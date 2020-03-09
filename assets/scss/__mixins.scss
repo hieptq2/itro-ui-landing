@@ -1,0 +1,39 @@
+@mixin one-line-ellipsis($width: auto, $max-width: 100%){
+  display: block;
+  width: $width;
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin multi-line-ellipsis($line-height, $lines-to-show, $dot: true, $height: false){
+  display: block;
+  overflow: hidden;
+  line-height: $line-height;
+  max-height: $lines-to-show * $line-height;
+  @if ($height){
+    height: $lines-to-show * $line-height;
+  }
+  @if ($dot){
+    display: -webkit-box;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+}
+
+// button-reset
+%button-reset{
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+%mdi-icon{
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+}

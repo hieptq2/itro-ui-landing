@@ -1,0 +1,71 @@
+// ============================================================================
+// HELPERS & PLACEHOLDERS
+
+%bg-cover{
+  @include background-size(cover);
+  background: {
+    position: 50% 50%;
+    repeat: no-repeat;
+  };
+}
+%bg-contain{
+  @include background-size(contain);
+  background: {
+    position: 50% 50%;
+    repeat: no-repeat;
+  };
+}
+%no-underline{
+  &,
+  &:hover,
+  &:active,
+  &:focus, 
+  &:visited{
+    text-decoration: none;
+  }
+}
+%hover-underline{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+%no-outline{
+  &,
+  &:hover,
+  &:active,
+  &:focus, 
+  &:visited{
+    outline: none;
+  }
+}
+
+.h-bg-cover{
+  @extend %bg-cover;
+}
+.h-bg-contain{
+  @extend %bg-contain;
+}
+
+.h-rectangle{
+  position: relative;
+  display: block;
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  &__inner{
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  &--r11, .ratio-r11{   &:after { padding-bottom: 100%; } }
+  &--r31, .ratio-r31{   &:after { padding-bottom: 33.3333%; } }
+  &--r13, .ratio-r13{   &:after { padding-bottom: 300%; } }
+  &--r32, .ratio-r32{   &:after { padding-bottom: 66.6666%; } }
+  &--r23, .ratio-r23{   &:after { padding-bottom: 150%; } }
+  &--r21, .ratio-r21{   &:after { padding-bottom: 50%; } }
+  &--r12, .ratio-r12{   &:after { padding-bottom: 200%; } }
+  &--r169, .ratio-169{  &:after { padding-bottom: 56.25%; } }
+  &--r916, .ratio-916{  &:after { padding-bottom: 178%; } }
+}
