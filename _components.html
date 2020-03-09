@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>itro | Components | Template</title>
+	<title>Components | iTro Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+
+	<style>
+		.l-components__single > h2{
+			position: relative;
+			display: inline-block;
+			margin: 2rem 0 2rem -1rem;
+			padding: .25rem .5rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #fff;
+			background-color: #000;
+		}
+	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="padding-bottom: 50vh;">
 		<div class="l-components">
 			<h1 class="l-components__title mt-0">Components</h1>
 			<hr>
@@ -13,9 +29,29 @@
 				<h2>Colors</h2>
 			</div>
 			<hr>
+			<div class="l-components__single">
+				<h2>Typo</h2>
+				<div>
+					<h1>h1. heading - tiêu đề iTro</h1>
+					<h2>h2. heading - tiêu đề iTro</h2>
+					<h3>h3. heading - tiêu đề iTro</h3>
+					<h4>h4. heading - tiêu đề iTro</h4>
+					<h5>h5. heading - tiêu đề iTro</h5>
+					<h6>h6. heading - tiêu đề iTro</h6>
+					<p>p. Tập thể dục thường xuyên dù tại nhà hay ngoài trời đều giúp cơ thể khỏe mạnh, tâm trạng vui vẻ và lạc quan hơn. Trong một nghiên cứu đăng trên Tạp chí Y học Thể thao Anh vào tháng 4/2019, các nhà khoa học cho biết chỉ cần 10 phút thể dục mỗi tuần, bạn đã kéo dài tuổi thọ. Kết quả Khảo sát Sức khỏe Quốc gia tại Mỹ kéo dài 9 năm với trên 88.000 người tham gia cũng cho thấy những người tập thể dục 10-59 phút một tuần ở cường độ nhẹ đến trung bình giảm 18% nguy cơ tử vong sớm so với những người không tập. Người thường xuyên hoạt động thể chất có nguy cơ tử vong vì bệnh tim mạch thấp hơn 12%, vì ung thư thấp hơn 14% so với người lười vận động.</p>
+				</div>
+			</div>
 			<hr>
 			<div class="l-components__single">
-				<h2>Colors</h2>
+				<h2>Form</h2>
+			</div>
+			<hr>
+			<div class="l-components__single">
+				<h2>Button</h2>
+				<div>
+					<button type="button" class="btn btn--primary">Primary</button>
+					<button type="button" class="btn btn-link">Link</button>
+				</div>
 			</div>
 		</div>
 	</div>
