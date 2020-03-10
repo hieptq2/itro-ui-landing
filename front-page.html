@@ -28,17 +28,20 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/itro-logo-colored.png">
             </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent>
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="mdi mdi-menu"></i>
+                <i class="mdi mdi-close"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-nav--left">
                     <li class="nav-item"><a class="nav-link" href="#">Cho thuê</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tìm nhà</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tìm ở ghép</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Phòng trọ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nhà nguyên căn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chung cư, căn hộ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Văn phòng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ở ghép</a></li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Dùng thử miễn phí</a></li>
+                <ul class="navbar-nav navbar-nav--right">
                     <li class="nav-item-divider"></li>
                     <li class="nav-item"><a class="nav-link" href="#">Đăng nhập</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Đăng ký</a></li>
@@ -190,7 +193,7 @@
     </div>
     <!--END reveal-->
     <!--showcase-->
-    <div class="block-showcase">
+    <div class="block-showcase d-none">
         <div class="container">
             <div class="block-showcase__wrap">
                 <div class="row justify-content-end">
@@ -221,7 +224,7 @@
     </div>
     <!--END showcase-->
     <!--plugins-->
-    <div class="block-ld block-plugins">
+    <div class="block-ld block-plugins d-none">
         <div class="container">
             <div class="block-plugins__wrap">
                 <div class="block-ld__header text-center">
@@ -262,25 +265,23 @@
                 <div class="block-clients__main">
                     <div class="block-clients__list">
                         <div class="row justify-content-center align-items-center">
-                            <div class="col-auto">
-                                <div class="single-client-logo"><img src="https://pngimage.net/wp-content/uploads/2018/05/background-logo-png-5.png" alt="Alternate Text" /></div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <div class="single-client-logo"><img src="mockups/logo1.png" alt="Alternate Text" /></div>
                             </div>
-                            <div class="col-auto">
-                                <div class="single-client-logo"><img src="https://upload.wikimedia.org/wikipedia/vi/8/80/FPT_New_Logo.png" alt="Alternate Text" /></div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <div class="single-client-logo"><img src="mockups/logo2.png" alt="Alternate Text" /></div>
                             </div>
-                            <div class="w-100 d-block d-lg-none"></div>
-                            <div class="col-auto">
-                                <div class="single-client-logo"><img src="https://www.freepnglogos.com/uploads/eagles-png-logo/eagle-sports-png-logos--0.png" alt="Alternate Text" /></div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <div class="single-client-logo"><img src="mockups/logo3.png" alt="Alternate Text" /></div>
                             </div>
-                            <div class="col-auto">
-                                <div class="single-client-logo"><img src="https://cdn.freebiesupply.com/images/large/2x/advocare-logo-png-transparent.png" alt="Alternate Text" /></div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <div class="single-client-logo"><img src="mockups/logo4.png" alt="Alternate Text" /></div>
                             </div>
-                            <div class="w-100 d-block d-lg-none"></div>
-                            <div class="col-auto">
-                                <div class="single-client-logo"><img src="https://pngimg.com/uploads/intel/intel_PNG15.png" alt="Alternate Text" /></div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <div class="single-client-logo"><img src="mockups/logo5.png" alt="Alternate Text" /></div>
                             </div>
-                            <div class="col-auto">
-                                <div class="single-client-logo"><img src="https://www.pngarts.com/files/3/Logo-Free-PNG-Image.png" alt="Alternate Text" /></div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <div class="single-client-logo"><img src="mockups/logo6.png" alt="Alternate Text" /></div>
                             </div>
                         </div>
                     </div>
@@ -295,13 +296,12 @@
             <div class="block-cta__wrap shadow">
                 <div class="row align-items-lg-center">
                     <div class="col-lg">
-                        <h2 class="cta-title">Title</h2>
-                        <div class="cta-subtitle">Subtitle</div>
+                        <h2 class="cta-title">Get started with iTro today</h2>
+                        <div class="cta-subtitle">Turn your ideas into incredible products with a 30-day trial.</div>
                     </div>
-                    <div class="col-lg-auto">
+                    <div class="col-lg-auto mt-4 mt-lg-0">
                         <div class="cta-actions">
-                            <a href="#" class="btn btn-primary">Dùng thử miễn phí</a>
-                            <a href="#" class="btn btn-default">Bảng giá dịch vụ</a>
+                            <a href="#" class="btn btn-lg btn-primary btn-block">Dùng thử miễn phí</a>
                         </div>
                     </div>
                 </div>

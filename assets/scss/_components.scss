@@ -25,34 +25,65 @@
     }
 
     &__main {
-        padding-top: 8rem;
+        padding-top: 5rem;
+        @include viewport-min(md){
+            padding-top: 8rem;
+        }
     }
 
     &__intro {
+        padding: 0 2rem;
+        @include viewport-min(md){
+            padding: 0 12.5%;
+        }
         .hero-title {
             margin: 0 0 1rem;
-            font-size: 4rem;
+            font-size: 2.5rem;
             font-weight: 900;
             letter-spacing: -1px;
-
+            @include viewport-min(md){
+                font-size: 3rem;
+            }
+            @include viewport-min(lg){
+                font-size: 3.5rem;
+            }
+            @include viewport-min(xl){
+                font-size: 4rem;
+            }
             span {
                 display: inline-block;
-            }
-
-            &__breakline {
-                width: 100%;
             }
         }
 
         .hero-subtitle {
-            font-size: 2rem;
+            line-height: 1.375;
+            font-size: 1.5rem;
             letter-spacing: -.5px;
+            @include viewport-min(md){
+                font-size: 1.5rem;
+            }
+            @include viewport-min(lg){
+                font-size: 1.75rem;
+            }
+            @include viewport-min(xl){
+                font-size: 2rem;
+            }
+            span {
+                display: inline-block;
+            }
         }
 
         .hero-btns {
             margin: 2.5rem 0 0 0;
             .btn{
                 margin: 0 .25rem;
+                @include viewport-max(lg){
+                    display: block;
+                    width: 80%;
+                    max-width: 320px;
+                    margin: .5rem auto;
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -117,7 +148,7 @@
             img {
                 display: block;
                 max-height: 4rem;
-                max-width: 8rem;
+                max-width: 100%;
                 filter: grayscale(100%);
             }
         }
@@ -126,10 +157,39 @@
 
 .block-cta{
     margin: 4rem 0 0;
+    color: #fff;
+    @include viewport-min(lg) {
+        
+    }
     &__wrap{
-        padding: 4rem;
+        margin: 0 -1rem;
+        padding: 2rem 2rem;
         background-color: $gray-700;
-        border-radius: 16px;
+        @include viewport-min(sm) {
+            border-radius: 1rem;
+        }
+        @include viewport-min(lg) {
+            margin: 0;
+            padding: 2rem 3rem;
+        }
+    }
+    .cta-title{
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -.5px;
+        @include viewport-min(lg) {
+            font-size: 2.5rem;
+        }
+    }
+    .cta-subtitle {
+        margin: .5rem 0 0;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: -.25px;
+        @include viewport-min(lg) {
+            font-size: 1.25rem;
+        }
     }
 }
 
