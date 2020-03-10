@@ -1,0 +1,37 @@
+// Custom variables for BS
+
+
+// Colors
+$primary: #ec8056;
+$secondary: #1cbdb0;
+    
+
+// Border
+$border-radius: 4px;
+$border-radius-lg: 4px;
+$border-radius-sm: 2px;
+
+$grid-gutter-width: 2rem;
+
+// Buttons + Forms
+$input-btn-padding-y-sm: .375rem;
+$input-btn-padding-x-sm: .75rem;
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1.25rem;
+$input-btn-padding-y-lg: .6125rem;
+$input-btn-padding-x-lg: 1.5rem;
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900&display=swap&subset=vietnamese');
+
+$ff-inter: 'Inter', sans-serif;
+$ff-muli: 'Muli', sans-serif;
+
+$font-family-base: $ff-inter;
+
+// Badge
+$badge-font-weight: 400;
+$badge-padding-y: .5em;
+$badge-padding-x: .75em;
+$badge-border-radius: 2px;

@@ -69,3 +69,13 @@
   &--r169, .ratio-169{  &:after { padding-bottom: 56.25%; } }
   &--r916, .ratio-916{  &:after { padding-bottom: 178%; } }
 }
+
+%mdi-icon {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

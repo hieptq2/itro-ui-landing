@@ -1,3 +1,54 @@
+// breakpoint viewport sizes and media queries
+
+@mixin viewport-min($breakpoint) {
+    $min: map-get($grid-breakpoints, $breakpoint);
+
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin viewport-max($breakpoint) {
+    $max: map-get($grid-breakpoints, $breakpoint);
+
+    @if $max {
+        @media (max-width: $max - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin viewport-between($lower, $upper) {
+    $min: map-get($grid-breakpoints, $lower);
+    $max: map-get($grid-breakpoints, $upper) - 1;
+
+    @if $min != null and $max != null {
+        @media (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    }
+    @else if $max == null {
+        @include viewport-min($lower) {
+            @content;
+        }
+    }
+    @else if $min == null {
+        @include viewport-max($upper) {
+            @content;
+        }
+    }
+}
+
+// text size
+
 @mixin one-line-ellipsis($width: auto, $max-width: 100%){
   display: block;
   width: $width;

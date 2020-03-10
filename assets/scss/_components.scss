@@ -1,0 +1,217 @@
+.block-hero {
+    &--ld {
+    }
+
+    &__wrap {
+        position: relative;
+        min-height: 100vh;
+        margin-top: -72px;
+        padding-top: 72px;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-color: lighten(#ec8056, 35%);
+        z-index: 10;
+    }
+
+    &__body {
+        position: relative;
+        z-index: 20;
+    }
+
+    &__main {
+        padding-top: 8rem;
+    }
+
+    &__intro {
+        .hero-title {
+            margin: 0 0 1rem;
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+
+            span {
+                display: inline-block;
+            }
+
+            &__breakline {
+                width: 100%;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 2rem;
+            letter-spacing: -.5px;
+        }
+
+        .hero-btns {
+            margin: 2.5rem 0 0 0;
+            .btn{
+                margin: 0 .25rem;
+            }
+        }
+    }
+
+    &__screenshot {
+        margin: 5rem 0 0 0;
+        .screenshot-wrap{
+            video{
+                display: block;
+            }
+        }
+    }
+}
+
+.block-ld {
+    margin: 8rem 0;
+    &__header {
+        //
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: -.5px;
+    }
+
+    &__subtitle {
+        margin: 1rem 0 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: -.25px;
+    }
+}
+
+
+.block-features {
+    padding: 4rem 0;
+    margin: 4rem 0;
+}
+
+.block-clients {
+    margin: 4rem 0 0;
+
+    &__title {
+        line-height: 1.25;
+        font-size: 1.125rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $gray-900;
+    }
+
+    &__list {
+        margin: 2rem 0 0;
+
+        .single-client-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem 1rem;
+
+            img {
+                display: block;
+                max-height: 4rem;
+                max-width: 8rem;
+                filter: grayscale(100%);
+            }
+        }
+    }
+}
+
+.block-cta{
+    margin: 4rem 0 0;
+    &__wrap{
+        padding: 4rem;
+        background-color: $gray-700;
+        border-radius: 16px;
+    }
+}
+
+.c-card {
+    position: relative;
+    border-radius: 8px;
+
+    &--bd {
+        box-shadow: 0 0 0 1px $gray-100;
+    }
+
+    &--sd {
+        &::after, &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 8px;
+            will-change: opacity;
+            -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+        }
+
+        &::before {
+            box-shadow: 0 1rem 2rem 0 rgba(0,0,0,.025), 0 .5rem 1rem 0 rgba(0,0,0,.05);
+        }
+    }
+
+    &-ft {
+        height: 100%;
+
+        &__wrap {
+            display: block;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 10;
+        }
+
+        &__media {
+            flex: 0 0 auto;
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+
+            video {
+                display: block;
+                width: 100%;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &__main {
+            flex: 1 1 auto;
+            min-height: 0;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+        // in main
+        .main-pos-top {
+            flex: 1 1 auto;
+            min-height: 0;
+            min-width: 0;
+            position: relative;
+        }
+
+        .main-pos-bottom {
+            margin: 1rem 0 0;
+        }
+        &__tags{
+            margin: 0 0 .5rem 0;
+        }
+    }
+}
