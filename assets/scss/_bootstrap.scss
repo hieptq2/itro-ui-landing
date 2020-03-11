@@ -1,10 +1,35 @@
 // badge
-.badge{
+.badge {
     text-transform: uppercase;
     letter-spacing: .5px;
 
-    &-primary{
+    &-primary {
         color: #fff;
+    }
+
+    &--blue {
+        color: $blue;
+        background-color: lighten($blue, 40%);
+    }
+
+    &--orange {
+        color: $orange;
+        background-color: lighten($orange, 40%);
+    }
+
+    &--teal {
+        color: $teal;
+        background-color: lighten($teal, 45%);
+    }
+
+    &--green {
+        color: $green;
+        background-color: lighten($green, 42%);
+    }
+
+    &--cyan {
+        color: $cyan;
+        background-color: lighten($cyan, 42%);
     }
 }
 // button
