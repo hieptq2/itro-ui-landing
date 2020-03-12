@@ -78,6 +78,34 @@
 
 .animated.delay-19s { -webkit-animation-delay: 0.9s; animation-delay: 0.9s; }
 
+.element-animated { opacity: 0; }
+
+.element-animated.animated { opacity: 1; }
+
+@keyframes a-ldTitle { from { opacity: 0; -webkit-transform: translate3d(0, 2rem, 0); transform: translate3d(0, 2rem, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+@keyframes a-ldSubtitle { from { opacity: 0; -webkit-transform: translate3d(0, 1.5rem, 0); transform: translate3d(0, 1.5rem, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.a-ldTitle { -webkit-animation-name: a-ldTitle; animation-name: a-ldTitle; }
+
+.a-ldSubtitle { -webkit-animation-name: a-ldSubtitle; animation-name: a-ldSubtitle; }
+
+@keyframes fadeInUp--xs { from { opacity: 0; -webkit-transform: translate3d(0, 1.5rem, 0); transform: translate3d(0, 1.5rem, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.fadeInUp--xs { -webkit-animation-name: fadeInUp--xs; animation-name: fadeInUp--xs; }
+
+@keyframes fadeInUp--sm { from { opacity: 0; -webkit-transform: translate3d(0, 2.5rem, 0); transform: translate3d(0, 2.5rem, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.fadeInUp--sm { -webkit-animation-name: fadeInUp--sm; animation-name: fadeInUp--sm; }
+
+@keyframes fadeInLeft--sm { from { opacity: 0; -webkit-transform: translate3d(-2.5rem, 0, 0); transform: translate3d(-2.5rem, 0, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.fadeInLeft--sm { -webkit-animation-name: fadeInLeft--sm; animation-name: fadeInLeft--sm; }
+
+@keyframes fadeInRight--sm { from { opacity: 0; -webkit-transform: translate3d(2.5rem, 0, 0); transform: translate3d(2.5rem, 0, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.fadeInRight--sm { -webkit-animation-name: fadeInRight--sm; animation-name: fadeInRight--sm; }
+
 body { font-family: "Inter", sans-serif; color: #212529; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Muli", sans-serif; }
