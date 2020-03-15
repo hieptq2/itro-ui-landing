@@ -1,201 +1,17 @@
-.block-hero {
-    &--ld {
-    }
+a.c-card {
+    transition: transform .2s ease-in-out;
 
-    &__wrap {
-        position: relative;
-        min-height: 100vh;
-        margin-top: -72px;
-        padding-top: 72px;
-    }
-
-    &__background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        background-color: lighten(#ec8056, 35%);
-        z-index: 10;
-    }
-
-    &__body {
-        position: relative;
-        z-index: 20;
-    }
-
-    &__main {
-        padding-top: 5rem;
-        @include viewport-min(md){
-            padding-top: 8rem;
-        }
-    }
-
-    &__intro {
-        padding: 0 2rem;
-        @include viewport-min(md){
-            padding: 0 12.5%;
-        }
-        .hero-title {
-            margin: 0 0 1rem;
-            font-size: 2.5rem;
-            font-weight: 900;
-            letter-spacing: -1px;
-            @include viewport-min(md){
-                font-size: 3rem;
-            }
-            @include viewport-min(lg){
-                font-size: 3.5rem;
-            }
-            @include viewport-min(xl){
-                font-size: 4rem;
-            }
-            span {
-                display: inline-block;
-            }
-        }
-
-        .hero-subtitle {
-            line-height: 1.375;
-            font-size: 1.5rem;
-            letter-spacing: -.5px;
-            @include viewport-min(md){
-                font-size: 1.5rem;
-            }
-            @include viewport-min(lg){
-                font-size: 1.75rem;
-            }
-            @include viewport-min(xl){
-                font-size: 2rem;
-            }
-            span {
-                display: inline-block;
-            }
-        }
-
-        .hero-btns {
-            margin: 2.5rem 0 0 0;
-            .btn{
-                margin: 0 .25rem;
-                @include viewport-max(lg){
-                    display: block;
-                    width: 80%;
-                    max-width: 320px;
-                    margin: .5rem auto;
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-
-    &__screenshot {
-        margin: 5rem 0 0 0;
-        .screenshot-wrap{
-            video{
-                display: block;
-            }
-        }
-    }
-}
-
-.block-ld {
-    margin: 8rem 0;
-    &__header {
-        //
-    }
-
-    &__title {
-        margin: 0;
-        font-size: 3rem;
-        font-weight: 900;
-        letter-spacing: -.5px;
-    }
-
-    &__subtitle {
-        margin: 1rem 0 0;
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: -.25px;
-    }
-}
-
-
-.block-features {
-    padding: 4rem 0;
-    margin: 4rem 0;
-}
-
-.block-clients {
-    margin: 4rem 0 0;
-
-    &__title {
-        line-height: 1.25;
-        font-size: 1.125rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: $gray-900;
-    }
-
-    &__list {
-        margin: 2rem 0 0;
-
-        .single-client-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: .5rem 1rem;
-
-            img {
-                display: block;
-                max-height: 4rem;
-                max-width: 100%;
-                filter: grayscale(100%);
-            }
-        }
-    }
-}
-
-.block-cta{
-    margin: 4rem 0 0;
-    color: #fff;
-    @include viewport-min(lg) {
-        
-    }
-    &__wrap{
-        margin: 0 -1rem;
-        padding: 2rem 2rem;
-        background-color: $gray-700;
-        @include viewport-min(sm) {
-            border-radius: 1rem;
-        }
-        @include viewport-min(lg) {
-            margin: 0;
-            padding: 2rem 3rem;
-        }
-    }
-    .cta-title{
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -.5px;
-        @include viewport-min(lg) {
-            font-size: 2.5rem;
-        }
-    }
-    .cta-subtitle {
-        margin: .5rem 0 0;
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: -.25px;
-        @include viewport-min(lg) {
-            font-size: 1.25rem;
-        }
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-3px);
     }
 }
 
 .c-card {
     position: relative;
+    display: block;
     border-radius: 8px;
+    color: $gray-900;
 
     &--bd {
         box-shadow: 0 0 0 1px $gray-100;
@@ -223,7 +39,19 @@
     }
 
     &-ft {
+        background-color: #fff;
         height: 100%;
+        margin: 0 0 1rem;
+
+        @include viewport-max(lg) {
+            font-size: .875rem;
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
 
         &__wrap {
             display: block;
@@ -232,6 +60,11 @@
             flex-direction: column;
             position: relative;
             z-index: 10;
+            color: $gray-900;
+
+            &:hover {
+                color: $gray-900;
+            }
         }
 
         &__media {
@@ -257,7 +90,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 2rem;
+            padding: 1rem;
+
+            @include viewport-min(lg) {
+                padding: 2rem;
+            }
         }
         // in main
         .main-pos-top {
@@ -270,8 +107,65 @@
         .main-pos-bottom {
             margin: 1rem 0 0;
         }
-        &__tags{
-            margin: 0 0 .5rem 0;
+
+        &__tags {
+            margin: 0 0 .75rem 0;
+        }
+
+        &__title {
+            margin: 0;
+            font-weight: 700;
+
+            @include viewport-max(lg) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__descr {
+            margin: .5rem 0 0;
+        }
+
+        &__more {
+            a {
+                transition: color .2s ease-in-out, padding-left .2s ease-in-out;
+
+                &:hover {
+                    padding-left: 3px;
+                }
+            }
+        }
+
+        &--rv {
+            .c-card-ft {
+                //xx
+                &__wrap {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 1rem;
+
+                    @include viewport-min(lg) {
+                        padding: 2rem;
+                    }
+                }
+
+                &__icon {
+                    flex: 0 0 72px;
+                    margin: 0 1rem 0 0;
+
+                    img {
+                        display: block;
+                        width: 72px;
+                    }
+                }
+
+                &__main {
+                    padding: 0;
+                }
+
+                &__tags {
+                    margin: 0;
+                }
+            }
         }
     }
 }

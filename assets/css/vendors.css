@@ -3098,7 +3098,7 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 
 @-webkit-keyframes fadeInUp { from { opacity: 0; -webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); }
   to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
-@keyframes fadeInUp { from { opacity: 0; -webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); }
+@keyframes fadeInUp { from { opacity: 0; -webkit-transform: translate3d(0, 50%, 0); transform: translate3d(0, 50%, 0); }
   to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
 .fadeInUp { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
 
