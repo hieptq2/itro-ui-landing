@@ -1,26 +1,97 @@
 .front-page {
+    position: relative;
+    &__bg{
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        overflow: hidden;
+        .bg-top{
+            position: absolute;
+            z-index: 10;
+            height: 75%;
+            top: 0;
+            left: 0; right: 0;
+            background-color: $primary;
+        }
+        .bg-center{
+            position: absolute;
+            z-index: 15;
+            top: 75%;
+            left: 0; right: 0;
+            transform: translateY(-50%);
+        }
+        .bg-bottom{
+            // position: absolute;
+            // height: 50%;
+            // bottom: 0;
+            // left: 0; right: 0;
+            // background-color: #fff;
+        }
+    }
     &__wrap {
-        //
+        position: relative;
+        z-index: 50;
     }
 
     .front-header {
         height: 72px;
+        padding: 1rem;
+        .header{
+            //xx
+            &__logo{
+                display: block;
+                img{
+                    height: 36px;
+                }
+            }
+        }
     }
     .front-main{
         min-height: calc(100vh - 72px);
         display: flex;
         align-items: center;
         justify-content: center;
+        &__header{
+            margin-bottom: 4rem;
+            @include viewport-min(lg) {
+                padding: 0 12%;
+            }
+        }
+        &__title {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -.5px;
+            color: #fff;
+            @include viewport-min(lg) {
+                font-size: 3.5rem;
+            }
+        }
+
+        &__subtitle {
+            margin: 1rem 0 0;
+            font-size: 1.125rem;
+            font-weight: 400;
+            letter-spacing: -.25px;
+            color: $gray-100;
+            @include viewport-min(lg) {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
 .block-hero {
     &--ld {
+        //
     }
 
     &__wrap {
         position: relative;
-        min-height: 100vh;
         margin-top: -72px;
         padding-top: 72px;
     }
@@ -30,29 +101,38 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 100vh;
-        background-color: lighten(#ec8056, 35%);
+        bottom: 0;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(251,131,50,0.1) 25%, rgba(248,195,50,0.08) 75%, rgba(255,255,255,1) 100%);
         z-index: 10;
-
-        .background-wrapper {
+        .hero-background {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
             width: 100%;
             height: 100%;
-            background-image: url('../img/city-outline.svg');
-            background-position: bottom center;
-            background-size: 250% auto;
-            background-repeat: no-repeat;
-            opacity: .08 !important;
-
-            @include viewport-min(sm) {
-                background-size: 150% auto;
+            overflow: hidden;
+            @include viewport-min(lg){
+                display: block;
             }
-
-            @include viewport-min(md) {
-                background-size: 120% auto;
+            &__shape {
+                position: absolute;
+                will-change: transform;
             }
-
-            @include viewport-min(xl) {
-                background-size: 100% auto;
+            svg {
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                position: absolute
+            }
+            .stroke {
+                fill: none;
+                stroke: #fa6400;
+                stroke-opacity: .4;
+                stroke-width: 1;
             }
         }
     }
@@ -63,32 +143,54 @@
     }
 
     &__main {
-        padding: 5rem 0;
+        padding: 4rem 0;
 
         @include viewport-min(lg) {
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: calc(75vh - 72px);
-            padding: 8rem 5%;
+            padding: 6rem 5% 8rem;
         }
 
         @include viewport-min(md) {
-            padding: 8rem 8%;
+            padding-left: 8%;
+            padding-right: 8%;
         }
     }
 
     &__intro {
         padding: 0 2rem;
-
+    
         @include viewport-min(md) {
             padding: 0 12.5%;
         }
-
+        .hero-badge{
+            margin: 0 0 3rem;
+            &__btn{
+                display: inline-block;
+                padding: .5rem .75rem;
+                font-size: .75rem;
+                font-weight: 600;
+                color: #fff;
+                background-image: linear-gradient(270deg,#e64c4c 0,#ef32fb 100%);
+                border-radius: .75rem;
+                box-shadow: 0 .25rem .5rem rgba(0,0,0,.1);
+                transition: box-shadow .2s ease-in-out;
+                &:hover{
+                    text-decoration: none;
+                    box-shadow: 0 .25rem 1rem rgba(0,0,0,.2);
+                }
+                @include viewport-min(lg){
+                    padding: .6125rem 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
         .hero-title {
-            margin: 0 0 1rem;
+            margin: 0 0 1.5rem;
             font-size: 2.5rem;
-            font-weight: 900;
+            font-weight: 800;
             letter-spacing: -1px;
 
             @include viewport-min(md) {
@@ -109,20 +211,17 @@
         }
 
         .hero-subtitle {
-            line-height: 1.375;
-            font-size: 1.5rem;
+            line-height: 1.5;
+            font-size: 1.25rem;
             letter-spacing: -.5px;
-
+            color: $gray-700;
             @include viewport-min(md) {
                 font-size: 1.5rem;
             }
 
             @include viewport-min(lg) {
+                line-height: 1.375;
                 font-size: 1.75rem;
-            }
-
-            @include viewport-min(xl) {
-                font-size: 2rem;
             }
 
             span {
@@ -131,11 +230,12 @@
         }
 
         .hero-btns {
-            margin: 2.5rem 0 0 0;
+            margin: 3rem 0 0 0;
 
             .btn {
                 margin: 0 .25rem;
-
+                padding-left: 2rem;
+                padding-right: 2rem;
                 @include viewport-max(lg) {
                     display: block;
                     width: 80%;
@@ -186,9 +286,9 @@
     &__title {
         margin: 0;
         font-size: 2rem;
-        font-weight: 900;
+        font-weight: 800;
         letter-spacing: -.5px;
-
+        color: $gray-900;
         @include viewport-min(lg) {
             font-size: 3rem;
         }
@@ -199,7 +299,7 @@
         font-size: 1.125rem;
         font-weight: 400;
         letter-spacing: -.25px;
-
+        color: $gray-700;
         @include viewport-min(lg) {
             font-size: 1.5rem;
         }
@@ -248,7 +348,7 @@
         padding: 0 0 0 1rem;
 
         @include viewport-min(lg) {
-            height: 600px;
+            height: 500px;
         }
 
         &__single {
@@ -427,13 +527,18 @@
     }
 
     .cta-subtitle {
-        margin: .5rem 0 0;
+        margin: .75rem 0 0;
         font-size: 1rem;
         font-weight: 400;
-        letter-spacing: -.25px;
-
+        color: $gray-200;
         @include viewport-min(lg) {
             font-size: 1.25rem;
+        }
+    }
+    .cta-actions{
+        white-space: nowrap;
+        .btn{
+            margin: 0 0 0 .5rem;
         }
     }
 }
