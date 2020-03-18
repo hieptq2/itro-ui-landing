@@ -1,5 +1,9 @@
+// Colors
+
 $primary: #ec8056;
 $secondary: #1cbdb0;
+$facebook: #3b5999;
+$zalo: #038AE3;
 
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -22,11 +26,12 @@ $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
 
-$ff-inter: 'Inter', sans-serif;
-$ff-muli: 'Muli', sans-serif;
+// Fonts
 
-$font-family-base: $ff-inter;
-$font-family-heading: $ff-muli;
+$font-family: "SF Pro", sans-serif;
+
+$font-family-base: $font-family;
+$font-family-heading: $font-family;
 
 $grid-breakpoints: ( 
     xs: 0, 

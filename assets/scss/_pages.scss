@@ -1,0 +1,130 @@
+.page-si{
+	&__wrap{
+        @include viewport-min(lg){
+            display: flex;
+            height: 100vh;
+        }
+	}
+    .block-si-form{
+        @include viewport-min(lg){
+            flex: 0 0 auto;
+            max-height: 100%;
+            overflow: auto;
+        }
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &__wrap{
+            max-width: 480px;
+            margin: 0 auto;
+            @include viewport-min(lg){
+                width: 375px;
+            }
+        }
+    }
+    .block-si-intro{
+        @include viewport-min(lg){
+            max-height: 100%;
+            overflow: auto;
+            flex: 1 1 auto;
+            min-width: 0;
+            max-height: 100%;
+            overflow: auto;
+        }
+        &__wrap{
+            padding: 2rem 15%;
+            margin: 0 auto;
+       }
+    }
+}
+
+
+
+.front-page {
+    position: relative;
+    &__bg{
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        overflow: hidden;
+        .bg-top{
+            position: absolute;
+            z-index: 10;
+            height: 75%;
+            top: 0;
+            left: 0; right: 0;
+            background-color: $primary;
+        }
+        .bg-center{
+            position: absolute;
+            z-index: 15;
+            top: 75%;
+            left: 0; right: 0;
+            transform: translateY(-50%);
+        }
+        .bg-bottom{
+            // position: absolute;
+            // height: 50%;
+            // bottom: 0;
+            // left: 0; right: 0;
+            // background-color: #fff;
+        }
+    }
+    &__wrap {
+        position: relative;
+        z-index: 50;
+    }
+
+    .front-header {
+        height: 72px;
+        padding: 1rem;
+        .header{
+            //xx
+            &__logo{
+                display: block;
+                img{
+                    height: 36px;
+                }
+            }
+        }
+    }
+    .front-main{
+        min-height: calc(100vh - 72px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__header{
+            margin-bottom: 4rem;
+            @include viewport-min(lg) {
+                padding: 0 12%;
+            }
+        }
+        &__title {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -.5px;
+            color: #fff;
+            @include viewport-min(lg) {
+                font-size: 3.5rem;
+            }
+        }
+
+        &__subtitle {
+            margin: 1rem 0 0;
+            font-size: 1.125rem;
+            font-weight: 400;
+            letter-spacing: -.25px;
+            color: $gray-100;
+            @include viewport-min(lg) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

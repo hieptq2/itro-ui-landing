@@ -1,89 +1,183 @@
-.front-page {
-    position: relative;
-    &__bg{
-        position: absolute;
-        z-index: 20;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        overflow: hidden;
-        .bg-top{
-            position: absolute;
-            z-index: 10;
-            height: 75%;
-            top: 0;
-            left: 0; right: 0;
-            background-color: $primary;
-        }
-        .bg-center{
-            position: absolute;
-            z-index: 15;
-            top: 75%;
-            left: 0; right: 0;
-            transform: translateY(-50%);
-        }
-        .bg-bottom{
-            // position: absolute;
-            // height: 50%;
-            // bottom: 0;
-            // left: 0; right: 0;
-            // background-color: #fff;
-        }
-    }
-    &__wrap {
-        position: relative;
-        z-index: 50;
-    }
+// ------------------------------------
+// Sign In and Sign Up
 
-    .front-header {
-        height: 72px;
-        padding: 1rem;
-        .header{
-            //xx
-            &__logo{
-                display: block;
-                img{
-                    height: 36px;
-                }
-            }
+.block-si-form{
+    padding: 1.5rem;
+    @include viewport-min(lg){
+        padding: 2rem;
+    }
+    a{
+        &:hover{
+            text-decoration: none;
         }
     }
-    .front-main{
-        min-height: calc(100vh - 72px);
+    &__wrap{
+        //
+    }
+    &__header{
         display: flex;
         align-items: center;
-        justify-content: center;
-        &__header{
-            margin-bottom: 4rem;
-            @include viewport-min(lg) {
-                padding: 0 12%;
+        justify-content: space-between;
+        margin: 0 0 3rem;
+    }
+    &__body{
+        //
+    }
+    &--footer{
+        //
+    }
+    .si-top-logo{
+        a{
+            display: block;
+            img{
+                display: block;
             }
         }
-        &__title {
+    }
+    .si-top-action{
+        padding-top: .5rem;
+        a{
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 500;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .si-main{
+        &__wrap{
+            //
+        }
+        &__top{
+            margin: 0 0 1.5rem;
+        }
+        &__title{
             margin: 0;
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -.5px;
-            color: #fff;
-            @include viewport-min(lg) {
-                font-size: 3.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            @include viewport-min(lg){
+                font-size: 1.5rem;
             }
         }
+        &__subtitle{
+            margin: .25rem 0 0;
+            font-size: .875rem;
+            @include viewport-min(lg){
+                font-size: 1rem;
+            }
+        }
+        &__form{
 
-        &__subtitle {
-            margin: 1rem 0 0;
-            font-size: 1.125rem;
-            font-weight: 400;
-            letter-spacing: -.25px;
-            color: $gray-100;
-            @include viewport-min(lg) {
-                font-size: 1.5rem;
+        }
+        &__divider{
+            margin: .75rem 0;
+            @include viewport-min(lg){
+                margin: 1.25rem 0;
+            }
+            position: relative;
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                top: 50%;
+                left: 0;
+                margin-top: -1px;
+                z-index: 10;
+                background-color: $gray-300;
+            }
+            span{
+                position: relative;
+                display: block;
+                width: 3rem;
+                height: 3rem;
+                margin: 0 auto;
+                line-height: calc(3rem - 2px);
+                font-size: .875rem;
+                font-weight: 500;
+                text-align: center;
+                color: $gray-500;
+                background-color: #fff;
+                border: 1px solid $gray-300;
+                border-radius: 50%;
+                z-index: 15;
+            }
+        }
+        &__social{
+            padding: .5rem 0;
+            @include viewport-min(lg){
+                padding: .75rem 0;
             }
         }
     }
 }
+.block-si-intro{
+    &__wrap{
+
+    }
+    .si-intro{
+        //xx
+        &-header{
+            padding: 2rem 0;
+        }
+        &-title{
+            font-size: 3rem;
+            margin: 0 0 1rem;
+            color: $gray-900;
+        }
+        &-subtitle{
+            font-size: 1.25rem;
+            margin: 0 0 1rem;
+            color: $gray-600;
+        }
+        &-action{
+            margin: 2rem 0 0;
+            .btn-lg{
+                padding: 1rem 2rem;
+            }
+        }
+        &-divider{
+            margin: 8rem 0;
+        }
+        &-main{
+            //
+        }
+        &-app{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__screen{
+                flex: 0 0 auto;
+                img{
+                    width: 200px;
+                }
+            }
+            &__content{
+                flex: 1 auto auto;
+                min-width: 0;
+                margin: 1rem 0 0 4rem;
+            }
+            &__title{
+                margin: 0;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+            &__download{
+                margin: 1.5rem 0 0;
+                a{
+                    display: inline-block;
+                    margin: .5rem 0;
+                }
+            }
+        }
+    }
+}
+// END - Sign In and Sign Up
+
+// ------------------------------------
+// Landing page
 
 .block-hero {
     &--ld {
@@ -542,3 +636,7 @@
         }
     }
 }
+
+// END - Landing page
+
+// ------------------------------------
