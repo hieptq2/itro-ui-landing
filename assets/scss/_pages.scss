@@ -42,89 +42,51 @@
 
 
 
-.front-page {
+.page-front {
     position: relative;
-    &__bg{
-        position: absolute;
-        z-index: 20;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        overflow: hidden;
-        .bg-top{
-            position: absolute;
-            z-index: 10;
-            height: 75%;
-            top: 0;
-            left: 0; right: 0;
-            background-color: $primary;
-        }
-        .bg-center{
-            position: absolute;
-            z-index: 15;
-            top: 75%;
-            left: 0; right: 0;
-            transform: translateY(-50%);
-        }
-        .bg-bottom{
-            // position: absolute;
-            // height: 50%;
-            // bottom: 0;
-            // left: 0; right: 0;
-            // background-color: #fff;
-        }
-    }
     &__wrap {
+        @extend %bg-cover;
+        background-position: center bottom;
         position: relative;
         z-index: 50;
-    }
-
-    .front-header {
-        height: 72px;
-        padding: 1rem;
-        .header{
-            //xx
-            &__logo{
-                display: block;
-                img{
-                    height: 36px;
-                }
-            }
-        }
+        background-image: url("../img/bg-front.png");
+        padding-bottom: 2rem;
     }
     .front-main{
-        min-height: calc(100vh - 72px);
         display: flex;
         align-items: center;
         justify-content: center;
         &__header{
-            margin-bottom: 4rem;
+            padding: 2.5rem 0;
             @include viewport-min(lg) {
-                padding: 0 12%;
+                padding: 4rem 5% 3rem;
             }
         }
         &__title {
             margin: 0;
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.5rem;
+            font-weight: 200;
             letter-spacing: -.5px;
             color: #fff;
             @include viewport-min(lg) {
-                font-size: 3.5rem;
+                font-size: 5rem;
             }
         }
 
-        &__subtitle {
-            margin: 1rem 0 0;
-            font-size: 1.125rem;
+        &__quote {
+            position: relative;
+            margin: 1.5rem 0 0;
+            font-size: 1rem;
             font-weight: 400;
-            letter-spacing: -.25px;
+            font-style: italic;
             color: $gray-100;
             @include viewport-min(lg) {
-                font-size: 1.5rem;
+                font-size: 1.125rem;
             }
+            p{
+                margin-bottom: .5rem;
+            }
+
         }
     }
 }

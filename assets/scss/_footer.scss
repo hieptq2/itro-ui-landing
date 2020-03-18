@@ -237,3 +237,14 @@
         }
     }
 }
+
+.front-footer{
+    margin: 8rem 0 0;
+    padding: .5rem 0; 
+    font-size: .875rem;
+    color: $gray-600;
+    @include viewport-max(sm) {
+        text-align: center;
+        margin: 10rem 0 0;
+    }
+}

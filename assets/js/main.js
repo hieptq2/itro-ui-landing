@@ -6,10 +6,20 @@ $(document).ready(function () {
     //always open accordion on showcase block
     $('#Accordion-Showcase [data-toggle="collapse"]').on('click', function (e) {
         e.preventDefault();
+        var dataShowcase = $(this).data('showcase');
         if (!$(this).hasClass('collapsed')) {
             e.stopPropagation();
             return false;
+        }else{
+            // console.log(dataShowcase);
+            $('.accordion-media .showcase-wrap').each(function(e) {
+                $(this).removeClass('active');
+                if ($(this).attr('id') == dataShowcase){
+                    $(this).addClass('active'); 
+                }
+            });
         }
+        dataShowcase = '';
     });
 
     //[landing] animate when scroll to element
@@ -32,7 +42,6 @@ function scrollWaypointInit(items, trigger) {
         var trigger = (trigger) ? trigger : element;
 
         trigger.waypoint(function () {
-            console.log(osAnimationClass);
             element.addClass('animated').addClass(osAnimationClass);
         }, {
             triggerOnce: true,

@@ -7,7 +7,7 @@
 
 
 a.c-card {
-    transition: transform .2s ease-in-out;
+    // transition: transform .2s ease-in-out;
 
     &:hover {
         text-decoration: none;
@@ -125,7 +125,7 @@ a.c-card {
 
         &__title {
             margin: 0;
-            font-weight: 800;
+            font-weight: 700;
 
             @include viewport-max(lg) {
                 font-size: 1.5rem;
@@ -181,50 +181,74 @@ a.c-card {
     }
 
     &-bn{
-        margin: 0 0 2rem;
+        margin: 0 0;
         padding: 1rem 0;
+        @include viewport-max(md){
+            text-align: center;
+        }
         &__icon{
             margin: 0 0 1.125rem;
             max-width: 100%;
         }
         &__title {
             margin: 0;
-            font-size: 1.75rem;
-            font-weight: 800;
+            font-size: 1.25rem;
+            font-weight: 700;
             color: $gray-900;
-            @include viewport-max(lg) {
+            @include viewport-min(lg) {
                 font-size: 1.5rem;
             }
         }
         &__descr {
-            margin: .75rem 0 0;
+            margin: .25rem 0 0;
             color: $gray-600;
+            @include viewport-min(lg) {
+                margin: .75rem 0 0;
+            }
         }
     }
 
     &-fr{
         display: flex;
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
         align-items: center;
         justify-content: center;
         color: #fff;
+        background-color: $gray-800;
+        border-radius: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        transition: box-shadow .2s ease-in-out;
+        @include viewport-min(sm){
+            width: 240px;
+            height: 240px;
+        }
         &:hover{
             color: #fff;
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
         }
-        &--manager{
-            background-color: #2980b9;
-            background: radial-gradient(circle, rgba(103,156,191,1) 0%, rgba(41,128,185,1) 100%);
+        &--1{
+            background-color: #1aeada;
+            background: radial-gradient(circle, #1aeada 0%, #1dbfb0 100%);
         }
-        &--user{
-            background-color: #27ae60;
-            background: radial-gradient(circle, #333 0%, #555 100%)
+        &--2{
+            background-color: #ee7347;
+            background: radial-gradient(circle, #f7a97b 0%, #ee7347 100%)
+        }
+        &--3{
+            background-color: #5ea8fd;
+            background: radial-gradient(circle, #95c1fe 0%, #5ea8fd 100%)
         }
         &__wrap{
             display: block;
         }
         &__icon{
-            margin: 0 0 1rem;
+            margin: 0 0 2rem;
+        }
+        &__title{
+            margin: 0 0;
+            font-size: 1.5rem;
+            font-weight: 300;
         }
     }
 }

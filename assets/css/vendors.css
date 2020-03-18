@@ -9,7 +9,9 @@
 /** Heavy Italic */
 @font-face { font-family: "SF Pro"; font-weight: 800; font-style: italic; src: url("../fonts/SF-Pro-Display-HeavyItalic.otf"); }
 /** Light */
+@font-face { font-family: "SF Pro"; font-weight: 200; src: url("../fonts/SF-Pro-Display-Light.otf"); }
 /** Light Italic */
+@font-face { font-family: "SF Pro"; font-weight: 200; font-style: italic; src: url("../fonts/SF-Pro-Display-LightItalic.otf"); }
 /** Medium */
 @font-face { font-family: "SF Pro"; font-weight: 500; src: url("../fonts/SF-Pro-Display-Medium.otf"); }
 /** Medium Italic */
@@ -24,7 +26,6 @@
 @font-face { font-family: "SF Pro"; font-weight: 600; font-style: italic; src: url("../fonts/SF-Pro-Display-SemiboldItalic.otf"); }
 /** Ultrathin */
 /** Ultrathin Italic */
-@font-face { font-family: "SF Pro"; font-weight: 100; font-style: italic; src: url("../fonts/SF-Pro-Display-UltrathinItalic.otf"); }
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
