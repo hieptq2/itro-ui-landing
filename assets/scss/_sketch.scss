@@ -1,4 +1,4 @@
-.block-cloud__montage {
+.el-grp__montage {
     position: relative;
     width: 47.5rem;
     height: 47.5rem;
@@ -10,7 +10,7 @@
     // -webkit-perspective: 1000px;
     // perspective: 1000px;
 }
-.block-cloud__montage__layer {
+.el-grp__montage__layer {
     position: absolute;
     left: 0;
     top: 0;
@@ -18,11 +18,11 @@
     height: 100%;
     will-change: transform;
 }
-.block-cloud__montage__layer__el{
-	position: absolute;
-	will-change: transform;
-	transform: scale(.9);
+.el-grp__montage__layer__el {
+    position: absolute;
+    will-change: transform;
+    transform: scale(.9);
 }
-img.block-cloud__montage__layer__el{
-	transform: scale(1);
+img.el-grp__montage__layer__el {
+    transform: scale(1);
 }

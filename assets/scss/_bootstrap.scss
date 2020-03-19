@@ -1,5 +1,6 @@
 // badge
 .badge {
+    padding: 9px 12px 8px;
     text-transform: uppercase;
     letter-spacing: .5px;
 
@@ -63,9 +64,11 @@
             box-shadow: 0 .25rem .5rem rgba(0,0,0,.15);
         }
     }
-    &-link{
+
+    &-link {
         box-shadow: 0 0 0 transparent !important;
     }
+
     &-default {
         background-color: #fff;
         border-color: $gray-300;
@@ -77,11 +80,13 @@
 
     &-primary {
         color: #fff;
+
         &:hover {
             border-color: transparent;
         }
     }
-    &-secondary{
+
+    &-secondary {
         &:hover {
             border-color: transparent;
         }
@@ -92,17 +97,18 @@
             color: #fff;
         }
     }
-    &.no-translate{
+
+    &.no-translate {
         // transform: translate(0, 0) !important;
     }
-
     // socical
-    &-social{
+    &-social {
         position: relative;
         color: #fff;
         background-color: $gray-800;
         padding-left: 3.25rem;
-        &__icon{
+
+        &__icon {
             display: block;
             position: absolute;
             top: 50%;
@@ -112,25 +118,43 @@
             height: 2rem;
             line-height: 2rem;
             text-align: center;
-            img{
+
+            img {
                 max-width: 1.5rem;
                 max-height: 1.5rem;
             }
-            i.mdi{
+
+            i.mdi {
                 display: inline-block;
                 vertical-align: top;
                 line-height: 2rem;
                 font-size: 1.5rem;
             }
         }
-        &:hover{
+
+        &:hover {
             color: #fff;
         }
-        &--facebook{
+
+        &--facebook {
             background-color: $facebook;
         }
-        &--zalo{
+
+        &--zalo {
             background-color: $zalo;
+        }
+    }
+    // app download
+    &-app-download {
+        display: inline-block;
+
+        &:hover {
+            transform: translateY(-.125rem);
+            opacity: .8;
+        }
+
+        &:active {
+            transform: translateY(-.25rem);
         }
     }
 }
@@ -138,13 +162,13 @@
 
 // form
 
-.form-label{
+.form-label {
     margin-bottom: .25rem;
+    font-size: .875rem;
+    font-weight: 300;
+    color: $gray-900;
 }
 .form-control {
-    &:focus {
-        border-color: $gray-500;
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    }
+    //
 }
 

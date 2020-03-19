@@ -43,7 +43,7 @@
     </style>
 </head>
 <body>
-    <div class="container" style="padding: 6.125vh 0 50vh;">
+    <div class="container" style="padding: 6.125vh 1rem 50vh;">
         <div class="l-components">
             <h1 class="l-components__title mt-0">iTro <small style="padding: 1rem">✕</small> Components</h1>
             <hr>
@@ -70,10 +70,32 @@
                     <h4>h4. heading - tiêu đề iTro</h4>
                     <h5>h5. heading - tiêu đề iTro</h5>
                     <h6>h6. heading - tiêu đề iTro</h6>
-                    <p></p>
+                    <hr class="my-3" />
                     <p>p. Tập thể dục thường xuyên dù tại nhà hay ngoài trời đều giúp cơ thể khỏe mạnh, tâm trạng vui vẻ và lạc quan hơn. Trong một nghiên cứu đăng trên Tạp chí Y học Thể thao Anh vào tháng 4/2019, các nhà khoa học cho biết chỉ cần 10 phút thể dục mỗi tuần, bạn đã kéo dài tuổi thọ. Kết quả Khảo sát Sức khỏe Quốc gia tại Mỹ kéo dài 9 năm với trên 88.000 người tham gia cũng cho thấy những người tập thể dục 10-59 phút một tuần ở cường độ nhẹ đến trung bình giảm 18% nguy cơ tử vong sớm so với những người không tập. Người thường xuyên hoạt động thể chất có nguy cơ tử vong vì bệnh tim mạch thấp hơn 12%, vì ung thư thấp hơn 14% so với người lười vận động.</p>
-                    <p></p>
-                    <p><a href="#">Link</a></p>
+                    <p>
+                        <a href="#">Link</a>
+                    </p>
+                    <hr class="my-3" />
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 text-center">
+                            <h1 class="c-section-title">Section title - Đội hình kết hợp 11 hậu vệ phải hay nhất thế giới hiện nay.</h1>
+                            <div class="c-section-subtitle">Section subtitle - Đội hình toàn hậu vệ phải của bóng đá châu Âu. - Bóng đá châu Âu hiện tại chứng kiến nhiều hậu vệ cánh tài năng có thể thi đấu tốt ngay cả khi phải xếp chơi trái vị trí sở trường.</div>
+                        </div>
+                    </div>
+                    <hr class="my-3" />
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 text-center">
+                            <h1 class="c-section-title c-section-title--sm">Section title SM - Đội hình kết hợp 11 hậu vệ phải hay nhất thế giới hiện nay.</h1>
+                            <div class="c-section-subtitle c-section-subtitle--sm">Section subtitle SM - Đội hình toàn hậu vệ phải của bóng đá châu Âu. - Bóng đá châu Âu hiện tại chứng kiến nhiều hậu vệ cánh tài năng có thể thi đấu tốt ngay cả khi phải xếp chơi trái vị trí sở trường.</div>
+                        </div>
+                    </div>
+                    <hr class="my-3" />
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 text-center">
+                            <h1 class="c-section-title c-section-title--lg">Section title LG - Đội hình kết hợp 11 hậu vệ phải hay nhất thế giới hiện nay.</h1>
+                            <div class="c-section-subtitle c-section-subtitle--lg">Section subtitle LG - Đội hình toàn hậu vệ phải của bóng đá châu Âu. - Bóng đá châu Âu hiện tại chứng kiến nhiều hậu vệ cánh tài năng có thể thi đấu tốt ngay cả khi phải xếp chơi trái vị trí sở trường.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr />
@@ -94,12 +116,12 @@
                     <div class="col-12 col-sm-6">
                         <form>
                             <div class="form-group">
-                                <label>Text</label>
+                                <label class="form-label">Text</label>
                                 <input type="text" class="form-control" placeholder="Placeholder">
                                 <small class="form-text text-muted">Help text</small>
                             </div>
                             <div class="form-group">
-                                <label>Example select</label>
+                                <label class="form-label">Example select</label>
                                 <select class="form-control">
                                     <option>1</option>
                                     <option>2</option>
@@ -107,12 +129,26 @@
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
+                                <small class="form-text text-danger">Warning red!</small>
                             </div>
                             <div class="form-group">
-                                <label>Textarea</label>
+                                <label class="form-label">Textarea</label>
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
                             <div class="form-group">
+                                <label class="form-label">Input group</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Text</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Placeholder">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button">Button</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Checkbox & Radio</label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                     <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
@@ -165,7 +201,7 @@
                         <button type="button" class="btn btn-lg btn-link">Link</button>
                     </p>
                 </div>
-                <div class="mt-3">
+                <div class="mt-4">
                     <div class="row">
                         <div class="col-lg-3">
                             <button class="btn btn-social btn-social--facebook btn-block mb-2">
@@ -176,6 +212,10 @@
                                 <span class="btn-social__icon"><img src="assets/img/icon-zalo-white.png" alt=""></span>
                                 Continue with Zalo
                             </button>
+                        </div>
+                        <div class="col-lg-9">
+                            <a href="#" class="btn-app-download mx-1"><img src="assets/img/download-app-store.png" alt="Download on App Store" height="56" /></a>
+                            <a href="#" class="btn-app-download mx-1"><img src="assets/img/download-google-play.png" alt="Download on CH Play" height="56" /></a>
                         </div>
                     </div>
                 </div>

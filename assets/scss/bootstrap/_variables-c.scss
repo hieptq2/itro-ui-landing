@@ -5,6 +5,16 @@
 $primary: #ec8056;
 $secondary: #1cbdb0;
 
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -15,6 +25,13 @@ $yellow: #ffc107;
 $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
+
+// Link
+
+$link-color: $primary;
+$link-decoration: none !default;
+$link-hover-color: $primary;
+$link-hover-decoration: underline !default;
     
 
 // Border
@@ -25,12 +42,25 @@ $border-radius-sm: 3px;
 $grid-gutter-width: 2rem;
 
 // Buttons + Forms
-$input-btn-padding-y-sm: .375rem;
+$input-btn-padding-y-sm: .25rem;
 $input-btn-padding-x-sm: .75rem;
 $input-btn-padding-y: .5rem;
 $input-btn-padding-x: 1rem;
-$input-btn-padding-y-lg: .6125rem;
-$input-btn-padding-x-lg: 1.25rem;
+$input-btn-padding-y-lg: .75rem;
+$input-btn-padding-x-lg: 1.5rem;
+
+$input-color: $gray-900;
+$input-border-color: $gray-300;
+
+$input-focus-bg: #fff;
+$input-focus-border-color: $gray-400;
+
+$input-placeholder-color: $gray-400;
+$input-plaintext-color: $gray-900;
+$input-focus-box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.075);
+
+$input-group-addon-color: $gray-700;
+$input-group-addon-bg: $gray-100;
 
 // Font
 $font-family: "SF Pro", sans-serif;

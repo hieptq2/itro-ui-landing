@@ -2,13 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\css",
     "\\assets\\js",
     "\\assets\\libs",
     "\\assets\\libs\\bootstrap",
+    "\\assets\\libs\\waypoints",
     "\\assets\\scss",
+    "\\assets\\scss\\animate",
     "\\assets\\scss\\bootstrap",
     "\\assets\\scss\\bootstrap\\mixins"
   ],
-  "SelectedNode": "\\assets\\scss\\_components.scss",
+  "SelectedNode": "\\assets\\libs\\jquery.min.js",
   "PreviewInSolutionExplorer": false
 }

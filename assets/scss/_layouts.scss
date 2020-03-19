@@ -205,6 +205,7 @@
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(251,131,50,0.1) 25%, rgba(248,195,50,0.08) 75%, rgba(255,255,255,1) 100%);
         z-index: 10;
+
         .hero-background {
             display: none;
             position: absolute;
@@ -214,13 +215,16 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            @include viewport-min(lg){
+
+            @include viewport-min(lg) {
                 display: block;
             }
+
             &__shape {
                 position: absolute;
                 will-change: transform;
             }
+
             svg {
                 -webkit-transform: translate(-50%,-50%);
                 transform: translate(-50%,-50%);
@@ -228,6 +232,7 @@
                 transform-origin: 50% 50%;
                 position: absolute
             }
+
             .stroke {
                 fill: none;
                 stroke: #fa6400;
@@ -243,17 +248,16 @@
     }
 
     &__main {
-        padding: 4rem 0;
+        padding: 3rem 0;
 
         @include viewport-min(lg) {
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: calc(75vh - 72px);
-            padding: 6rem 5% 8rem;
+            padding: 4rem 5% 4rem;
         }
 
-        @include viewport-min(md) {
+        @include viewport-min(xl) {
             padding-left: 8%;
             padding-right: 8%;
         }
@@ -261,49 +265,23 @@
 
     &__intro {
         padding: 0 2rem;
-    
+
         @include viewport-min(md) {
             padding: 0 12.5%;
         }
-        .hero-badge{
-            margin: 0 0 3rem;
-            &__btn{
+
+        .hero-badge {
+            margin: 0 0 2rem;
+
+            span {
                 display: inline-block;
-                padding: .5rem .75rem;
-                font-size: .75rem;
-                font-weight: 600;
-                color: #fff;
-                background-image: linear-gradient(270deg,#e64c4c 0,#ef32fb 100%);
-                border-radius: .75rem;
-                box-shadow: 0 .25rem .5rem rgba(0,0,0,.1);
-                transition: box-shadow .2s ease-in-out;
-                &:hover{
-                    text-decoration: none;
-                    box-shadow: 0 .25rem 1rem rgba(0,0,0,.2);
-                }
-                @include viewport-min(lg){
-                    padding: .6125rem 1rem;
-                    font-size: 1rem;
-                }
+                vertical-align: top;
             }
         }
+
         .hero-title {
-            margin: 0 0 1.5rem;
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -.5px;
-
-            @include viewport-min(md) {
-                font-size: 3rem;
-            }
-
-            @include viewport-min(lg) {
-                font-size: 3.5rem;
-            }
-
-            @include viewport-min(xl) {
-                font-size: 4rem;
-            }
+            @extend .c-section-title;
+            @extend .c-section-title--lg;
 
             span {
                 display: inline-block;
@@ -311,32 +289,21 @@
         }
 
         .hero-subtitle {
-            line-height: 1.5;
-            font-size: 1.25rem;
-            letter-spacing: -.25px;
-            color: $gray-700;
-            @include viewport-min(md) {
-                font-size: 1.5rem;
-            }
-
-            @include viewport-min(lg) {
-                line-height: 1.375;
-                font-size: 1.75rem;
-            }
-
-            span {
-                display: inline-block;
-            }
+            @extend .c-section-subtitle;
+            @extend .c-section-subtitle--lg;
         }
 
         .hero-btns {
-            margin: 3rem 0 0 0;
+            margin: 2rem 0 0 0;
+
+            @include viewport-min(sm) {
+                margin: 3rem 0 0 0;
+            }
 
             .btn {
                 margin: 0 .25rem;
-                padding-left: 2rem;
-                padding-right: 2rem;
-                @include viewport-max(lg) {
+
+                @include viewport-max(md) {
                     display: block;
                     width: 80%;
                     max-width: 320px;
@@ -348,6 +315,12 @@
     }
 
     &__screenshot {
+        margin: 0;
+
+        @include viewport-min(sm) {
+            margin: 3rem 0 0;
+        }
+
         .screenshot-wrap {
             video {
                 display: block;
@@ -357,10 +330,10 @@
 }
 
 .block-ld {
-    padding: 3rem 0;
+    padding: 2rem 0;
 
     @include viewport-min(lg) {
-        padding: 5rem 0;
+        padding: 4rem 0;
     }
 
     &--bg-gradient-top {
@@ -370,52 +343,58 @@
     &__header {
         padding: 0 1rem;
 
+        @include viewport-min(md) {
+            padding: 0 8%;
+        }
+
         @include viewport-min(lg) {
-            padding: 0 12.5%;
+            padding: 0 12%;
+        }
+
+        @include viewport-min(xl) {
+            padding: 0 20%;
         }
     }
 
     &__main {
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         @include viewport-min(lg) {
-            margin-top: 4rem;
+            margin-top: 3rem;
+        }
+    }
+
+    &__footer {
+        margin-top: 1rem;
+
+        @include viewport-min(lg) {
+            margin-top: 2rem;
         }
     }
 
     &__title {
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -.5px;
-        color: $gray-900;
-        @include viewport-min(lg) {
-            font-size: 3rem;
-        }
+        @extend .c-section-title;
     }
 
     &__subtitle {
-        margin: 1rem 0 0;
-        font-size: 1.125rem;
-        font-weight: 400;
-        letter-spacing: -.25px;
-        color: $gray-700;
-        @include viewport-min(lg) {
-            font-size: 1.5rem;
-        }
+        @extend .c-section-subtitle;
     }
 }
 
 .block-features {
-    padding: 2.5rem 0;
+    margin: 2rem 0 0;
+    padding: 2rem 0;
 
     @include viewport-min(lg) {
-        padding: 5rem 0;
+        margin: 0;
+        padding: 4rem 0;
     }
 }
 
 .block-showcase {
     padding-bottom: 0;
+    overflow: hidden;
+
     &__wrap {
     }
 
@@ -428,22 +407,26 @@
     }
 
     .accordion-media {
-        &__wrap{
+        &__wrap {
             width: 100%;
             margin: 0 auto 2rem;
             height: 23.75rem;
             position: relative;
-            @include viewport-min(sm){
+
+            @include viewport-min(sm) {
                 overflow: visible;
             }
+
             @include viewport-min(sm) {
-                margin: 0 auto 2rem;
+                margin: 0 auto;
             }
+
             @include viewport-min(lg) {
-                width: 42.5rem;
-                height: 47.5rem;
+                width: 47.5rem;
+                height: 42.5rem;
             }
         }
+
         img {
             display: block;
             max-width: 100%;
@@ -456,9 +439,11 @@
             min-width: 0;
             margin: 0 2rem 0 0;
         }
-        .showcase-wrap{
+
+        .showcase-wrap {
             position: absolute;
-            top: 0; left: 0;
+            top: 0;
+            left: 0;
             width: 47.5rem;
             height: 47.5rem;
             opacity: 0;
@@ -466,35 +451,89 @@
             transform-origin: 0 0;
             margin-left: auto;
             margin-right: auto;
-            @include viewport-max(lg){
+
+            @include viewport-max(lg) {
                 transform: scale(.5);
             }
-            @include viewport-min(lg){
-                top: -5rem; 
+
+            @include viewport-min(lg) {
+                top: -5rem;
                 left: -12rem;
             }
-            @include viewport-min(xl){
-                top: -6rem; 
+
+            @include viewport-min(xl) {
+                top: -6rem;
                 left: -5rem;
             }
-            .block-cloud__montage{
+
+            .el-grp__montage {
                 position: absolute;
-                top: 0; left: 0;
+                top: 0;
+                left: 0;
             }
-            &.active{
+
+            .el-grp__montage__layer {
+                transition-property: opacity margin;
+                opacity: 0;
+
+                &:nth-child(1) {
+                    margin-top: 20px;
+                    transition-duration: 1s;
+                    transition-delay: .8s;
+                }
+
+                &:nth-child(2) {
+                    margin-top: -90px;
+                    transition-duration: .5s;
+                    transition-delay: .5s;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 30px;
+                    transition-duration: .5s;
+                    transition-delay: .4s;
+                }
+
+                &:nth-child(4) {
+                    margin-top: -10px;
+                    margin-left: 35px;
+                    transition-duration: .6s;
+                    transition-delay: .6s;
+                }
+
+                &:nth-child(5) {
+                    margin-top: 15px;
+                    margin-left: -25px;
+                    transition-duration: .7s;
+                    transition-delay: .5s;
+                }
+
+                &:nth-child(6) {
+                    margin-top: 30px;
+                    margin-left: -15px;
+                    transition-duration: .6s;
+                    transition-delay: .3s;
+                }
+            }
+
+            &.active {
                 opacity: 1;
+
+                .el-grp__montage__layer {
+                    margin: 0 !important;
+                    opacity: 1 !important;
+                }
             }
         }
-
     }
 
     .accordion-showcase {
         padding: 0 1.5rem 3rem 1.5rem;
-        
+
         @include viewport-min(lg) {
             flex: 0 0 33%;
             padding: 5rem 0;
-            height: 35rem;
+            height: 42.5rem;
         }
 
         &__single {
@@ -537,11 +576,11 @@
                     position: relative;
                     margin: 0 0 .75rem;
                     line-height: 1.25;
-                    font-size: 1.375rem;
+                    font-size: 1.25rem;
                     font-weight: 700;
 
                     @include viewport-min(lg) {
-                        font-size: 1.625rem;
+                        font-size: 1.5rem;
                     }
 
                     a {
@@ -556,7 +595,9 @@
                             @extend %mdi-icon;
                             display: block;
                             position: absolute;
-                            top: 2px;
+                            line-height: 1.5rem;
+                            top: 50%;
+                            margin-top: -.75rem;
                             left: -28px;
                             content: "\F0140";
                             font-size: 1.5rem;
@@ -583,6 +624,7 @@
                 }
 
                 &__descr {
+                    margin: 0;
                     color: $gray-600;
                 }
 
@@ -605,20 +647,20 @@
 }
 
 .block-clients {
-    margin: 2rem 0 0;
     padding: 2rem 0;
 
     @include viewport-min(lg) {
-        margin: 3rem 0 0;
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
 
     &__title {
-        line-height: 1.25;
-        font-size: 1.125rem;
-        font-weight: 800;
-        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
         color: $gray-900;
+
+        @include viewport-min(lg) {
+            font-size: 1.25rem;
+        }
     }
 
     &__list {
@@ -664,28 +706,21 @@
     }
 
     .cta-title {
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -.5px;
-
-        @include viewport-min(lg) {
-            font-size: 2.5rem;
-        }
+        @extend .c-section-title;
+        @extend .c-section-title--sm;
+        color: #fff;
     }
 
     .cta-subtitle {
-        margin: .75rem 0 0;
-        font-size: 1rem;
-        font-weight: 400;
-        color: $gray-200;
-        @include viewport-min(lg) {
-            font-size: 1.25rem;
-        }
+        @extend .c-section-subtitle;
+        @extend .c-section-subtitle--sm;
+        color: #fff;
     }
-    .cta-actions{
+
+    .cta-actions {
         white-space: nowrap;
-        .btn{
+
+        .btn {
             margin: 0 0 0 .5rem;
         }
     }
