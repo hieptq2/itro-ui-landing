@@ -398,9 +398,9 @@ a.c-card--bd { box-shadow: 0 0 0 1px #f8f9fa; }
 @media (min-width: 992px) { .block-si-form .si-main__social { padding: .75rem 0; } }
 
 .block-si-intro { position: relative; z-index: 20; background-color: #fcfcfc; }
-.block-si-intro__wrap { padding: 2rem 2rem 1rem; margin: 0 auto; }
-@media (min-width: 1200px) { .block-si-intro__wrap { padding: 2rem 0 1rem; width: 780px; } }
-@media (min-width: 1440px) { .block-si-intro__wrap { padding: 3rem 2rem 1rem; width: 960px; } }
+.block-si-intro__wrap { position: relative; margin: 0 auto; padding: 2rem 2rem 6rem; min-height: 100vh; }
+@media (min-width: 1200px) { .block-si-intro__wrap { padding: 2rem 0 6rem; width: 780px; } }
+@media (min-width: 1440px) { .block-si-intro__wrap { padding: 3rem 2rem 8rem; width: 960px; } }
 .block-si-intro .si-intro-header { padding: 1rem 0; }
 @media (min-width: 992px) { .block-si-intro .si-intro-header { padding: 1rem 0; } }
 .block-si-intro .si-intro-title { font-size: 1.5rem; line-height: 1.5; text-transform: uppercase; }
@@ -422,7 +422,7 @@ a.c-card--bd { box-shadow: 0 0 0 1px #f8f9fa; }
 .block-si-intro .si-intro-app__download { margin: 1rem 0 0; }
 @media (min-width: 1200px) { .block-si-intro .si-intro-app__download { margin: 1.5rem 0 0; } }
 .block-si-intro .si-intro-app__download a { display: inline-block; margin: .5rem 0; }
-.block-si-intro .si-intro-footer { margin: 4rem 0 0; color: #6c757d; }
+.block-si-intro .si-intro-footer { color: #6c757d; position: absolute; bottom: 0; left: 0; right: 0; padding: .5rem 0; }
 
 .block-hero__wrap { position: relative; margin-top: -72px; padding-top: 72px; }
 .block-hero__background { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: white; background: linear-gradient(0deg, #ffffff 0%, rgba(251, 131, 50, 0.1) 25%, rgba(248, 195, 50, 0.08) 75%, #ffffff 100%); z-index: 10; }

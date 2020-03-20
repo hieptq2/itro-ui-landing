@@ -152,16 +152,18 @@
     background-color: #fcfcfc;
 
     &__wrap {
-        padding: 2rem 2rem 1rem;
+        position: relative;
         margin: 0 auto;
+        padding: 2rem 2rem 6rem;
+        min-height: 100vh;
 
         @include viewport-min(xl) {
-            padding: 2rem 0 1rem;
+            padding: 2rem 0 6rem;
             width: 780px;
         }
 
         @media (min-width: 1440px) {
-            padding: 3rem 2rem 1rem;
+            padding: 3rem 2rem 8rem;
             width: 960px;
         }
     }
@@ -282,8 +284,12 @@
         }
 
         &-footer {
-            margin: 4rem 0 0;
             color: $gray-600;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: .5rem 0;
         }
     }
 }
