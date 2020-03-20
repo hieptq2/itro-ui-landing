@@ -5,13 +5,8 @@
     "\\assets\\css",
     "\\assets\\js",
     "\\assets\\libs",
-    "\\assets\\libs\\bootstrap",
-    "\\assets\\libs\\waypoints",
-    "\\assets\\scss",
-    "\\assets\\scss\\animate",
-    "\\assets\\scss\\bootstrap",
-    "\\assets\\scss\\bootstrap\\mixins"
+    "\\assets\\scss"
   ],
-  "SelectedNode": "\\assets\\libs\\jquery.min.js",
+  "SelectedNode": "\\assets\\scss\\__helpers.scss",
   "PreviewInSolutionExplorer": false
 }

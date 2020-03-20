@@ -81,8 +81,8 @@
 
     &__item {
         display: block;
-        background-color: #fff;
-        color: $gray-900;
+        background-color: #e4edf2;
+        color: $gray-700;
 
         &:hover {
             color: $gray-900;
@@ -106,7 +106,7 @@
 
         @include viewport-min(sm) {
             width: 280px;
-            padding: 1rem 0;
+            padding: 1.25rem 0;
             border-right: 1px solid $gray-200;
 
             &:first-child {
@@ -125,16 +125,17 @@
 
         &.active {
             color: #fff;
-            background-color: $secondary;
-            border-color: $secondary;
+            background-color: $primary;
+            border-color: $primary;
         }
 
         .tab-item {
             //xx
             &-title {
                 margin: 0;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 font-weight: 500;
+                text-transform: uppercase;
             }
 
             &-subtitle {
@@ -535,7 +536,7 @@
                 }
 
                 &__title {
-                    color: $primary;
+                    color: $gray-900;
                 }
             }
         }
@@ -565,6 +566,10 @@
             height: auto;
             margin: 0 0 .75rem;
 
+            .badge-primary {
+                background-color: #ffb34b;
+            }
+
             @include viewport-min(lg) {
                 height: 1.25rem;
             }
@@ -573,8 +578,8 @@
         &__title {
             margin: 0;
             font-size: 1.75rem;
-            font-weight: 700;
-            color: $secondary;
+            font-weight: 600;
+            color: $gray-900;
         }
 
         &__pricing {

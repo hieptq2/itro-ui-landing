@@ -155,6 +155,10 @@
         @include viewport-min(lg) {
             padding: 2rem 15% 1rem;
         }
+
+        @media (min-width: 1440px) {
+            padding: 3rem 25% 1rem;
+        }
     }
 
     .si-intro {
@@ -239,7 +243,7 @@
 
             &__title {
                 margin: 0;
-                font-size: 2rem;
+                font-size: 1.75rem;
                 font-weight: 300;
             }
 
@@ -260,12 +264,6 @@
     }
 }
 // END - Sign In and Sign Up
-
-// ------------------------------------
-// Front page
-.block-fr-roles{
-    padding: 1rem 0;
-}
 
 // ------------------------------------
 // Landing page
