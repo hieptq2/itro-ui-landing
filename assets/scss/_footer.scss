@@ -30,7 +30,7 @@
             margin: 0;
             line-height: 1.5;
             font-size: .875rem;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: uppercase;
             position: relative;
 
@@ -145,8 +145,8 @@
                     line-height: 1.5;
                     padding: .125rem 0;
                     font-size: .875rem;
-                    font-weight: 500;
-                    color: $gray-500;
+                    font-weight: 400;
+                    color: $gray-600;
                     transition: color .2s ease-in-out, padding .2s ease-in-out;
 
                     &:hover {

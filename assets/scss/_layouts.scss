@@ -733,3 +733,30 @@
 .block-fr-roles{
 
 }
+
+// ------------------------------------
+.block-pricing {
+    padding-bottom: 1rem;
+
+    &--bg {
+        background-color: #fff;
+        background-image: url('../img/bg-pricing.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .block-ld {
+        //xx
+        &__footer {
+            margin-top: 5rem;
+
+            @include viewport-min(lg) {
+                margin-top: 8rem;
+            }
+        }
+    }
+
+    .pricing-noted {
+    }
+}
