@@ -271,7 +271,7 @@
         &__title {
             margin: 0;
             font-size: 1.25rem;
-            font-weight: 700;
+            font-weight: 600;
             color: $gray-900;
 
             @include viewport-min(lg) {
@@ -319,21 +319,25 @@
                     padding: 1rem;
 
                     @include viewport-min(lg) {
-                        padding: 1.5rem;
+                        padding: 1rem;
                     }
                 }
 
                 &__icon {
-                    flex: 0 0 72px;
+                    flex: 0 0 4rem;
                     margin: 0 1rem 0 0;
-
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: .75rem;
+                    background-color: $primary;
                     @include viewport-min(lg) {
-                        margin: 0 1.5rem 0 0;
+                        margin: 0 1rem 0 0;
                     }
 
                     img {
                         display: block;
-                        width: 72px;
+                        width: 2.5rem;
+                        margin: .75rem 0 0 .75rem;
                     }
                 }
 
@@ -368,11 +372,8 @@
 
     &-bn {
         margin: 0 0;
-        padding: 1rem 0;
-
-        @include viewport-max(md) {
-            text-align: center;
-        }
+        padding: 1rem;
+        text-align: center;
 
         &__icon {
             margin: 0 0 1rem;
@@ -386,7 +387,7 @@
         &__title {
             margin: 0;
             font-size: 1.125rem;
-            font-weight: 700;
+            font-weight: 600;
             color: $gray-900;
 
             @include viewport-min(lg) {
