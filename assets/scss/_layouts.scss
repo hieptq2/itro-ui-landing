@@ -497,12 +497,16 @@
 
     &__title {
         @extend .c-section-title;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 1.375;
+        color: #333;
     }
 
     &__subtitle {
         @extend .c-section-subtitle;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: #324148;
     }
 }
 
@@ -941,7 +945,7 @@
 // ------------------------------------
 // Front page
 .block-pricing {
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
 
     &--bg {
         background-color: #fff;
@@ -949,20 +953,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom center;
-    }
-
-    .block-ld {
-        //xx
-        &__footer {
-            margin-top: 5rem;
-
-            @include viewport-min(lg) {
-                margin-top: 8rem;
-            }
-        }
-    }
-
-    .pricing-noted {
     }
 }
 
