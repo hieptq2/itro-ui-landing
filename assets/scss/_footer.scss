@@ -35,7 +35,7 @@
             position: relative;
 
             @include viewport-min(lg) {
-                margin: 0 0 .25rem;
+                margin: 0 0 1rem;
                 font-size: 1rem;
                 /*&:after {
                     content: "";
@@ -140,13 +140,12 @@
 
             li {
                 a {
-                    display: inline-block;
-                    vertical-align: top;
+                    display: block;
                     line-height: 1.5;
-                    padding: .125rem 0;
+                    padding: .25rem 0;
                     font-size: .875rem;
                     font-weight: 400;
-                    color: $gray-600;
+                    color: #a9a9a9;
                     transition: color .2s ease-in-out, padding .2s ease-in-out;
 
                     &:hover {
@@ -162,7 +161,7 @@
             .subcribe-text {
                 margin: .25rem 0 .75rem 0;
                 font-size: .75rem;
-                color: $gray-600;
+                color: #a9a9a9;
 
                 @include viewport-min(lg) {
                     margin: .25rem 0 1rem 0;
@@ -194,7 +193,6 @@
 
     .footer-social {
         margin-top: 1rem;
-
         @include viewport-max(lg) {
             margin-top: 0;
             text-align: center;
@@ -205,6 +203,7 @@
             margin: 0;
             padding: .5rem 0;
             display: flex;
+            align-items: center;
 
             @include viewport-max(lg) {
                 justify-content: center;
@@ -230,7 +229,7 @@
 
     .footer-copyright {
         font-size: .875rem;
-        color: $gray-700;
+        color: #a9a9a9;
 
         @include viewport-max(lg) {
             text-align: center;

@@ -88,10 +88,25 @@
         .navbar-collapse{
             .navbar-nav{
                 .nav-item{
+                    text-transform: uppercase;
                     .nav-link{
                         &:after{
                             @extend %mdi-icon;
                             content: "";
+                        }
+                    }
+                    &--btn{
+                        .btn{
+                            &-primary{
+                                color: $primary;
+                                background-color: #fff;
+                                border-color: $primary;
+                                &:hover{
+                                    color: #fff;
+                                    background-color: $primary;
+                                    box-shadow: 0 0 0;
+                                }
+                            }
                         }
                     }
                 }
@@ -191,10 +206,15 @@
                             margin: 0 0 0 1rem;
                             .btn{
                                 font-weight: 400;
-                                padding: .75rem 1.5rem;
+                                padding: .5rem 1.75rem;
                                 border-radius: 999px;
                                 b{
                                     font-weight: 600;
+                                }
+                                &.primary{
+                                    color: $primary;
+                                    background-color: #fff;
+                                    border-color: $primary;
                                 }
                             }
                         }
