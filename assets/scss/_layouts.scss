@@ -437,8 +437,12 @@
         }
 
         .screenshot-wrap {
+            text-align: center;
             video {
                 display: block;
+            }
+            img{
+                max-width: 100%;
             }
         }
     }

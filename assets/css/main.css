@@ -450,7 +450,9 @@ a.c-card--bd { box-shadow: 0 0 0 1px #f8f9fa; }
 @media (max-width: 767px) { .block-hero__intro .hero-btns .btn { display: block; width: 80%; max-width: 320px; margin: 1rem auto; font-size: 1rem; } }
 .block-hero__screenshot { margin: 0; }
 @media (min-width: 576px) { .block-hero__screenshot { margin: 1rem 0 0; } }
+.block-hero__screenshot .screenshot-wrap { text-align: center; }
 .block-hero__screenshot .screenshot-wrap video { display: block; }
+.block-hero__screenshot .screenshot-wrap img { max-width: 100%; }
 
 .block-ld { padding: 2rem 0; }
 @media (min-width: 992px) { .block-ld { padding: 4rem 0; } }
