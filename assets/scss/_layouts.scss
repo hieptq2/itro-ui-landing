@@ -1109,6 +1109,30 @@
     }
 }
 
+.block-appscr{
+    overflow: hidden;
+    &__wrap{
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}
+
+.slide-appscr{
+    padding: 1rem 0;
+    &__item{
+        padding: .5rem;
+        @include viewport-min(sm){
+            padding: 1rem;
+        }
+        &, &:focus{
+            outline: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
 // END - Landing page
 
 // ------------------------------------

@@ -789,6 +789,37 @@ a.c-card {
 }
 
 .c-process{
+    &--useapp{
+        .c-process{
+            //xx
+            &__wrap{
+                @include viewport-min(lg){
+                    display: flex;
+                    padding-bottom: 2rem;
+                }
+            }
+            &__step{
+                @include viewport-min(lg){
+                    margin-right: 4rem;
+                    position: relative;
+                    &:nth-child(2){
+                        top: 2rem;
+                    }
+                    &:last-child{
+                        top: 4rem;
+                        margin-right: 0;
+                    }
+                    &:after{
+                        top: 5rem;
+                        left: 100%;
+                        width: 4rem;
+                        height: auto;
+                        border-top: 2px dotted $primary;
+                    }
+                }
+            }
+        }
+    }
     &__wrap{
         // display: flex;
     }
