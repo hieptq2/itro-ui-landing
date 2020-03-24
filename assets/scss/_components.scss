@@ -712,6 +712,69 @@
             }
         }
     }
+
+    &-bnf{
+        margin: 0 auto;
+        height: 100%;
+        max-width: 480px;
+        color: $gray-900;
+        background-color: #fff;
+        text-align: center;
+        @include viewport-min(lg){
+            text-align: left;
+            max-width: none;
+        }
+        &--fet{
+            color: #fff;
+            background-color: #2fcbbe;
+            .c-card-bnf{
+                //xx
+                &__stl{
+                    color: #fff;
+                }
+            }
+        }
+        &__wrp{
+            padding: 1.5rem;
+            @include viewport-min(lg){
+                padding: 2rem;
+            }
+        }
+        &__icn{
+            img{
+                display: inline-block;
+                vertical-align: top;
+                height: 56px;
+            }
+        }
+        &__cnt{
+            margin: 1.25rem 0 0;
+        }
+        &__tle{
+            margin: 0;
+            font-size: 1.125rem;
+            font-weight: 600;
+
+            @include viewport-min(lg) {
+                width: 90%;
+                font-size: 1.25rem;
+            }
+        }
+        &__dcr{
+            margin: .5rem 0 0;
+            font-size: .875rem;
+            font-weight: 400;
+
+            @include viewport-min(lg) {
+                margin: .75rem 0 0;
+                font-size: 1rem;
+            }
+
+            b {
+                color: $gray-800;
+            }
+        }
+    }
 }
 
 a.c-card {
@@ -722,6 +785,64 @@ a.c-card {
 
     &--bd {
         box-shadow: 0 0 0 1px $gray-100;
+    }
+}
+
+.c-process{
+    &__wrap{
+        // display: flex;
+    }
+    &__step{
+        position: relative;
+        margin: 0 auto 2rem auto;
+        max-width: 480px;
+        background-color: #fff;
+        box-shadow: 0 .25rem .75rem 0 rgba(#000,.1);
+        border-radius: .5rem;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 3rem;
+            height: 2rem;
+            border-left: 2px dotted $primary;
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+    }
+    .single-step{
+        &__wrp{
+            padding: 1.5rem 2rem;
+        }
+        &__lvl{
+            margin: 0 0 .5rem;
+            font-size: .875rem;
+            text-transform: uppercase;
+            color: $gray-900;
+        }
+        &__tle{
+            margin: 0 0 .5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $primary;
+        }
+        &__dcr{
+            margin: 1rem 0 0;
+            font-size: 1rem;
+            font-weight: 400;
+            color: $gray-900;
+            p{
+                margin-bottom: .5rem;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 
