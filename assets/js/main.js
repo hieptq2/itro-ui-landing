@@ -24,8 +24,28 @@ $(document).ready(function () {
 
     //[landing] animate when scroll to element
     scrollWaypointInit($('.element-animated'));
+
+
+    //[landing] smoooth scroll
+    $('.js-smooth-scroll').smoothScroll({
+        offset: -56,
+        speed: 1000
+    });
+
+    //[landing] navbar fixed
+    scrollNavbarBackground();
+    $(document).scroll(function(){
+        scrollNavbarBackground();
+    });
 })
 
+function scrollNavbarBackground(){
+    if($(document).scrollTop() > 56){
+        $('.js-header-landing-bg.fixtop').addClass('fixtop--active');
+    }else{
+        $('.js-header-landing-bg.fixtop').removeClass('fixtop--active');
+    }
+}
 
 function scrollWaypointInit(items, trigger) {
     items.each(function () {

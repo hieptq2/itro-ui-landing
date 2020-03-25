@@ -1,4 +1,23 @@
 .page-header {
+    transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    &.fixtop{
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        @include viewport-min(lg){
+            background-color: transparent;
+        }
+        &--active{
+            @include viewport-min(lg){
+                background-color: #fff;
+                box-shadow: 0 1px 8px 0 rgba(#000,.08);
+            }
+            .navbar{
+                @include viewport-min(lg){
+                    height: 56px;
+                }
+            }
+        }
+    }
     &--ld {
         position: relative;
         background-color: $gray-800;
@@ -9,6 +28,7 @@
         .navbar {
             padding: 0 1rem;
             height: 56px;
+            transition: height .2s ease-in-out;
             @include viewport-min(lg){
                 height: 72px;
             }
@@ -183,6 +203,11 @@
                                     &:after{
                                         transform: translateY(0);
                                         opacity: 1;
+                                    }
+                                }
+                                &:active{
+                                    &:after{
+                                        transform: translateY(2px);
                                     }
                                 }
                                 b{

@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- header -->
-    <header id="pageHeader" class="page-header page-header--ld animated fadeInDown">
+    <header id="pageHeader" class="page-header page-header--ld fixtop js-header-landing-bg animated fadeInDown">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/itro-logo-colored.png">
@@ -34,10 +34,9 @@
             </button>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav navbar-nav--left">
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Tải app</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Bảng giá</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Hướng dẫn</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Khuyến mại</a></li>
+                    <li class="nav-item nav-item--text"><a href="#BlockTenantBenefits" class="nav-link js-smooth-scroll">Lợi ích</a></li>
+                    <li class="nav-item nav-item--text"><a href="#BlockTenantSteps" class="nav-link js-smooth-scroll">Hướng dẫn</a></li>
+                    <li class="nav-item nav-item--text"><a href="#BlockTenantDownload" class="nav-link js-smooth-scroll">Tải app</a></li>
                 </ul>
                 <!-- <ul class="navbar-nav navbar-nav--right">
                     <li class="nav-item nav-item--btn"><a class="btn btn-primary" href="#">Phần mềm quản lý</a></li>
@@ -48,7 +47,7 @@
     <!-- END header -->
     <!--=======================================================================-->
     <!-- app -->
-    <section class="block-app block-app--top">
+    <section class="block-app block-app--top-fixed">
         <div class="block-app__background">
             <div class="hero-background">
                 <div class="hero-background__shapes">
@@ -139,7 +138,7 @@
     <!-- END app -->
     <!--=======================================================================-->
     <!-- benefits -->
-    <section class="block-ld block-benefits block-ld--bg-gray01">
+    <section id="BlockTenantBenefits" class="block-ld block-benefits block-ld--bg-gray01">
         <div class="container">
             <div class="block-benefits__wrap">
                 <div class="block-ld__header text-center">
@@ -205,7 +204,7 @@
     <!-- END benefits -->
     <!--=======================================================================-->
     <!-- steps -->
-    <section class="block-ld block-steps">
+    <section id="BlockTenantSteps" class="block-ld block-steps">
         <div class="container">
             <div class="block-steps__wrap">
                 <div class="block-ld__header text-center">
@@ -296,7 +295,7 @@
     <!-- END steps -->
     <!--=======================================================================-->
     <!-- download -->
-    <section class="block-ld block-download">
+    <section id="BlockTenantDownload" class="block-ld block-download block-ld--bg-gray01">
         <div class="container">
             <div class="block-download__wrap">
                 <div class="row align-items-center">
@@ -428,6 +427,7 @@
     <script src="assets/libs/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/jquery.smooth-scroll.js"></script>
     <script src="assets/js/main.js">
 
     </script>
