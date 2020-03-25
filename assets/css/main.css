@@ -611,7 +611,7 @@ align-items: center;*/ }
 @media (min-width: 992px) { .block-app__sc .app-sc-mobile { width: 12rem; margin-left: -8rem; } }
 .block-app__cnt { padding: 1rem 1rem 2rem; text-align: center; }
 @media (min-width: 576px) { .block-app__cnt { padding: 3rem; } }
-@media (min-width: 992px) { .block-app__cnt { padding: 4rem 0 4rem 4rem; text-align: left; max-width: 560px; } }
+@media (min-width: 992px) { .block-app__cnt { padding: 4rem 0 4rem 4rem; text-align: left; max-width: 600px; } }
 .block-app__tle { line-height: 1.375; }
 .block-app__tle span { display: inline-block; }
 .block-app__stl p { margin-bottom: .5rem; }
