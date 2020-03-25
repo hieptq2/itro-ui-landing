@@ -824,12 +824,33 @@ a.c-card {
         // display: flex;
     }
     &__step{
+        display: block;
         position: relative;
         margin: 0 auto 2rem auto;
         max-width: 480px;
         background-color: #fff;
         box-shadow: 0 .25rem .75rem 0 rgba(#000,.1);
         border-radius: .5rem;
+        &:hover{
+            text-decoration: none;
+            color: $gray-900;
+            opacity: .9;
+        }
+        &.active{
+            color: #fff;
+            background-color: $primary;
+            .single-step{
+                &__lvl{
+                    color: #fff;
+                }
+                &__tle{
+                    color: #fff;
+                }
+                &__dcr{
+                    color: #fff;
+                }
+            }
+        }
         &:after{
             content: "";
             display: block;

@@ -289,7 +289,12 @@ a.c-card--bd { box-shadow: 0 0 0 1px #f8f9fa; }
   .c-process--useapp .c-process__step:nth-child(2) { top: 2rem; }
   .c-process--useapp .c-process__step:last-child { top: 4rem; margin-right: 0; }
   .c-process--useapp .c-process__step:after { top: 5rem; left: 100%; width: 4rem; height: auto; border-top: 2px dotted #ec8056; } }
-.c-process__step { position: relative; margin: 0 auto 2rem auto; max-width: 480px; background-color: #fff; box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.1); border-radius: .5rem; }
+.c-process__step { display: block; position: relative; margin: 0 auto 2rem auto; max-width: 480px; background-color: #fff; box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.1); border-radius: .5rem; }
+.c-process__step:hover { text-decoration: none; color: #333; opacity: .9; }
+.c-process__step.active { color: #fff; background-color: #ec8056; }
+.c-process__step.active .single-step__lvl { color: #fff; }
+.c-process__step.active .single-step__tle { color: #fff; }
+.c-process__step.active .single-step__dcr { color: #fff; }
 .c-process__step:after { content: ""; display: block; position: absolute; top: 100%; left: 3rem; height: 2rem; border-left: 2px dotted #ec8056; }
 .c-process__step:last-child:after { display: none; }
 .c-process .single-step__wrp { padding: 1.5rem 2rem; }
