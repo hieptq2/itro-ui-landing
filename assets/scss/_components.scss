@@ -819,6 +819,26 @@ a.c-card {
                 }
             }
         }
+        .single-step{
+            &__hdr{
+                position: relative;
+                padding-right: 2rem;
+            }
+            &__icn{
+                position: absolute;
+                top: -1rem; right: -1rem;
+                width: auto; height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    flex: 1 1 auto;
+                    display: block;
+                    max-width: 4rem;
+                    max-height: 100%;
+                }
+            }
+        }
     }
     &--screen{
         @include viewport-max(lg){

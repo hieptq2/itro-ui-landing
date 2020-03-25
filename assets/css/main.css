@@ -292,6 +292,9 @@ a.c-card--bd { box-shadow: 0 0 0 1px #f8f9fa; }
   .c-process--useapp .c-process__step:nth-child(2) { top: 2rem; }
   .c-process--useapp .c-process__step:last-child { top: 4rem; margin-right: 0; }
   .c-process--useapp .c-process__step:after { top: 5rem; left: 100%; width: 4rem; height: auto; border-top: 2px dotted #ec8056; } }
+.c-process--useapp .single-step__hdr { position: relative; padding-right: 2rem; }
+.c-process--useapp .single-step__icn { position: absolute; top: -1rem; right: -1rem; width: auto; height: 4rem; display: flex; align-items: center; justify-content: center; }
+.c-process--useapp .single-step__icn img { flex: 1 1 auto; display: block; max-width: 4rem; max-height: 100%; }
 @media (max-width: 991px) { .c-process--screen { overflow: auto; } }
 @media (max-width: 991px) { .c-process--screen .c-process__wrap { display: flex; flex-wrap: nowrap; margin: 0 -1rem; padding: 0 2rem 1rem 1rem; } }
 @media (max-width: 991px) { .c-process--screen .c-process__step { flex: 0 0 250px; padding-right: 1rem; margin: .5rem 1.5rem .5rem .5rem; }
