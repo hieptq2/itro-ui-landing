@@ -1,0 +1,6 @@
+.slick-slider{
+  	display: none;
+  	&.slick-initialized{
+   	 	display: block !important;
+  	}
+}

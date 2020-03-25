@@ -1111,6 +1111,7 @@
 
 .block-appscr{
     overflow: hidden;
+    padding: 2rem 0;
     &__wrap{
         margin: 0 auto;
         max-width: 1440px;
@@ -1129,6 +1130,37 @@
         }
         img{
             width: 100%;
+        }
+    }
+    .slick-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        padding: 1rem 0;
+        margin: 0;
+        li{
+            display: block;
+            font-size: 0;
+            padding: .25rem;
+            &:focus{
+                outline: none;
+            }
+            button{
+                @extend %button-reset;
+                display: block;
+                width: .5rem;
+                height: .5rem;
+                background-color: $gray-300;
+                border: 0;
+                border-radius: 50%;
+                transition: background-color .3s ease-in-out;
+            }
+            &.slick-active{
+                button{
+                    background-color: $primary;
+                }
+            }
         }
     }
 }
