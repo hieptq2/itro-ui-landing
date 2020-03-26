@@ -1216,7 +1216,7 @@
 // ------------------------------------
 // Front page
 .block-pricing {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     &--tenant{
         padding-bottom: 4rem;
     }
@@ -1228,7 +1228,10 @@
         background-position: bottom center;
     }
     &__noted{
-        margin: 3rem 0 0;
+        margin: 4rem 0 0;
+        @include viewport-min(lg){
+            margin-top: 5rem;
+        }
     }
 }
 
