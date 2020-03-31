@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- header -->
-    <header id="pageHeader" class="page-header page-header--ld animated fadeInDown">
+    <header id="pageHeader" class="page-header page-header--ld fixtop js-header-landing-bg animated fadeInDown">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/itro-logo-colored.png">
@@ -34,10 +34,10 @@
             </button>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav navbar-nav--left">
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Tải app</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Bảng giá</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Hướng dẫn</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Khuyến mại</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link js-smooth-scroll" href="#BlockDownloadTop">Tải app</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link js-smooth-scroll" href="#BlockDownloadSteps">Hướng dẫn</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link js-smooth-scroll" href="#BlockDownloadScreenshot">Ứng dụng</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link js-smooth-scroll" href="#BlockDownloadApp">Tải App</a></li>
                 </ul>
                 <ul class="navbar-nav navbar-nav--right">
                     <li class="nav-item nav-item--btn"><a class="btn btn-primary" href="#">Phần mềm quản lý</a></li>
@@ -48,7 +48,7 @@
     <!-- END header -->
     <!--=======================================================================-->
     <!-- app -->
-    <section class="block-app block-app--top">
+    <section id="BlockDownloadTop" class="block-app block-app--top">
         <div class="block-app__background">
             <div class="hero-background">
                 <div class="hero-background__shapes">
@@ -139,7 +139,7 @@
     <!-- END app -->
     <!--=======================================================================-->
     <!-- steps -->
-    <section class="block-ld block-steps">
+    <section id="BlockDownloadSteps" class="block-ld block-steps">
         <div class="container">
             <div class="block-steps__wrap">
                 <div class="block-ld__header text-center">
@@ -207,7 +207,7 @@
     <!-- END steps -->
     <!--=======================================================================-->
     <!-- app screenshot -->
-    <section class="block-appscr">
+    <section id="BlockDownloadScreenshot" class="block-appscr">
         <div class="block-appscr__wrap">
             <div class="container-fluid px-0">
                 <div class="slide-appscr js-slide-appscr">
@@ -233,7 +233,7 @@
     <!-- END app screenshot -->
     <!--=======================================================================-->
     <!-- download -->
-    <section class="block-ld block-download block-ld--bg-gray01">
+    <section id="BlockDownloadApp" class="block-ld block-download block-ld--bg-gray01">
         <div class="container">
             <div class="block-download__wrap">
                 <div class="row align-items-center">
@@ -366,10 +366,11 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/libs/slick.min.js"></script>
+    <script src="assets/libs/jquery.smooth-scroll.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.js-slide-appscr').slick({
                 centerMode: true,
                 centerPadding: '72px',

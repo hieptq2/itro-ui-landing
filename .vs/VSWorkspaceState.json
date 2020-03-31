@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\css",
-    "\\assets\\js",
-    "\\assets\\libs",
     "\\assets\\scss"
   ],
-  "SelectedNode": "\\assets\\scss\\__helpers.scss",
+  "SelectedNode": "\\assets\\scss\\_components.scss",
   "PreviewInSolutionExplorer": false
 }
