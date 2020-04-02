@@ -1,3 +1,4 @@
+
 // ------------------------------------
 // Sign In and Sign Up
 
@@ -1296,5 +1297,290 @@
             margin: 1rem 0;
             border-color: $gray-200;
         }
+    }
+}
+
+.l-sidebar {
+    //
+}
+
+.l-manual-menu {
+    &__tgl {
+        position: relative;
+        margin: 0 0 1rem;
+        text-align: left;
+        text-transform: uppercase;
+        box-shadow: 0 0 0 !important;
+
+        &:active {
+            background-color: $gray-100;
+        }
+
+        &.collapsed {
+            color: $gray-900;
+
+            &:hover {
+                color: $gray-900;
+            }
+
+            &:after {
+                transform: rotate(-90deg);
+            }
+        }
+
+        &:after {
+            @extend %mdi-icon;
+            content: "\F0140";
+            display: block;
+            position: absolute;
+            right: .5rem;
+            top: 50%;
+            margin-top: -12px;
+            line-height: 24px;
+            font-size: 1.25rem;
+            transition: transform .2s ease-in-out;
+        }
+    }
+
+    &__mni{
+        //
+    }
+    // menu
+    &__navtabs {
+        display: flex;
+        margin: 0 0 1rem;
+        border: 0;
+
+        a {
+            flex: 1 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem 0;
+            line-height: 1.5;
+            font-size: .875rem;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: .5px;
+            color: #333;
+            background-color: #E4EDF2;
+
+            &:first-child {
+                border-radius: .25rem 0 0 .25rem;
+            }
+
+            &:last-child {
+                border-radius: 0 .25rem .25rem 0;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            i.mdi {
+                display: block;
+                line-height: 1.125rem;
+                margin: 0 .625rem 0 0;
+                padding: 0 .5rem 0 0;
+                border-right: 1px solid rgba(#000,.1);
+            }
+
+            &.active {
+                color: #fff;
+                background-color: #F06134;
+                border-color: #F06134;
+
+                i.mdi {
+                    border-color: rgba(#fff,.25);
+                }
+            }
+        }
+    }
+    // list
+    ol {
+        counter-reset: item;
+    }
+
+    li {
+        display: block;
+
+        &:before {
+            content: counters(item, ".") ".";
+            counter-increment: item;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+
+        ol {
+            padding: 0 0 0 1rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.75rem;
+
+            &:before {
+                position: absolute;
+                display: block;
+                left: 0;
+                width: 1.5rem;
+                line-height: 1.5rem;
+                top: .5rem;
+                text-align: center;
+            }
+
+            a {
+                display: inline-block;
+                vertical-align: top;
+                line-height: 1.5;
+                color: $gray-900;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+
+            &.active {
+                &:before {
+                    color: $primary;
+                }
+
+                & > a {
+                    color: $primary;
+                }
+            }
+        }
+
+        & > li {
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+            border-bottom: 1px solid $gray-200;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            & > a {
+                padding: .25rem 0;
+            }
+
+            ol {
+                margin: .25rem 0 .5rem -1.25rem;
+                padding-left: 1rem;
+                border-left: 3px solid $gray-100;
+
+                li {
+                    padding-left: 2.25rem;
+                    font-size: .875rem;
+                    line-height: 1.5;
+
+                    & > a {
+                        padding: .125rem 0;
+                    }
+
+                    &:before {
+                        top: 1px;
+                        width: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block-manual {
+    padding: 2rem 0;
+
+    @include viewport-min(lg) {
+        padding: 3rem 0;
+    }
+
+    &__hdr {
+        margin: 0 0 1rem;
+    }
+
+    &__tle {
+        margin: 0;
+        font-size: 1.5rem;
+
+        @include viewport-min(md) {
+            font-size: 2rem;
+        }
+    }
+
+    &__sbr {
+        @include viewport-min(lg) {
+            width: 20rem;
+            height: 100%;
+            padding: 0 1rem 0 0;
+            border-right: 1px solid $gray-300;
+        }
+    }
+
+    &__cnt {
+        &-hdr {
+            padding: 0 0 1rem;
+            margin: 0 0 2rem;
+            border-bottom: 1px solid $gray-200;
+
+            @include viewport-min(md) {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-tle {
+            margin: .5rem 0 0 0;
+            font-size: 1.25rem;
+            font-weight: 300;
+
+            @include viewport-min(md) {
+                margin: 0 0 0 1rem;
+                font-size: 1.5rem;
+            }
+
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-badge {
+            span {
+                padding: .25rem .5rem;
+                background-color: $gray-100;
+                border-radius: .25rem;
+                display: inline-flex;
+                align-items: center;
+                font-size: .75rem;
+                font-weight: 500;
+                color: $primary;
+
+                @include viewport-min(md) {
+                    padding: .25rem .5rem;
+                    font-size: 1rem;
+                }
+
+                i.mdi {
+                    display: block;
+                    line-height: 1.125rem;
+                    margin: 0 .5rem 0 0;
+                    padding: 0 .5rem 0 0;
+                    border-right: 1px solid rgba(#000,.1);
+                }
+            }
+        }
+    }
+}
+
+.block-breadcrumb{
+    margin: 1rem 0;
+    & + .block-manual{
+        padding-top: 1rem;
     }
 }

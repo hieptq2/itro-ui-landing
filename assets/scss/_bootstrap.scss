@@ -172,3 +172,21 @@
     //
 }
 
+// breadcrumb
+.breadcrumb {
+    padding: .5rem .75rem;
+    background-color: rgba(#000,.02);
+    border: 0;
+
+    .breadcrumb-item {
+        font-size: .875rem;
+
+        & + .breadcrumb-item::before {
+            color: $gray-400;
+        }
+        &.active{
+            color: $gray-600;
+        }
+    }
+}
+

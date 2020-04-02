@@ -52,6 +52,61 @@
         }
     }
 }
+
+.c-pagination {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: .5rem 0;
+    list-style: none;
+
+    &__item {
+        padding: .125rem;
+        line-height: 1.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 .125rem;
+
+        @include viewport-min(lg) {
+            padding: .25rem;
+            line-height: 2rem;
+            font-size: 1.125rem;
+        }
+
+        a, span {
+            display: block;
+            padding: 0 .5rem;
+            border-bottom: 3px solid transparent;
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+                border-bottom-color: $primary;
+            }
+        }
+
+        &.item-nav {
+            font-size: 1.5rem;
+
+            a {
+                &:hover {
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+
+        .p-item-active {
+            color: $gray-900;
+            border-bottom-color: $gray-900;
+        }
+
+        .p-item-dot {
+            color: $gray-500;
+        }
+    }
+}
+
 .c-hero-badge {
     @extend %button-reset;
     display: inline-block;
@@ -999,3 +1054,123 @@ a.c-card {
     
     }
 }
+
+.c-mnl-itm {
+    margin-bottom: 1rem;
+
+    &__wrp {
+        display: flex;
+        align-items: center;
+    }
+
+    &__mda {
+        flex: 0 0 5rem;
+        margin: 0 1rem 0 0;
+
+        @include viewport-min(sm) {
+            flex: 0 0 12rem;
+            margin: 0 1rem 0 0;
+
+            &:after {
+                padding-bottom: 75%;
+            }
+        }
+
+        @include viewport-min(lg) {
+            flex-basis: 14rem;
+        }
+
+        @include viewport-min(lg) {
+            flex-basis: 15rem;
+        }
+
+        @include viewport-min(xl) {
+            flex-basis: 15rem;
+        }
+
+        .itm-mda-wrp {
+            display: block;
+            width: 100%;
+            border-radius: .25rem;
+            border: 1px solid $gray-200;
+        }
+
+        a.itm-mda-wrp {
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    &__cnt {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    &__tle {
+        margin: 0;
+        line-height: 1.25;
+        font-size: 1rem;
+        font-weight: 500;
+
+        @include viewport-min(md) {
+            font-size: 1.25rem;
+        }
+
+        a {
+            color: $gray-900;
+
+            &:hover {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__mta {
+        margin: .25rem 0 0;
+        font-size: 0;
+        line-height: 1.25rem;
+
+        @include viewport-min(md) {
+            margin: .5rem 0 0;
+        }
+
+        & > span {
+            display: inline-block;
+            vertical-align: top;
+            font-size: .75rem;
+            line-height: 1.25rem;
+            color: $gray-500;
+
+            & + span {
+                &:before {
+                    content: "\2022";
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0 .5rem;
+                    line-height: 1.125rem;
+                    font-size: .5rem;
+                }
+            }
+        }
+
+        a {
+            color: lighten($primary,5%);
+        }
+    }
+
+    &__ecp {
+        margin: .5rem 0 0;
+        line-height: 1.25rem;
+        font-size: .875rem;
+        color: $gray-600;
+        @include multi-line-ellipsis(1.25rem, 3, true, false);
+
+        @include viewport-max(md) {
+            display: none;
+        }
+    }
+}
+
+

@@ -170,6 +170,9 @@
             }
 
             .subcrible-form {
+                @include viewport-max(lg){
+                    justify-content: center;
+                }
                 .form-control {
 
                     &:focus {
