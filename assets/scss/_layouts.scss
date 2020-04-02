@@ -1236,3 +1236,65 @@
 }
 
 // ------------------------------------
+
+.block-article {
+    padding: 2rem 0;
+    color: $gray-700;
+    min-height: 75vh;
+
+    @include viewport-min(lg) {
+        padding: 3rem 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $gray-900;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        line-height: 1.375;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.375;
+    }
+
+    @inlcude viewport-min(lg) {
+        padding: 4rem 0;
+    }
+
+    &__wrap {
+        //
+    }
+
+    &__hdr {
+        padding: 0 0 1rem;
+        margin: 0 0 2rem;
+        border-bottom: 1px solid $gray-200;
+    }
+
+    &__cnt {
+        h1, h2, h3, h4, h5, h6 {
+            margin: 1.25rem 0 .75rem;
+        }
+
+        p {
+            margin-bottom: .5rem;
+        }
+
+        ul {
+            margin-bottom: .5rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border-color: $gray-200;
+        }
+    }
+}

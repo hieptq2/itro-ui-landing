@@ -1,59 +1,83 @@
 .page-header {
     transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
-    &.fixtop{
+
+    &.fixtop {
         position: fixed;
-        top: 0; left: 0; right: 0;
-        @include viewport-min(lg){
+        top: 0;
+        left: 0;
+        right: 0;
+
+        @include viewport-min(lg) {
             background-color: transparent;
         }
-        &--active{
-            @include viewport-min(lg){
+
+        &--active {
+            @include viewport-min(lg) {
                 background-color: #fff;
                 box-shadow: 0 1px 8px 0 rgba(#000,.08);
             }
-            .navbar{
-                @include viewport-min(lg){
+
+            .navbar {
+                @include viewport-min(lg) {
                     height: 56px;
                 }
             }
         }
+
+        & + div {
+            margin-top: 56px;
+
+            @include viewport-min(lg) {
+                margin-top: 72px;
+            }
+        }
     }
+
     &--ld {
         position: relative;
         background-color: $gray-800;
         z-index: 1000;
-        @include viewport-min(lg){
+
+        @include viewport-min(lg) {
             background-color: transparent;
         }
+
         .navbar {
             padding: 0 1rem;
             height: 56px;
             transition: height .2s ease-in-out;
-            @include viewport-min(lg){
+
+            @include viewport-min(lg) {
                 height: 72px;
             }
+
             .navbar-brand {
                 padding: 0;
                 height: 56px;
                 display: flex;
                 align-items: center;
+
                 img {
                     display: block;
                     height: 28px;
                 }
-                @include viewport-min(lg){
+
+                @include viewport-min(lg) {
                     height: 72px;
                     position: relative;
                     margin-right: 3rem;
-                    &:after{
+
+                    &:after {
                         position: absolute;
                         right: -2rem;
-                        top: 50%; margin-top: -1rem;
+                        top: 50%;
+                        margin-top: -1rem;
                         content: "";
                         width: 1px;
                         height: 2rem;
                         background-color: $gray-300;
                     }
+
                     img {
                         display: block;
                         height: 32px;
@@ -73,16 +97,20 @@
             font-size: 2rem;
             text-align: center;
             color: #fff;
-            &:focus{
+
+            &:focus {
                 outline: none;
             }
-            @include viewport-min(lg){
+
+            @include viewport-min(lg) {
                 display: none;
             }
-            .mdi{
+
+            .mdi {
                 display: block;
                 position: absolute;
-                top: 0; left: 0;
+                top: 0;
+                left: 0;
                 height: 56px;
                 width: 56px;
                 line-height: 56px;
@@ -90,39 +118,48 @@
                 text-align: center;
                 transition: opacity .3s ease-in-out;
             }
-            .mdi-close{
+
+            .mdi-close {
                 opacity: 1;
             }
-            .mdi-menu{
+
+            .mdi-menu {
                 opacity: 0;
             }
-            &.collapsed{
-                .mdi-close{
+
+            &.collapsed {
+                .mdi-close {
                     opacity: 0;
                 }
-                .mdi-menu{
+
+                .mdi-menu {
                     opacity: 1;
                 }
             }
         }
-        .navbar-collapse{
-            .navbar-nav{
-                .nav-item{
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
                     text-transform: uppercase;
-                    .nav-link{
-                        &:after{
+
+                    .nav-link {
+                        &:after {
                             @extend %mdi-icon;
                             content: "";
                         }
                     }
-                    &--btn{
-                        .btn{
+
+                    &--btn {
+                        .btn {
                             box-shadow: 0 0 0;
-                            &-primary{
+
+                            &-primary {
                                 color: $primary;
                                 background-color: #fff;
                                 border-color: $primary;
-                                &:hover{
+
+                                &:hover {
                                     color: #fff;
                                     background-color: $primary;
                                     box-shadow: 0 0 0;
@@ -132,22 +169,27 @@
                     }
                 }
             }
-            @include viewport-max(lg){
+
+            @include viewport-max(lg) {
                 margin: 0 -1rem;
                 background-color: $gray-900;
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-                .navbar-nav{
+
+                .navbar-nav {
                     padding: 0 1rem;
+
                     .nav-item {
                         border-bottom: 1px solid $gray-800;
-                        .nav-link{
+
+                        .nav-link {
                             position: relative;
                             padding: 1rem 0;
                             display: block;
                             font-size: 1rem;
                             font-weight: 400;
                             color: #fff;
-                            &:after{
+
+                            &:after {
                                 display: block;
                                 content: "\F0142";
                                 position: absolute;
@@ -158,26 +200,31 @@
                                 font-size: 1rem;
                                 color: $gray-600;
                             }
-                            b{
+
+                            b {
                                 font-weight: 600;
                             }
                         }
                     }
-                    .btn{
+
+                    .btn {
                         width: 100%;
                         margin: 1rem 0;
                     }
                 }
             }
-            @include viewport-min(lg){
-                .navbar-nav{
+
+            @include viewport-min(lg) {
+                .navbar-nav {
                     align-items: center;
-                    &--left{
+
+                    &--left {
                         margin-right: auto;
                     }
-                    .nav-item{
-                        &--text{
-                            .nav-link{
+
+                    .nav-item {
+                        &--text {
+                            .nav-link {
                                 position: relative;
                                 padding: 1rem .75rem;
                                 display: block;
@@ -185,11 +232,13 @@
                                 font-weight: 400;
                                 color: $gray-700;
                                 transition: transform .2s ease-in-out, color .2s ease-in-out;
-                                &:after{
+
+                                &:after {
                                     content: "";
                                     display: block;
                                     position: absolute;
-                                    right: .75rem; left: .75rem;
+                                    right: .75rem;
+                                    left: .75rem;
                                     bottom: .75rem;
                                     height: 1px;
                                     background-color: $primary;
@@ -197,47 +246,58 @@
                                     opacity: 0;
                                     transition: transform .2s ease-in-out, opacity .2s ease-in-out;
                                 }
-                                &:hover{
+
+                                &:hover {
                                     color: $primary;
                                     transform: translateY(-2px);
-                                    &:after{
+
+                                    &:after {
                                         transform: translateY(0);
                                         opacity: 1;
                                     }
                                 }
-                                &:active{
-                                    &:after{
+
+                                &:active {
+                                    &:after {
                                         transform: translateY(2px);
                                     }
                                 }
-                                b{
+
+                                b {
                                     font-weight: 600;
                                 }
                             }
                         }
-                        &--link{
-                            .nav-link{
+
+                        &--link {
+                            .nav-link {
                                 font-weight: 400;
                                 color: $primary;
                                 transition: color .1s ease-in-out;
-                                &:hover{
+
+                                &:hover {
                                     color: $gray-500;
                                 }
-                                b{
+
+                                b {
                                     font-weight: 600;
                                 }
                             }
                         }
-                        &--btn{
+
+                        &--btn {
                             margin: 0 0 0 1rem;
-                            .btn{
+
+                            .btn {
                                 font-weight: 400;
                                 padding: .5rem 1.75rem;
                                 border-radius: 999px;
-                                b{
+
+                                b {
                                     font-weight: 600;
                                 }
-                                &.primary{
+
+                                &.primary {
                                     color: $primary;
                                     background-color: #fff;
                                     border-color: $primary;
@@ -247,14 +307,17 @@
                     }
                 }
             }
-            @include viewport-min(xl){
-                .navbar-nav{
-                    .nav-item{
-                        &--text{
-                            .nav-link{
+
+            @include viewport-min(xl) {
+                .navbar-nav {
+                    .nav-item {
+                        &--text {
+                            .nav-link {
                                 padding: 1rem 1.125rem;
-                                &:after{
-                                    right: 1.125rem; left: 1.125rem;
+
+                                &:after {
+                                    right: 1.125rem;
+                                    left: 1.125rem;
                                 }
                             }
                         }
@@ -263,46 +326,56 @@
             }
         }
     }
-    &--fr{
+
+    &--fr {
         .navbar {
             padding: 0 1rem;
             height: 56px;
-            @include viewport-min(lg){
+
+            @include viewport-min(lg) {
                 padding: 0 2rem;
                 height: 96px;
             }
+
             .navbar-brand {
                 height: 56px;
+
                 img {
                     height: 32px;
                 }
-                @include viewport-min(lg){
+
+                @include viewport-min(lg) {
                     height: 96px;
-                    &:after{
+
+                    &:after {
                         display: none;
                     }
+
                     img {
                         height: 48px;
                     }
                 }
             }
         }
-        .navbar-collapse{
-            @include viewport-min(lg){
-                .navbar-nav{
-                    .nav-item{
-                        &--link{
-                            .nav-link{
+
+        .navbar-collapse {
+            @include viewport-min(lg) {
+                .navbar-nav {
+                    .nav-item {
+                        &--link {
+                            .nav-link {
                                 padding: 1rem 1rem;
                                 font-size: 1.125rem;
                                 color: #fff;
-                                &:hover{
+
+                                &:hover {
                                     color: $gray-200;
                                 }
                             }
                         }
-                        &--btn{
-                            .nav-link{
+
+                        &--btn {
+                            .nav-link {
                                 padding: .75rem 1.5rem;
                                 font-size: 1.125rem;
                                 color: #fff;
@@ -310,7 +383,8 @@
                                 background-color: transparent;
                                 border: 1px solid #fff;
                                 border-radius: 999px;
-                                &:hover{
+
+                                &:hover {
                                     background-color: rgba(#fff,.2);
                                 }
                             }
