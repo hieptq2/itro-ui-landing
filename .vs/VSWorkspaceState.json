@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\scss"
+    "\\assets\\scss",
+    "\\assets\\scss\\bootstrap"
   ],
-  "SelectedNode": "\\assets\\scss\\_layouts.scss",
+  "SelectedNode": "\\assets\\scss\\_bootstrap.scss",
   "PreviewInSolutionExplorer": false
 }
