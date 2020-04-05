@@ -177,10 +177,11 @@
     padding: .5rem .75rem;
     background-color: rgba(#000,.02);
     border: 0;
-
+    flex-wrap: nowrap;
+    overflow: auto;
     .breadcrumb-item {
         font-size: .875rem;
-
+        white-space: nowrap;
         & + .breadcrumb-item::before {
             color: $gray-400;
         }
