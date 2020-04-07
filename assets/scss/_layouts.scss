@@ -1671,6 +1671,11 @@
                 background-color: rgba(#000,.8);
                 border-radius: 0 0 .5rem .5rem;
 
+
+                .post__tag {
+                    margin: 0 0 .5rem;
+                }
+
                 @include viewport-min(lg) {
                     position: absolute;
                     bottom: 1rem;
@@ -1745,6 +1750,10 @@
                 height: 100%;
                 object-fit: cover;
             }
+        }
+
+        .post__tag {
+            margin: 0 0 .5rem;
         }
 
         .post__content {
