@@ -1,3 +1,19 @@
+.body {
+    //xx
+    &--bg-light {
+        background-color: #fcfcfc;
+
+        .page-header {
+            @include viewport-min(lg) {
+                background-color: #fff;
+            }
+        }
+    }
+}
+.page-main{
+    min-height: calc(100vh - 340px);
+}
+
 
 // ------------------------------------
 // Sign In and Sign Up
@@ -1579,21 +1595,18 @@
 }
 
 .block-breadcrumb{
-    margin: 1rem 0;
+    margin: .5rem 0;
+    padding: .5rem 0;
     & + .block-manual{
         padding-top: 1rem;
     }
-}
-
-.block-blog{
-
 }
 .block-blog {
     &__featured-posts {
         margin: 1rem 0 2rem;
 
         @include viewport-min(lg) {
-            margin: 2rem 0;
+            margin: 1rem 0 2rem;
         }
 
         .carousel-indicators {
@@ -1713,6 +1726,17 @@
 
     &__list-posts {
         margin: 1rem 0;
+        .row{
+            margin: 0 -.75rem;
+        }
+        [class^="col"] {
+            padding: 0 .75rem;
+            margin: 0 0 1rem;
+
+            @include viewport-min(lg) {
+                margin: 0 0 1.5rem;
+            }
+        }
     }
 
     &__title {
@@ -1723,11 +1747,10 @@
     }
 
     &__single-post {
-        margin: 0 0 .5rem;
-
-        @include viewport-min(lg) {
-            margin: 0 0 1rem;
-        }
+        height: 100%;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0 1rem 2rem 0 rgba(0,0,0,.025), 0 .5rem 1rem 0 rgba(0,0,0,.05);
 
         a {
             &:hover, &:active, &:focus {
@@ -1736,7 +1759,7 @@
         }
 
         .post__photo {
-            border-radius: .5rem;
+            border-radius: .5rem .5rem 0 0;
             overflow: hidden;
 
             a {
@@ -1754,10 +1777,23 @@
 
         .post__tag {
             margin: 0 0 .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .tag-post-time {
+                font-size: 1.125rem;
+                font-weight: 500;
+                color: $gray-500;
+
+                &.active {
+                    color: $primary;
+                }
+            }
         }
 
         .post__content {
-            padding: .75rem .5rem 1rem;
+            padding: 1rem;
         }
 
         .post__content__title {
