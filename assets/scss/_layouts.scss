@@ -913,16 +913,19 @@
 
 // more landing
 
-.block-app{
+.block-app {
     position: relative;
     overflow: hidden;
-    &--top{
+
+    &--top {
         margin-top: -72px;
         padding-top: 144px;
     }
-    &--top-fixed{
+
+    &--top-fixed {
         padding-top: 72px;
     }
+
     &__background {
         position: absolute;
         top: 0;
@@ -968,70 +971,86 @@
             }
         }
     }
-    &__wrap{
+
+    &__wrap {
         position: relative;
         z-index: 20;
         padding: 2rem 0;
-        @include viewport-min(md){
+
+        @include viewport-min(md) {
             padding: 3rem 0 4rem;
         }
-        @include viewport-min(xl){
+
+        @include viewport-min(xl) {
             padding: 4rem 0 5rem;
         }
     }
-    &__sc{
-        img{
+
+    &__sc {
+        img {
             max-height: 100%;
             max-width: 100%;
         }
-        .app-sc{
+
+        .app-sc {
             //xx
-            &-wrap{
+            &-wrap {
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
-                @include viewport-min(lg){
+
+                @include viewport-min(lg) {
                     align-items: flex-end;
                     justify-content: flex-end;
                 }
             }
-            &-tablet{
+
+            &-tablet {
                 width: 80%;
                 max-width: 20rem;
-                @include viewport-min(lg){
+
+                @include viewport-min(lg) {
                     width: 24rem;
                     max-width: none;
                 }
-                @include viewport-min(xl){
+
+                @include viewport-min(xl) {
                     width: 28rem;
                 }
             }
-            &-mobile{
+
+            &-mobile {
                 width: 6rem;
                 margin-left: -4rem;
-                @include viewport-min(lg){
+
+                @include viewport-min(lg) {
                     width: 10rem;
                     margin-left: -6rem;
                 }
-                @include viewport-min(lg){
+
+                @include viewport-min(lg) {
                     width: 12rem;
                     margin-left: -8rem;
                 }
             }
         }
     }
-    &__cnt{
+
+    &__cnt {
         padding: 1rem 1rem 2rem;
         text-align: center;
-        @include viewport-min(sm){
+
+        @include viewport-min(sm) {
             padding: 3rem;
         }
-        @include viewport-min(lg){
+
+        @include viewport-min(lg) {
             padding: 4rem 0 4rem 4rem;
             text-align: left;
             max-width: 600px;
         }
     }
+
     &__tle {
         @extend .c-section-title;
         @extend .c-section-title--sm;
@@ -1045,25 +1064,52 @@
     &__stl {
         @extend .c-section-subtitle;
         @extend .c-section-subtitle--sm;
-        p{
+
+        p {
             margin-bottom: .5rem;
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    &__dwl{
+
+    &__dwl {
         margin: 2rem 0 0;
-        @include viewport-min(lg){
+
+        @include viewport-min(lg) {
             margin: 3rem 0 0;
+            display: flex;
+            align-items: center;
         }
-        .single-download-btn{
+
+        .single-download-btn {
             margin: 0 .25rem 1rem;
-            img{
+
+            img {
                 height: 56px;
-                @include viewport-min(xl){
+
+                @include viewport-min(xl) {
                     height: 64px;
                 }
+            }
+        }
+
+        .dwl-qrc-wrp {
+            margin: 24px 0 0;
+            text-align: center;
+
+            .qr-txt {
+                font-size: .875rem;
+                font-style: italic;
+                margin: 0 0 .25rem;
+                color: $gray-700;
+            }
+            .qr-img{
+                //
+            }
+            @include viewport-min(lg) {
+                margin: 0 0 24px 48px;
             }
         }
     }
