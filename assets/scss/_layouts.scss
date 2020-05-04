@@ -1125,6 +1125,17 @@
             }
         }
     }
+
+    &__qr{
+        text-align: center;
+        margin: 1rem 0 0;
+        .qr-txt{
+            font-size: .875rem;
+            font-style: italic;
+            margin: 0 0 .5rem;
+            color: $gray-600;
+        }
+    }
 }
 
 .block-appscr{

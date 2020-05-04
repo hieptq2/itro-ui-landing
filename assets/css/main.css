@@ -692,6 +692,8 @@ align-items: center;*/ }
 @media (min-width: 992px) { .block-download__btn .single-dwn-btn { display: inline-block; vertical-align: top; } }
 .block-download__btn .single-dwn-btn img { height: 56px; }
 @media (min-width: 1200px) { .block-download__btn .single-dwn-btn img { height: 64px; } }
+.block-download__qr { text-align: center; margin: 1rem 0 0; }
+.block-download__qr .qr-txt { font-size: .875rem; font-style: italic; margin: 0 0 .5rem; color: #6c757d; }
 
 .block-appscr { overflow: hidden; padding: 2rem 0; }
 .block-appscr__wrap { margin: 0 auto; max-width: 1440px; }
