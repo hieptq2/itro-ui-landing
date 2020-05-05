@@ -730,6 +730,7 @@ align-items: center;*/ }
 @media (min-width: 992px) { .block-pricing__noted { margin-top: 5rem; } }
 
 .block-article { padding: 2rem 0; color: #495057; min-height: 75vh; }
+.block-article img { max-width: 100%; height: auto !important; }
 @media (min-width: 992px) { .block-article { padding: 3rem 0; } }
 .block-article h1, .block-article h2, .block-article h3, .block-article h4, .block-article h5, .block-article h6 { color: #333; }
 .block-article h1 { font-size: 1.5rem; line-height: 1.25; }
