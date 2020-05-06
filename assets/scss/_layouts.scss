@@ -1315,10 +1315,16 @@
     padding: 2rem 0;
     color: $gray-700;
     min-height: 75vh;
-    img{
+
+    img {
         max-width: 100%;
         height: auto !important;
     }
+
+    iframe {
+        max-width: 100% !important;
+    }
+
     @include viewport-min(lg) {
         padding: 3rem 0;
     }
