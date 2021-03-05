@@ -73,6 +73,30 @@
   }
 }
 
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 10%)) {
+
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+        border-radius: 999px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+        border-radius: 999px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+        border-radius: 999px;
+    }
+
+    & {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+
 // button-reset
 %button-reset{
   margin: 0;

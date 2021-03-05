@@ -1,4 +1,42 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
+
+
+    // ========================================================================
+    // TOP NAV SELECTION
+    $('.select2-topnav-single').select2({
+        language: "vi",
+        dropdownCssClass: "select2-topnav-dropdown",
+        closeOnSelect: true
+    }).on('select2:opening', function (e) {
+        $(this).data('select2').$dropdown.find(':input.select2-search__field').attr('placeholder', 'Tìm kiếm')
+        });
+
+    // select2 prevent closing after click (mobile)
+    if ($(window).width() < 992) {
+        $(".select2-topnav-single").on("select2:open", function () {
+            $(".select2-results").css("display", "none");
+        });
+
+        $(".select2-topnav-single").on('select2:opening', function () {
+            setTimeout(function () {
+                $(".select2-results").css("display", "block");
+            }, 200);
+        });
+    }
+
+    // Toggle click for search 
+    $('.searchbar-toggler').click(function (e) {
+        e.preventDefault();
+        $("#NavbarCollapse__Search").addClass('active');
+        $("body").addClass('to-front');
+    });
+    $('.page-header-ftr__mhdr-close').click(function (e) {
+        e.preventDefault();
+        $("#NavbarCollapse__Search").removeClass('active');
+        $("body").removeClass('to-front');
+    });
+    //end
+
 
     // ========================================================================
     // LANDING PAGE
