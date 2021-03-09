@@ -33,6 +33,15 @@
                 margin-top: 72px;
             }
         }
+
+        &.has-search {
+            & + div {
+
+                @include viewport-min(lg) {
+                    margin-top: 72px + 56px;
+                }
+            }
+        }
     }
 
     &--ld {
@@ -431,13 +440,13 @@
             right: 0;
             z-index: 2000;
             background-color: #fff;
-            box-shadow: -5px 0 16px 0 rgba(#000,.3);
             transform: translateX(100%);
-            transition: transform .1s ease-in-out;
+            transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
             z-index: 100;
 
             &.active {
                 transform: translateX(0);
+                box-shadow: -5px 0 16px 0 rgba(#000,.3);
 
                 &:before {
                     opacity: 1;
