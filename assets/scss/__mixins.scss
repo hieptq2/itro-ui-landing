@@ -97,6 +97,29 @@
     }
 }
 
+// Clear
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin clearall() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+
 // button-reset
 %button-reset{
   margin: 0;

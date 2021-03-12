@@ -1,0 +1,782 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hiep Ta | henry9.com | contact@henry9.com">
+
+    <title>Detail | iTro Template</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/vendors.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- header -->
+    <header id="pageHeader" class="page-header page-header--ld fixtop has-search js-header-landing-bg">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/itro-logo-colored.png">
+            </a>
+            <div class="navbar-btn-wrap">
+                <button class="searchbar-toggler">
+                    <i class="mdi mdi-magnify"></i>
+                </button>
+                <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <i class="mdi mdi-menu"></i>
+                    <i class="mdi mdi-close"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-nav--left">
+                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Tải app</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Bảng giá</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Hướng dẫn</a></li>
+                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Khuyến mại</a></li>
+                </ul>
+                <ul class="navbar-nav navbar-nav--right">
+                    <li class="nav-item nav-item--link"><a class="nav-link" href="#">Đăng nhập</a></li>
+                    <li class="nav-item nav-item--btn"><a class="btn btn-primary" href="#">Đăng ký</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="NavbarCollapse__Search" class="page-header__form">
+            <div class="container-fluid">
+                <div class="page-header__form-wrap">
+                    <div class="page-header-ftr">
+                        <div class="page-header-ftr__wrap">
+                            <div class="page-header-ftr__mhdr">
+                                <h4 class="page-header-ftr__mhdr-tle">Tìm kiếm</h4>
+                                <button class="page-header-ftr__mhdr-close">&#x2715;</button>
+                            </div>
+                            <div class="page-header-ftr__options">
+                                <div class="row">
+                                    <div class="col-12 col-lg">
+                                        <div class="s-flt-option">
+                                            <label class="s-flt-option__lbl">Tỉnh / Thành phố</label>
+                                            <select class="s-flt-option__slt select2-topnav-single">
+                                                <option selected>Toàn quốc</option>
+                                                <option>TP. Hồ Chí Minh</option>
+                                                <option>Hà Nội</option>
+                                                <option>Đà Nẵng</option>
+                                                <option>Cần Thơ</option>
+                                                <option>Hải Phòng</option>
+                                                <option>Khánh Hòa</option>
+                                                <option>Cà Mau</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg">
+                                        <div class="s-flt-option">
+                                            <label class="s-flt-option__lbl">Quận / Huyện</label>
+                                            <select class="s-flt-option__slt select2-topnav-single">
+                                                <option selected>Tất cả</option>
+                                                <option>Quận Hoàn Kiếm</option>
+                                                <option>Quận Đống Đa</option>
+                                                <option>Quận Ba Đình</option>
+                                                <option>Quận Hai Bà Trưng</option>
+                                                <option>Quận Hoàng Mai</option>
+                                                <option>Quận Thanh Xuân</option>
+                                                <option>Quận Long Biên</option>
+                                                <option>Quận Bắc Từ Liêm</option>
+                                                <option>Quận Nam Từ Liêm</option>
+                                                <option>Quận Tây Hồ</option>
+                                                <option>Quận Cầu Giấy</option>
+                                                <option>Quận Hà Đông</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg">
+                                        <div class="s-flt-option">
+                                            <label class="s-flt-option__lbl">Phường / Xã</label>
+                                            <select class="s-flt-option__slt select2-topnav-single">
+                                                <option selected>Tất cả</option>
+                                                <option>Đường Hoàn Kiếm</option>
+                                                <option>Đường Đống Đa</option>
+                                                <option>Đường Ba Đình</option>
+                                                <option>Đường Hai Bà Trưng</option>
+                                                <option>Đường Hoàng Mai</option>
+                                                <option>Đường Thanh Xuân</option>
+                                                <option>Đường Long Biên</option>
+                                                <option>Đường Bắc Từ Liêm</option>
+                                                <option>Đường Nam Từ Liêm</option>
+                                                <option>Đường Tây Hồ</option>
+                                                <option>Đường Cầu Giấy</option>
+                                                <option>Đường Hà Đông</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg">
+                                        <div class="s-flt-option">
+                                            <label class="s-flt-option__lbl">Khoảng giá</label>
+                                            <select class="s-flt-option__slt select2-topnav-single">
+                                                <option selected>Tất cả</option>
+                                                <option>Dưới 2 triệu</option>
+                                                <option>2 triệu - 5 triệu</option>
+                                                <option>5 triệu - 10 triệu</option>
+                                                <option>10 triệu - 20 triệu</option>
+                                                <option>Hơn 20 triệu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg">
+                                        <div class="s-flt-option">
+                                            <label class="s-flt-option__lbl">Loại chỗ ở</label>
+                                            <select class="s-flt-option__slt select2-topnav-single">
+                                                <option selected>Tất cả</option>
+                                                <option>Phòng trọ</option>
+                                                <option>Nhà cho thuê</option>
+                                                <option>Option long text long text long text long text 1</option>
+                                                <option>Option long text long text long text long text 2</option>
+                                                <option>Option long text long text long text long text 3</option>
+                                                <option>Option long text long text long text long text 4</option>
+                                                <option>Option long text long text long text long text 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg">
+                                        <div class="s-flt-option">
+                                            <label class="s-flt-option__lbl">Diện tích</label>
+                                            <select class="s-flt-option__slt select2-topnav-single">
+                                                <option selected>Tất cả</option>
+                                                <option>Nhỏ hơn 100m²</option>
+                                                <option>100m² - 500m²</option>
+                                                <option>500m² - 1000m²</option>
+                                                <option>1000m² - 2000m²</option>
+                                                <option>Hơn 2000m²</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-header-ftr__action">
+                                <button class="btn btn-primary ftr-action-submit"><i class="mdi mdi-magnify"></i>Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END header -->
+    <!--=======================================================================-->
+    <div class="l-detail">
+        <div class="detail-property">
+            <div class="detail-property__photos">
+                <div class="detail-property__photos__gallery">
+                    <div class="photo-gallery has-05-items">
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/960w/QVIEE1UZSX.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/QVIEE1UZSX.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/960w/8LHTBAZW32.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/8LHTBAZW32.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/960w/UN5RN5XG3H.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/UN5RN5XG3H.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/960w/YPM6VH3FCW.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/YPM6VH3FCW.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/280h/ND7JR4XWKI.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/ND7JR4XWKI.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/280h/UQOXY4POK8.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/UQOXY4POK8.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/280h/VNLKUDVUNE.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/VNLKUDVUNE.jpg"></a></div>
+                        <div class="single-gallery-item"><a href="https://cdn.stocksnap.io/img-thumbs/280h/KJ5NTGPBWF.jpg" data-fancybox="propertyPhotoGallery" class="img-wrap"><img src="https://cdn.stocksnap.io/img-thumbs/960w/KJ5NTGPBWF.jpg"></a></div>
+                        <button id="openPropertyGallery1" class="view-property-album remain-items-count">+ 5 ảnh</button>
+                    </div>
+                </div>
+                <div class="detail-property__photos__actions">
+                    <span class="d-iblock va-top" title="Thích" data-toggle="tooltip" data-placement="bottom">
+                        <a href="#" class="single-action active btn btn-icon ht-btn-default"><i class="ion-heart"></i></a>
+                    </span>
+                    <span class="d-iblock va-top" title="Báo cáo sai phạm" data-toggle="tooltip" data-placement="bottom">
+                        <a href="#modal__report-property" class="single-action btn btn-icon ht-btn-default" data-toggle="modal"><i class="ion-flag"></i></a>
+                    </span>
+                </div>
+                <!-- <div class="detail-property__photos__albums"></div> -->
+            </div>
+            <div class="detail-property__header ht-depth-1 has-bottom-info">
+                <div class="container container--extended">
+                    <div class="row">
+                        <div class="xs-12 col-md-9">
+                            <h1 class="detail-property__header__title">Nhà trọ tầng 10 Home City Trung Kinh</h1>
+                            <div class="detail-property__header__subtitle"><i class="mdi mdi-map-marker"></i>177 Trung Kinh, phường Yên Hòa, Quận Cầu Giấy, TP Hà Nội</div>
+                            <div class="detail-property__header__infos has-4-items clearfix">
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-calendar"></i></span>
+                                        <span class="label-text">Ngày chuyển</span>
+                                    </div>
+                                    <div class="single-info__data">15/04/2017</div>
+                                </div>
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-social-usd"></i></span>
+                                        <span class="label-text">Tiền phòng</span>
+                                    </div>
+                                    <div class="single-info__data">2.000.000đ</div>
+                                </div>
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-pricetags"></i></span>
+                                        <span class="label-text">Đặt cọc</span>
+                                    </div>
+                                    <div class="single-info__data">2.000.000đ</div>
+                                </div>
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-ios-people"></i></span>
+                                        <span class="label-text">Số người</span>
+                                    </div>
+                                    <div class="single-info__data">03 nam</div>
+                                </div>
+                                <div class="menu-divider"></div>
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-arrow-expand"></i></span>
+                                        <span class="label-text">Diện tích</span>
+                                    </div>
+                                    <div class="single-info__data">123.456 ha</div>
+                                </div>
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-outlet"></i></span>
+                                        <span class="label-text">Tiền điện</span>
+                                    </div>
+                                    <div class="single-info__data">123.000đ/kwh</div>
+                                </div>
+                                <div class="single-info clearfix">
+                                    <div class="single-info__label">
+                                        <span class="label-icon"><i class="ion-waterdrop"></i></span>
+                                        <span class="label-text">Tiền nước</span>
+                                    </div>
+                                    <div class="single-info__data">123.000đ/người</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-property__content has-sticky-navbar mt-16">
+                <div class="container container--extended">
+                    <div class="clearfix">
+                        <div id="stickySidebar_container" class="clearfix">
+                            <div id="stickySidebar_propertyOwner" class="detail-property__right-col sticky-type-02">
+                                <div class="sticky-sidebar__inner">
+                                    <div class="detail-property__owner ht-depth-1">
+                                        <div class="owner-avatar-wrap">
+                                            <div class="owner-avatar">
+                                                <div class="ht-rectangle ratio-11">
+                                                    <div class="ht-inner ht-bgcover bd-rd-circle" style="background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/S4P1EEYET5.jpg');"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owner-content">
+                                            <h3 class="owner-title">Cô Hạnh, 60 tuổi</h3>
+                                            <div class="owner-info mt-16">
+                                                <div class="single-info single-info--verified">
+                                                    <a href="#"><span class="info-icon"><i class="mdi mdi-email"></i></span><span class="info-data ml-8">Đã xác thực</span></a>
+                                                </div>
+                                                <div class="single-info">
+                                                    <a href="#"><span class="info-icon"><i class="mdi mdi-phone"></i></span><span class="info-data ml-8">Chưa xác thực</span></a>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="owner-contact mt-16">
+                                                <a href="" class="btn btn-primary btn-block">Nhắn tin</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-property__left-col">
+                                <div id="stickyMenu_helperDiv" style="height: 38px; display: none;"></div>
+                                <div id="stickyMenu_singleProperty" class="detail-property__menubar ht-depth-1">
+                                    <ul class="list-unstyled has-4-items clearfix">
+                                        <li><a class="smooth-scroll-link" href="#propertyDescriptionSection">Mô tả</a></li>
+                                        <li><a class="smooth-scroll-link" href="#propertyFeaturesSection">Tiện ích</a></li>
+                                        <li><a class="smooth-scroll-link" href="#propertyRulesSection">Nội quy</a></li>
+                                        <!-- <li><a class="smooth-scroll-link" href="#propertyRoomsSection">Phòng trống</a></li> -->
+                                        <li><a class="smooth-scroll-link" href="#propertyMapSection">Bản đồ</a></li>
+                                    </ul>
+                                </div>
+                                <div id="propertyDescriptionSection" class="detail-property__description mt-16 ht-depth-1">
+                                    <h3 class="descr-title">Thông tin mô tả</h3>
+                                    <p>Trả lời phỏng vấn CNN, Mark Zuckerberg tỏ ra hối hận vì "tin lời" Cambrige Analytica về việc xoá toàn bộ dữ liệu người dùng. Mark cũng thừa nhận đã từng mắc rất nhiều sai lầm trong quá trình xây dựng mạng xã hội với hơn 2 tỷ người dùng.</p>
+                                    <p>"Đây có lẽ là sai lầm lớn nhất mà chúng tôi từng mắc phải. Khi nhìn lại tôi cảm thấy hối hận vì không làm nó (kỹ lưỡng kiểm tra quy trình xoá thông tin của Cambrige Analytica - PV) sớm hơn. Tôi nghĩ rằng chúng tôi đã sai rồi", CEO Facebook nhận định sự cố lần này ảnh hưởng lớn nhất từ trước đến nay.</p>
+                                    <p>Tuy nhiên việc nhận sai này của Mark Zuckerberg vẫn xoay quanh việc công ty này tin nhầm người. "Tôi bắt đầu công việc rất trẻ và non nớt kinh nghiệm. Tôi mắc sai lầm kỹ thuật, sai lầm kinh doanh. Tôi thuê nhầm nhân viên, tôi đặt lòng tin sai người", vị CEO 33 tuổi trần tình.</p>
+                                    <p>Trước buổi phỏng vấn, COO Sheryl Sandberg, người phụ nữ quyền lực nhất Facebook cũng bày tỏ sự hối hận sâu sắc về scandal trên bằng việc chia sẻ bài đăng của Mark Zuckerberg. “Chúng tôi có trách nhiệm bảo vệ dữ liệu của bạn - nếu chúng tôi không làm được, chúng tôi không xứng đáng phục vụ các bạn”, Sheryl Sandberg lặp lại lời CEO Facebook. Bà cũng cho biết Facebook đang cố nhìn toàn cảnh vụ việc trong những ngày qua. Việc này nhằm ngăn chặn những trường hợp tương tự có thể diễn ra. Sheryl cũng khẳng định sẽ chặn bất kỳ ứng dụng nào còn sử dụng trái phép dữ liệu người dùng, hạn chế quyền của các ứng dụng về sau và thông báo cho người dùng nắm rõ tình trạng thông tin của họ.</p>
+                                    <hr>
+                                    <div id="propertyFeaturesSection">
+                                        <h3 class="descr-title">Tiện ích</h3>
+                                        <ul class="descr__features-list clearfix">
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></li>
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>2Tivi</span></li>
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>3Truyền hình cáp</span></li>
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>4Sofa</span></li>
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>5Nước khoáng</span></li>
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>6Nước khoáng</span></li>
+                                            <li><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>7Nước khoáng</span></li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                    <div id="propertyRulesSection">
+                                        <h3 class="descr-title">Nội quy</h3>
+                                        <ul class="descr__features-list clearfix">
+                                            <li><span>1Không làm ônf</span></li>
+                                            <li><span>2Không về khuya</span></li>
+                                            <li><span>3Không nuôi động vật</span></li>
+                                            <li><span>4Không hút thuốc</span></li>
+                                            <li><span>5Không trêu chó hàng xóm</span></li>
+                                            <li><span>6Không tán con gái chủ nhà</span></li>
+                                            <li><span>7Đổ rác đúng gơpf</span></li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                    <div id="propertyRoomsSection">
+                                        <h3 class="descr-title">Phòng trống</h3>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered descr__table-list">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Giá</th>
+                                                        <th>Đặt cọc</th>
+                                                        <th>Diện tích</th>
+                                                        <th>Số người ở</th>
+                                                        <th>Ngày chuyển</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="color-primary_text fw-500">1.500.000đ</span></td>
+                                                        <td><span class="color-primary_text fw-500">1.500.000đ</span></td>
+                                                        <td><span class="color-primary_text fw-500">15m2</span></td>
+                                                        <td><span class="color-primary_text fw-500">5</span></td>
+                                                        <td><span class="color-primary_text fw-500">Có thể chuyển ngay</span></td>
+                                                    </tr>
+                                                </tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="5">
+                                                            <div class="row justify-content-between">
+                                                                <div class="col text-left">
+                                                                    Nội thất
+                                                                </div>
+                                                                <div class="col text-right">
+                                                                    <a href="#" class="fz-12">Xem phòng</a>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5" class="text-left">
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                            <div class="single-property-feature"><img src="stock/icons/icon_16x16_01.png" width="12" height="12"><span>1Wifi</span></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered descr__table-list">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Giá</th>
+                                                        <th>Đặt cọc</th>
+                                                        <th>Diện tích</th>
+                                                        <th>Số người ở</th>
+                                                        <th>Ngày chuyển</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="color-primary_text fw-500">1.500.000đ</span></td>
+                                                        <td><span class="color-primary_text fw-500">1.500.000đ</span></td>
+                                                        <td><span class="color-primary_text fw-500">15m2</span></td>
+                                                        <td><span class="color-primary_text fw-500">5</span></td>
+                                                        <td><span class="color-primary_text fw-500">Có thể chuyển ngay</span></td>
+                                                    </tr>
+                                                </tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="5">
+                                                            <div class="row justify-content-between">
+                                                                <div class="col text-left">Nội thất</div>
+                                                                <div class="col text-right">
+                                                                    <a href="#" class="fz-12">Xem phòng</a>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5" class="text-left">
+                                                            Phòng không nội thất
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="propertyMapSection" class="detail-property__addresses">
+                <div class="container container--extended">
+                    <div class="ht-depth-1 mt-16 pa-16">
+                        <div class="detail-property__addresses__details">Số nhà 12, ngõ 123, phố Định Công, quận Hoàng Mai, Hà Nội</div>
+                        <div class="detail-property__addresses__details__maps">
+                            <div class="map_container flex-item flex-item-dw bg-color-grey-50">
+                                <div class="map-wrapper">
+                                    <!-- map here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-cards">
+            <div class="container">
+                <div class="block-cards__hdr">
+                    <h2 class="block-cards__tle">Tin đăng mới nhất</h2>
+                </div>
+                <div class="block-cards__grid">
+                    <div class="block-cards__single">
+                        <div class="c-card-ppt">
+                            <div class="c-card-ppt__wrap">
+                                <div class="c-card-ppt__media">
+                                    <a href="#" class="c-card-ppt__media-img">
+                                        <img src="https://via.placeholder.com/800x450" alt="Alternate Text" />
+                                        <i class="c-card-ppt__media-vid-icon mdi mdi-play-circle-outline"></i>
+                                    </a>
+                                    <div class="c-card-ppt__tag">
+                                        <span class="ppt-tag-sgl ppt-tag-sgl--1">Khuyến mãi</span>
+                                    </div>
+                                </div>
+                                <div class="c-card-ppt__cnt">
+                                    <div class="c-card-ppt__num-wrap">
+                                        <div class="c-card-ppt__price-wrap">
+                                            <a href="#" class="c-card-ppt__price">
+                                                <div class="ppt-cback-lbl">Giá thuê</div>
+                                                <div class="ppt-price-wrap">
+                                                    <div class="ppt-price-num">7.500.000</div>
+                                                    <div class="ppt-price-unit">đ / tháng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-card-ppt__cback-wrap">
+                                            <a href="#" class="c-card-ppt__cback">
+                                                <div class="ppt-cback-lbl">Cashback</div>
+                                                <div class="ppt-cback-wrap">
+                                                    <div class="ppt-cback-num">1.500.000</div>
+                                                    <div class="ppt-cback-unit">đ</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="c-card-ppt__locat">
+                                        <a href="#">401 - 492/5, Nguyễn Thị Minh Khai</a>
+                                    </h3>
+                                    <div class="c-card-ppt__info">
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-tag-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">Phòng tiện nghi</span>
+                                                </div>
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-vector-square"></i>
+                                                    <span class="ppt-info-sgl__lbl">25m2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-account-multiple-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">29 người đang quan tâm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-cards__single">
+                        <div class="c-card-ppt">
+                            <div class="c-card-ppt__wrap">
+                                <div class="c-card-ppt__media">
+                                    <a href="#" class="c-card-ppt__media-img">
+                                        <img src="https://via.placeholder.com/800x450" alt="Alternate Text" />
+                                        <i class="c-card-ppt__media-vid-icon mdi mdi-play-circle-outline"></i>
+                                    </a>
+                                    <div class="c-card-ppt__tag">
+                                        <span class="ppt-tag-sgl ppt-tag-sgl--2">Nhiều người xem</span>
+                                    </div>
+                                </div>
+                                <div class="c-card-ppt__cnt">
+                                    <div class="c-card-ppt__num-wrap">
+                                        <div class="c-card-ppt__price-wrap">
+                                            <a href="#" class="c-card-ppt__price">
+                                                <div class="ppt-cback-lbl">Giá thuê</div>
+                                                <div class="ppt-price-wrap">
+                                                    <div class="ppt-price-num">7.500.000</div>
+                                                    <div class="ppt-price-unit">đ / tháng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-card-ppt__cback-wrap">
+                                            <a href="#" class="c-card-ppt__cback">
+                                                <div class="ppt-cback-lbl">Cashback</div>
+                                                <div class="ppt-cback-wrap">
+                                                    <div class="ppt-cback-num">1.500.000</div>
+                                                    <div class="ppt-cback-unit">đ</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="c-card-ppt__locat">
+                                        <a href="#">401 - 492/5, Nguyễn Thị Minh Khai</a>
+                                    </h3>
+                                    <div class="c-card-ppt__info">
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-tag-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">Phòng tiện nghi</span>
+                                                </div>
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-vector-square"></i>
+                                                    <span class="ppt-info-sgl__lbl">25m2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-account-multiple-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">29 người đang quan tâm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-cards__single">
+                        <div class="c-card-ppt">
+                            <div class="c-card-ppt__wrap">
+                                <div class="c-card-ppt__media">
+                                    <a href="#" class="c-card-ppt__media-img">
+                                        <img src="https://via.placeholder.com/800x450" alt="Alternate Text" />
+                                        <i class="c-card-ppt__media-vid-icon mdi mdi-play-circle-outline"></i>
+                                    </a>
+                                    <div class="c-card-ppt__tag">
+                                        <span class="ppt-tag-sgl ppt-tag-sgl--3">Phòng mới</span>
+                                    </div>
+                                </div>
+                                <div class="c-card-ppt__cnt">
+                                    <div class="c-card-ppt__num-wrap">
+                                        <div class="c-card-ppt__price-wrap">
+                                            <a href="#" class="c-card-ppt__price">
+                                                <div class="ppt-cback-lbl">Giá thuê</div>
+                                                <div class="ppt-price-wrap">
+                                                    <div class="ppt-price-num">7.500.000</div>
+                                                    <div class="ppt-price-unit">đ / tháng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-card-ppt__cback-wrap">
+                                            <a href="#" class="c-card-ppt__cback">
+                                                <div class="ppt-cback-lbl">Cashback</div>
+                                                <div class="ppt-cback-wrap">
+                                                    <div class="ppt-cback-num">1.500.000</div>
+                                                    <div class="ppt-cback-unit">đ</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="c-card-ppt__locat">
+                                        <a href="#">401 - 492/5, Nguyễn Thị Minh Khai</a>
+                                    </h3>
+                                    <div class="c-card-ppt__info">
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-tag-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">Phòng tiện nghi</span>
+                                                </div>
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-vector-square"></i>
+                                                    <span class="ppt-info-sgl__lbl">25m2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-account-multiple-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">29 người đang quan tâm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=======================================================================-->
+    <!-- footer -->
+    <footer id="pageFooter" class="page-footer">
+        <div class="container">
+            <div class="page-footer__wrap">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="footer-section">
+                                    <h2 class="footer-section__title">
+                                        <a href="#Collapse-FooterMenu01" class="collapsed text-uppercase" data-toggle="collapse">ITRO</a>
+                                    </h2>
+                                    <div id="Collapse-FooterMenu01" class="footer-section__main collapse">
+                                        <ul class="footer-section__menu">
+                                            <li><a href="#">Trang chủ</a></li>
+                                            <li><a href="#">Tải app quản lý</a></li>
+                                            <li><a href="#">Ứng dụng tìm khách</a></li>
+                                            <li><a href="#">Hotline: 0868987355</a></li>
+                                            <li><a href="#">Email: phong@itro.vn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="footer-section">
+                                    <h3 class="footer-section__title">
+                                        <a href="#Collapse-FooterMenu02" class="collapsed text-uppercase" data-toggle="collapse">Hướng dẫn</a>
+                                    </h3>
+                                    <div id="Collapse-FooterMenu02" class="footer-section__main collapse">
+                                        <ul class="footer-section__menu">
+                                            <li><a href="#">Hướng dẫn sử dụng</a></li>
+                                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                                            <li><a href="#">Bảng giá</a></li>
+                                            <li><a href="#">Khuyến mại</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="footer-section">
+                                    <h3 class="footer-section__title">
+                                        <a href="#Collapse-FooterMenu03" class="collapsed text-uppercase" data-toggle="collapse">Mạng xã hội</a>
+                                    </h3>
+                                    <div id="Collapse-FooterMenu03" class="footer-section__main collapse">
+                                        <ul class="footer-section__menu">
+                                            <li><a href="#">Nhóm tìm trọ</a></li>
+                                            <li><a href="#">ITRO trên Facebook</a></li>
+                                            <li><a href="#">ITRO trên Youtube</a></li>
+                                            <li><a href="#">Chính sách sử dụng</a></li>
+                                            <li><a href="#">Điều khoản bảo mật</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="footer-section footer-subcribe">
+                            <h3 class="footer-section__title text-uppercase">Đăng ký nhận bản tin ITRO</h3>
+                            <div class="footer-section__main">
+                                <div class="footer-section__subcribe">
+                                    <p class="subcribe-text">Đừng bỏ lỡ các chương trình khuyến mại và các tin tức cập nhật của chúng tôi.</p>
+                                    <form class="subcrible-form form-inline">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-primary rounded-right no-translate"><i class="mdi mdi-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <div class="footer-social__main">
+                                <ul class="footer-social__social">
+                                    <li>
+                                        <a href="#">
+                                            <span class="sr-only">Facebook</span>
+                                            <i class="mdi mdi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="footer-copyright">©2020 ITRO</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END footer -->
+    <!-- script -->
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/select2/js/select2.full.js"></script>
+    <script src="assets/libs/select2/js/select2.full.min.js"></script>
+    <script src="assets/libs/select2/js/i18n/vi.js"></script>
+    <script src="assets/libs/jquery.smooth-scroll.js"></script>
+    <script src="assets/libs/sticky-sidebar.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- END script -->
+
+    <script>
+        //demo
+        $(document).ready(function () {
+            $('.ppt-atn-sgl--like').click(function (e) {
+                e.preventDefault();
+                $(this).toggleClass('active');
+            })
+
+            // ====
+            // sticky menu
+            var sidebar = new StickySidebar('#stickySidebar_propertyOwner.sticky-type-02', {
+                containerSelector: '#stickySidebar_container',
+                innerWrapperSelector: '.sticky-sidebar__inner',
+                topSpacing: 400,
+                bottomSpacing: 100,
+                minWidth: 992
+            });
+
+        // END sticy menu
+        // ====
+        });
+    </script>
+</body>
+</html>
