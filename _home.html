@@ -24,36 +24,38 @@
 <body>
     <!-- header -->
     <header id="pageHeader" class="page-header page-header--ld fixtop has-search js-header-landing-bg">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/itro-logo-colored.png">
-            </a>
-            <div class="navbar-btn-wrap">
-                <button class="searchbar-toggler">
-                    <i class="mdi mdi-magnify"></i>
-                </button>
-                <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent">
-                    <i class="mdi mdi-menu"></i>
-                    <i class="mdi mdi-close"></i>
-                </button>
-            </div>
-            
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-nav--left">
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Tải app</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Bảng giá</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Hướng dẫn</a></li>
-                    <li class="nav-item nav-item--text"><a class="nav-link" href="#">Khuyến mại</a></li>
-                </ul>
-                <ul class="navbar-nav navbar-nav--right">
-                    <li class="nav-item nav-item--link"><a class="nav-link" href="#">Đăng nhập</a></li>
-                    <li class="nav-item nav-item--btn"><a class="btn btn-primary" href="#">Đăng ký</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-resident.png" class="d-none d-lg-block">
+                    <img src="assets/img/logo-resident-white.png" class="d-block d-lg-none">
+                </a>
+                <div class="navbar-btn-wrap">
+                    <button class="searchbar-toggler">
+                        <i class="mdi mdi-magnify"></i>
+                    </button>
+                    <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <i class="mdi mdi-menu"></i>
+                        <i class="mdi mdi-close"></i>
+                    </button>
+                </div>
 
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-nav--left">
+                        <li class="nav-item nav-item--text"><a class="nav-link" href="#">Trang chủ</a></li>
+                        <li class="nav-item nav-item--text"><a class="nav-link" href="#">Cách hoạt động</a></li>
+                        <li class="nav-item nav-item--text"><a class="nav-link" href="#">Về chúng tôi</a></li>
+                        <li class="nav-item nav-item--text"><a class="nav-link" href="#">Liên hệ</a></li>
+                    </ul>
+                    <ul class="navbar-nav navbar-nav--right">
+                        <li class="nav-item nav-item--link"><a class="nav-link" href="#">Đăng nhập</a></li>
+                        <li class="nav-item nav-item--btn"><a class="btn btn-primary" href="#">Đăng ký</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div id="NavbarCollapse__Search" class="page-header__form">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="page-header__form-wrap">
                     <div class="page-header-ftr">
                         <div class="page-header-ftr__wrap">
@@ -190,14 +192,17 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-4">
                                             <div class="form-group">
-                                                <label class="form-label">Label</label>
+                                                <label class="form-label">Nhập giá phòng</label>
                                                 <input type="" value="" class="form-control" />
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-4">
                                             <div class="form-group">
-                                                <label class="form-label">Label</label>
-                                                <input type="" value="" class="form-control" />
+                                                <label class="form-label">Thời gian thuê</label>
+                                                <select class="form-control">
+                                                    <option>6 tháng</option>
+                                                    <option>1 năm</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-4">
@@ -411,6 +416,226 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="block-cards__pagn">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="mdi mdi-chevron-left"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="mdi mdi-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-cards">
+            <div class="container">
+                <div class="block-cards__hdr">
+                    <h2 class="block-cards__tle">Nhà đang trống</h2>
+                </div>
+                <div class="block-cards__grid">
+                    <div class="block-cards__single">
+                        <div class="c-card-ppt">
+                            <div class="c-card-ppt__wrap">
+                                <div class="c-card-ppt__media">
+                                    <a href="#" class="c-card-ppt__media-img">
+                                        <img src="https://via.placeholder.com/800x450" alt="Alternate Text" />
+                                        <i class="c-card-ppt__media-vid-icon mdi mdi-play-circle-outline"></i>
+                                    </a>
+                                    <div class="c-card-ppt__tag">
+                                        <span class="ppt-tag-sgl ppt-tag-sgl--1">Khuyến mãi</span>
+                                    </div>
+                                </div>
+                                <div class="c-card-ppt__cnt">
+                                    <div class="c-card-ppt__num-wrap">
+                                        <div class="c-card-ppt__price-wrap">
+                                            <a href="#" class="c-card-ppt__price">
+                                                <div class="ppt-cback-lbl">Giá thuê</div>
+                                                <div class="ppt-price-wrap">
+                                                    <div class="ppt-price-num">7.500.000</div>
+                                                    <div class="ppt-price-unit">đ / tháng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-card-ppt__cback-wrap">
+                                            <a href="#" class="c-card-ppt__cback">
+                                                <div class="ppt-cback-lbl">Cashback</div>
+                                                <div class="ppt-cback-wrap">
+                                                    <div class="ppt-cback-num">1.500.000</div>
+                                                    <div class="ppt-cback-unit">đ</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="c-card-ppt__locat">
+                                        <a href="#">401 - 492/5, Nguyễn Thị Minh Khai</a>
+                                    </h3>
+                                    <div class="c-card-ppt__info">
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-tag-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">Phòng tiện nghi</span>
+                                                </div>
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-vector-square"></i>
+                                                    <span class="ppt-info-sgl__lbl">25m2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-account-multiple-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">29 người đang quan tâm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-cards__single">
+                        <div class="c-card-ppt">
+                            <div class="c-card-ppt__wrap">
+                                <div class="c-card-ppt__media">
+                                    <a href="#" class="c-card-ppt__media-img">
+                                        <img src="https://via.placeholder.com/800x450" alt="Alternate Text" />
+                                        <i class="c-card-ppt__media-vid-icon mdi mdi-play-circle-outline"></i>
+                                    </a>
+                                    <div class="c-card-ppt__tag">
+                                        <span class="ppt-tag-sgl ppt-tag-sgl--2">Nhiều người xem</span>
+                                    </div>
+                                </div>
+                                <div class="c-card-ppt__cnt">
+                                    <div class="c-card-ppt__num-wrap">
+                                        <div class="c-card-ppt__price-wrap">
+                                            <a href="#" class="c-card-ppt__price">
+                                                <div class="ppt-cback-lbl">Giá thuê</div>
+                                                <div class="ppt-price-wrap">
+                                                    <div class="ppt-price-num">7.500.000</div>
+                                                    <div class="ppt-price-unit">đ / tháng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-card-ppt__cback-wrap">
+                                            <a href="#" class="c-card-ppt__cback">
+                                                <div class="ppt-cback-lbl">Cashback</div>
+                                                <div class="ppt-cback-wrap">
+                                                    <div class="ppt-cback-num">1.500.000</div>
+                                                    <div class="ppt-cback-unit">đ</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="c-card-ppt__locat">
+                                        <a href="#">401 - 492/5, Nguyễn Thị Minh Khai</a>
+                                    </h3>
+                                    <div class="c-card-ppt__info">
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-tag-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">Phòng tiện nghi</span>
+                                                </div>
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-vector-square"></i>
+                                                    <span class="ppt-info-sgl__lbl">25m2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-account-multiple-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">29 người đang quan tâm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-cards__single">
+                        <div class="c-card-ppt">
+                            <div class="c-card-ppt__wrap">
+                                <div class="c-card-ppt__media">
+                                    <a href="#" class="c-card-ppt__media-img">
+                                        <img src="https://via.placeholder.com/800x450" alt="Alternate Text" />
+                                        <i class="c-card-ppt__media-vid-icon mdi mdi-play-circle-outline"></i>
+                                    </a>
+                                    <div class="c-card-ppt__tag">
+                                        <span class="ppt-tag-sgl ppt-tag-sgl--3">Phòng mới</span>
+                                    </div>
+                                </div>
+                                <div class="c-card-ppt__cnt">
+                                    <div class="c-card-ppt__num-wrap">
+                                        <div class="c-card-ppt__price-wrap">
+                                            <a href="#" class="c-card-ppt__price">
+                                                <div class="ppt-cback-lbl">Giá thuê</div>
+                                                <div class="ppt-price-wrap">
+                                                    <div class="ppt-price-num">7.500.000</div>
+                                                    <div class="ppt-price-unit">đ / tháng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-card-ppt__cback-wrap">
+                                            <a href="#" class="c-card-ppt__cback">
+                                                <div class="ppt-cback-lbl">Cashback</div>
+                                                <div class="ppt-cback-wrap">
+                                                    <div class="ppt-cback-num">1.500.000</div>
+                                                    <div class="ppt-cback-unit">đ</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="c-card-ppt__locat">
+                                        <a href="#">401 - 492/5, Nguyễn Thị Minh Khai</a>
+                                    </h3>
+                                    <div class="c-card-ppt__info">
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-tag-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">Phòng tiện nghi</span>
+                                                </div>
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-vector-square"></i>
+                                                    <span class="ppt-info-sgl__lbl">25m2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-ppt__info-row">
+                                            <div class="c-card-ppt__info-side-a">
+                                                <div class="ppt-info-sgl">
+                                                    <i class="ppt-info-sgl__icn mdi mdi-account-multiple-outline"></i>
+                                                    <span class="ppt-info-sgl__lbl">29 người đang quan tâm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-cards__loading">
+                    <div class="text-center">
+                        <div class="spinner-border" role="status"></div>
                     </div>
                 </div>
             </div>

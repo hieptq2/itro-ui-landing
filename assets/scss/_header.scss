@@ -715,6 +715,10 @@
     @media (min-width: $lg) {
         &__form {
             border-top: 1px solid $gray-300;
+
+            .container {
+                padding: 0 .5rem 0 .25rem;
+            }
         }
 
         &__form-wrap {
