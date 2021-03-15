@@ -146,8 +146,87 @@
                 display: flex;
                 flex-wrap: nowrap;
                 overflow: auto;
-                .block-cards__single{
+
+                .block-cards__single {
                     flex: 0 0 90%;
+                }
+            }
+        }
+
+        &--slide {
+            padding: 0 16px;
+
+            @media (min-width: $lg) {
+                padding: 0;
+            }
+
+            .c-card-ppt {
+                &__cnt {
+                    padding: .75rem;
+                }
+
+                &__locat {
+                    margin: .25rem 0 0;
+                    padding: .125rem 0;
+                    font-size: .875rem;
+                }
+
+                &__num-wrap {
+                    display: block;
+                }
+
+                &__price {
+                    .ppt-cback-lbl {
+                        margin: 0 0 3px;
+                        font-size: 12px;
+                    }
+
+                    .ppt-price-wrap {
+                        display: flex;
+                        align-items: center;
+                        text-align: right;
+                    }
+
+                    .ppt-price-num {
+                        font-size: 1.125rem;
+
+                        @media (min-width: $md) {
+                            font-size: 1.25rem;
+                        }
+                    }
+
+                    .ppt-price-unit {
+                        margin: 0 0 0 .25rem;
+                        font-size: .75rem;
+
+                        @media (min-width: $md) {
+                            font-size: .875rem;
+                            margin: 0 0 0 .25rem;
+                        }
+                    }
+                }
+
+                &__cback-wrap {
+                    margin: 8px 0 0;
+                }
+
+                &__cback {
+                    .ppt-cback-lbl {
+                        font-size: 11px;
+                    }
+
+                    .ppt-cback-num {
+                        margin: 0;
+                        line-height: 1;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        color: $secondary;
+                    }
+
+                    .ppt-cback-unit {
+                        margin: .125rem 0 0 .25rem;
+                        font-size: .75rem;
+                    }
                 }
             }
         }

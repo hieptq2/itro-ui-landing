@@ -9,7 +9,7 @@
         closeOnSelect: true
     }).on('select2:opening', function (e) {
         $(this).data('select2').$dropdown.find(':input.select2-search__field').attr('placeholder', 'Tìm kiếm')
-        });
+    });
 
     // select2 prevent closing after click (mobile)
     if ($(window).width() < 992) {
@@ -48,12 +48,12 @@
         if (!$(this).hasClass('collapsed')) {
             e.stopPropagation();
             return false;
-        }else{
+        } else {
             // console.log(dataShowcase);
-            $('.accordion-media .showcase-wrap').each(function(e) {
+            $('.accordion-media .showcase-wrap').each(function (e) {
                 $(this).removeClass('active');
-                if ($(this).attr('id') == dataShowcase){
-                    $(this).addClass('active'); 
+                if ($(this).attr('id') == dataShowcase) {
+                    $(this).addClass('active');
                 }
             });
         }
@@ -72,8 +72,46 @@
 
     //[landing] navbar fixed
     scrollNavbarBackground();
-    $(document).scroll(function(){
+    $(document).scroll(function () {
         scrollNavbarBackground();
+    });
+
+    //[detail] slick slider
+    $('.block-cards__grid--slide').slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        infinite: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
     });
 })
 

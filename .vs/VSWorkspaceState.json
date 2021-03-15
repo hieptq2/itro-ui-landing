@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
+    "",
     "\\assets",
-    "\\assets\\js",
     "\\assets\\scss"
   ],
+  "SelectedNode": "\\assets\\scss\\_home.scss",
   "PreviewInSolutionExplorer": false
 }
