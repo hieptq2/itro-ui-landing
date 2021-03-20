@@ -169,7 +169,8 @@
     color: $gray-900;
 }
 .form-control {
-    //
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 // breadcrumb

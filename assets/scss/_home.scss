@@ -278,9 +278,31 @@
         position: relative;
 
         &-img {
+            position: relative;
             display: block;
             overflow: hidden;
             border-radius: .25rem .25rem 0 0;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 56.25%;
+            }
+
+            &-wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10;
+
+                background: {
+                    position: 50% 50%;
+                    repeat: no-repeat;
+                    size: cover;
+                }
+            }
 
             &:hover {
                 opacity: .9;

@@ -86,6 +86,8 @@
 
 .form-label { margin-bottom: .25rem; font-size: .875rem; font-weight: 400; color: #333; }
 
+.form-control { -webkit-appearance: none; appearance: none; }
+
 .breadcrumb { margin: 0; padding: .5rem .75rem; background-color: rgba(0, 0, 0, 0.02); border: 0; flex-wrap: nowrap; overflow: auto; }
 .breadcrumb .breadcrumb-item { font-size: .875rem; white-space: nowrap; }
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before { color: #ced4da; }
@@ -1155,7 +1157,9 @@ align-items: center;*/ }
 .c-card-ppt a:hover { text-decoration: none; }
 .c-card-ppt__wrap { display: block; background-color: #fff; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); border-radius: .25rem; height: 100%; }
 .c-card-ppt__media { position: relative; }
-.c-card-ppt__media-img { display: block; overflow: hidden; border-radius: .25rem .25rem 0 0; }
+.c-card-ppt__media-img { position: relative; display: block; overflow: hidden; border-radius: .25rem .25rem 0 0; }
+.c-card-ppt__media-img:after { content: ""; display: block; padding-bottom: 56.25%; }
+.c-card-ppt__media-img-wrap { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 10; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; }
 .c-card-ppt__media-img:hover { opacity: .9; }
 .c-card-ppt__media-vid-icon { display: block; position: absolute; top: 0; right: 0; z-index: 20; line-height: 1; font-size: 2rem; padding: .5rem; color: #fff; }
 .c-card-ppt__tag { position: absolute; top: 8px; left: -8px; z-index: 10; }
