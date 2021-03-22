@@ -713,6 +713,7 @@
     }
 
     @media (min-width: $lg) {
+        box-shadow: 0 1px 3px rgba(#000,.08);
         &__form {
             border-top: 1px solid $gray-300;
 
