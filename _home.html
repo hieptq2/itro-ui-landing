@@ -175,7 +175,7 @@
     <!-- END header -->
     <!--=======================================================================-->
     <div class="l-homepage">
-        <div class="block-cashback">
+        <div class="block-cashback" style="background-image: url('')">
             <div class="container">
                 <div class="block-cashback__wrap">
                     <div class="block-cashback__hdr">
@@ -206,11 +206,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary btn-submit">
+                                    <button class="btn btn-primary btn-submit js-demo-btn-submit">
                                         <i class="mdi mdi-calculator"></i>
                                         <span>Tính cashback</span>
                                     </button>
                                 </div>
+                            </div>
+                            <div class="l-cashback-calc__result">
+                                Số tiền cashback bạn được nhận là <b>200.000 VNĐ</b>
                             </div>
                         </div>
                     </div>
@@ -696,6 +699,7 @@
     <!-- script -->
     <script src="assets/libs/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/slick.min.js"></script>
     <script src="assets/libs/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/libs/select2/js/select2.full.min.js"></script>
     <script src="assets/libs/select2/js/i18n/vi.js"></script>
@@ -706,9 +710,16 @@
     <script>
         //demo
         $(document).ready(function () {
+
+            // demo
             $('.ppt-atn-sgl--like').click(function (e) {
                 e.preventDefault();
                 $(this).toggleClass('active');
+            })
+
+            $('.btn-submit').click(function (e) {
+                e.preventDefault();
+                $(this).closest('.l-cashback-calc').find('.l-cashback-calc__result').toggleClass('active');
             })
         })
     </script>

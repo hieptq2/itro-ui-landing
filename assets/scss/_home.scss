@@ -12,7 +12,9 @@
 
 .block-cashback {
     background-color: $gray-700;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     &__wrap {
         padding: 4rem 0;
 
@@ -47,10 +49,8 @@
     }
 
     &__calc {
+        position: relative;
         margin: 2.5rem auto 0;
-        padding: 1rem;
-        background-color: rgba(#fff,.9);
-        border-radius: .25rem;
 
         @media (min-width: $sm) {
             width: 80%;
@@ -59,8 +59,13 @@
 }
 
 .l-cashback-calc {
+    position: relative;
+
     &__wrap {
-        //
+        padding: 1rem;
+        background-color: rgba(#fff,1);
+        position: relative;
+        z-index: 30;
     }
 
     &__hdr {
@@ -86,15 +91,18 @@
                 padding: 0 .5rem;
             }
         }
-        .form-group{
+
+        .form-group {
             margin: 0 0 .5rem;
         }
+
         .form-label {
             padding: 0 .25rem;
             margin: 0 0 .125rem;
             color: $gray-700;
         }
-        .btn-submit{
+
+        .btn-submit {
             margin: .5rem 0 0;
             display: flex;
             align-items: center;
@@ -102,10 +110,32 @@
             width: 100%;
             height: 42px;
             font-size: 1.125rem;
-            i{
+
+            i {
                 font-size: 1.5rem;
                 margin: 0 .5rem 0 0;
             }
+        }
+    }
+
+    &__result {
+        position: absolute;
+        top: 100%;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        background-color: $green;
+        width: 100%;
+        height: auto;
+        color: #fff;
+        text-align: center;
+        z-index: 20;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform .2s ease-in-out, opacity .1s ease;
+
+        &.active {
+            transform: translateY(0);
+            opacity: 1;
         }
     }
 }
