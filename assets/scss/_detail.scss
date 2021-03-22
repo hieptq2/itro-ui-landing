@@ -290,7 +290,7 @@
     }
 
     &__header {
-        padding: 16px 16px 0;
+        padding: 16px 0 0;
 
         .detail-property__header__title {
             margin: 0;
@@ -975,7 +975,7 @@
     will-change: min-height;
 
     @media (max-width: $lg - 1) {
-        padding: 16px;
+        padding: 0 16px 16px;
     }
 
     @media (min-width: $lg) {
@@ -991,9 +991,12 @@
 }
 
 #stickySidebar_container {
-    margin-top: -270px;
-    .detail-property__left-col{
-        padding-top: 270px;
+    @media (min-width: $lg) {
+        margin-top: -270px;
+
+        .detail-property__left-col {
+            padding-top: 270px;
+        }
     }
 }
 #stickyMenu_singleProperty {
