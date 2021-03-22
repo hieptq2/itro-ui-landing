@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-position: center;
     &__wrap {
-        padding: 4rem 0;
+        padding: 4rem 0 5rem;
 
         @media (min-width: $sm) {
             padding: 5rem 0;

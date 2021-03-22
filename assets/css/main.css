@@ -1106,7 +1106,7 @@ align-items: center;*/ }
 @media (min-width: 992px) { .l-homepage { margin: 0; min-height: calc(100vh - 129px - 271px); } }
 
 .block-cashback { background-color: #495057; background-size: cover; background-repeat: no-repeat; background-position: center; }
-.block-cashback__wrap { padding: 4rem 0; }
+.block-cashback__wrap { padding: 4rem 0 5rem; }
 @media (min-width: 576px) { .block-cashback__wrap { padding: 5rem 0; } }
 .block-cashback__hdr { text-align: center; color: #fff; }
 .block-cashback__hdr-tle { line-height: 1.25; margin: 0 0 1rem; font-size: 2rem; font-weight: 400; }
