@@ -640,10 +640,10 @@
     }
 
     &__schedule {
+        padding: 0;
         @media (min-width: $md) {
             position: relative;
             /*top: -270px;*/
-            padding: 16px;
         }
     }
 
@@ -1011,12 +1011,47 @@
     }
 }
 .detail-property__schedule{
-    padding: 16px;
+    /*padding: 16px;*/
 }
 .schedule-event {
+
+    &__phone {
+        background-color: $primary;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: .5em;
+            font-size: 1.25rem;
+            color: #fff;
+
+            &:hover, &:focus, &:active {
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: lighten($primary,8%);
+            }
+            .se-phone-icon {
+                display: block;
+                line-height: 1;
+                font-size: 1.25em;
+                margin: 0 .75rem 0 0;
+            }
+
+            .se-phone-num {
+                display: block;
+                line-height: 1;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
     &__tle {
         line-height: 1;
-        font-size: 24px;
+        font-size: 1.25rem;
         font-weight: 500;
         padding: 0 0 1rem;
         margin: 0 0 1rem;
@@ -1024,8 +1059,39 @@
     }
 
     &__data {
+        padding: 1rem;
+
         .form-group {
+            position: relative;
             margin: 0 0 .5rem;
+            &__controls{
+                padding: .25rem 0;
+            }
+        }
+
+        .form-label {
+            position: absolute;
+            top: .5rem;
+            left: .75rem;
+            color: $gray-600;
+            font-weight: 400;
+            transition: all .1s ease-in-out;
+        }
+
+        .form-control {
+            padding-top: 2rem;
+            height: auto;
+            max-height: none;
+            padding-left: .75rem;
+            padding-right: .75rem;
+            border: 1px dashed $gray-400;
+            resize: none;
+            &:focus {
+                border: 1px solid $secondary;
+                & + .form-label{
+                    color: $gray-700;
+                }
+            }
         }
     }
 }
