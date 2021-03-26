@@ -1,12 +1,172 @@
 .l-about{
-    //
+    overflow: hidden;
 }
 //=========================================================
-.block-about-hero{
-    //
+.block-about-hero {
+    padding: 4rem 0 0;
+    margin: 0rem 0 4rem;
+
+    &__wrap {
+        //
+    }
+    &__cnt{
+        //
+    }
+    &__logo{
+        span{
+            display: block;
+            font-size: 0;
+            width: 0;
+            height: 0;
+        }
+        img{
+            max-width: 480px;
+        }
+    }
+
+    &__intro{
+        margin: 1rem 0 0;
+        font-size: 1.25rem;
+        p{
+            margin: 0 0 .5rem;
+        }
+    }
 }
-.block-about-quote{
-    //
+.block-about-quote {
+    &__wrap {
+        position: relative;
+        padding: 20rem 2rem 4rem;
+        color: #fff;
+        background-color: $primary;
+        border-radius: 2rem;
+
+        @media (min-width: $lg) {
+            margin: 0 -2rem 0 -1rem;
+        }
+    }
+
+    &__mda {
+        position: absolute;
+        z-index: 100;
+        top: -170px;
+        left: -80px;
+        width: 400px;
+        height: 400px;
+        background-color: #888;
+        border-radius: 2rem;
+        transform: rotate(45deg);
+        overflow: hidden;
+
+        img {
+            width: 140%;
+            height: 140%;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__mda-helper {
+        z-index: 90;
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        top: -190px;
+        left: 200px;
+        background-color: #fff;
+        transform: rotate(45deg);
+    }
+
+    &__tle {
+        position: relative;
+        margin: 0 0;
+        padding: 0 0 0 2rem;
+        line-height: 1.25;
+        font-size: 1.75rem;
+        font-weight: 600;
+
+        span {
+            display: block;
+        }
+
+        .quote-open-icon {
+            position: absolute;
+            top: -5px;
+            left: -18px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+        }
+    }
+
+    &__cnt {
+        position: relative;
+        font-size: 1.15rem;
+        font-style: italic;
+        text-indent: 2rem;
+        margin: 2rem 0 0;
+
+        .quote-open-icon {
+            position: absolute;
+            top: -5px;
+            left: -32px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            color: #fff;
+        }
+    }
+}
+.block-about-intro {
+    margin: 4rem 0;
+
+    &.intro-first {
+        margin-top: -24rem;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__tle {
+        position: relative;
+        padding: 0 0 1.5rem;
+        margin: 0 0 1.5rem;
+        line-height: 1.125;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 56px;
+            height: 5px;
+            background-color: $primary;
+            border-radius: 999px;
+        }
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        margin: 1rem 0 0;
+        font-size: 1.125rem;
+
+        p {
+            margin: 0 0 .5rem;
+        }
+    }
+
+    .about-intro-service-list{
+        text-transform: uppercase;
+        padding: 0 0 0 20px;
+        font-weight: 600;
+        li{
+            margin: .25rem 0;
+        }
+    }
 }
 //=========================================================
 .block-about {
@@ -176,16 +336,11 @@
     &__customers {
         .about-customers-slider {
             .about-customer {
-                display: none;
-
-                &:first-child {
-                    display: block;
-                }
 
                 &__wrap {
                     display: flex;
                     align-items: center;
-                    padding: 1rem 30% 1rem 0;
+                    padding: 1rem 0 1rem 0;
                 }
 
                 &__avt {
@@ -281,29 +436,39 @@
 
                     &-name {
                         margin: 0;
+                        line-height: 1;
                         font-size: 2rem;
                         font-weight: 700;
+                        position: relative;
+                        z-index: 30;
                     }
 
                     &-role {
+                        margin: .25rem 0 0;
+                        line-height: 1;
                         font-size: 1.5rem;
                         font-weight: 300;
+                        position: relative;
+                        z-index: 30;
+                        color: $gray-700;
                     }
 
                     &-shp {
                         position: absolute;
-                        top: 0;
+                        top: -.5rem;
                         left: 0;
                         z-index: 1;
                         width: 40px;
                         height: 23.09px;
+                        z-index: 20;
+                        opacity: .2;
 
                         .hexagon {
                             position: relative;
-                            width: 40px;
-                            height: 23.09px;
-                            background-color: #64C7CC;
-                            margin: 11.55px 0;
+                            width: 56px;
+                            height: 32.33px;
+                            background-color: $primary;
+                            margin: 16.17px 0;
                         }
 
                         .hexagon:before,
@@ -311,19 +476,19 @@
                             content: "";
                             position: absolute;
                             width: 0;
-                            border-left: 20px solid transparent;
-                            border-right: 20px solid transparent;
+                            border-left: 28px solid transparent;
+                            border-right: 28px solid transparent;
                         }
 
                         .hexagon:before {
                             bottom: 100%;
-                            border-bottom: 11.55px solid #64C7CC;
+                            border-bottom: 16.17px solid $primary;
                         }
 
                         .hexagon:after {
                             top: 100%;
                             width: 0;
-                            border-top: 11.55px solid #64C7CC;
+                            border-top: 16.17px solid $primary;
                         }
                     }
 
@@ -341,6 +506,36 @@
                     }
                 }
             }
+
+            .slick-arrow {
+                top: 24px;
+                left: auto;
+                margin-top: 0;
+                border-radius: 0;
+                box-shadow: 0 0 0 0;
+                width: 32px;
+                height: 32px;
+                line-height: 30px;
+                background-color: $gray-200;
+                border: 1px solid #fff;
+
+                &:active {
+                    background-color: $gray-300;
+                }
+
+                &:before {
+                    line-height: 30px;
+                    font-size: 1.25rem;
+                }
+
+                &.slick-next {
+                    right: 0;
+                }
+
+                &.slick-prev {
+                    right: 32px;
+                }
+            }
         }
     }
 
@@ -350,5 +545,150 @@
         background-color: $primary;
         text-align: center;
         color: #fff;
+    }
+
+    &__differ {
+        .about-differ-list {
+            padding: 0 0 0 1.5rem;
+            margin: 0;
+            list-style: none;
+
+            li {
+                position: relative;
+                font-size: 1.125rem;
+                padding: .25rem 0;
+
+                .hexagon {
+                    position: absolute;
+                    top: .6125rem;
+                    left: -1.75rem;
+                    width: 12px;
+                    height: 6.93px;
+                    background-color: $secondary;
+                    margin: 3.46px 0;
+                }
+
+                .hexagon:before,
+                .hexagon:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                }
+
+                .hexagon:before {
+                    bottom: 100%;
+                    border-bottom: 3.46px solid $secondary;
+                }
+
+                .hexagon:after {
+                    top: 100%;
+                    width: 0;
+                    border-top: 3.46px solid $secondary;
+                }
+            }
+        }
+    }
+
+    &__vision {
+        .about-vision {
+            padding: 1rem 0 0;
+            display: flex;
+
+            &__mda {
+                flex: 0 0 auto;
+                padding: 0 1rem;
+                .hexagon {
+                    position: relative;
+                    width: 128px;
+                    height: 73.90px;
+                    margin: 36.95px 0;
+                    background-image: url(http://csshexagon.com/img/meow.jpg);
+                    background-size: auto 147.8017px;
+                    background-position: center;
+                }
+
+                .hexTop,
+                .hexBottom {
+                    position: absolute;
+                    z-index: 1;
+                    width: 90.51px;
+                    height: 90.51px;
+                    overflow: hidden;
+                    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+                    -ms-transform: scaleY(0.5774) rotate(-45deg);
+                    transform: scaleY(0.5774) rotate(-45deg);
+                    background: inherit;
+                    left: 18.75px;
+                }
+                /*counter transform the bg image on the caps*/
+                .hexTop:after,
+                .hexBottom:after {
+                    content: "";
+                    position: absolute;
+                    width: 128.0000px;
+                    height: 73.90083445627211px;
+                    -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
+                    -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
+                    transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
+                    -webkit-transform-origin: 0 0;
+                    -ms-transform-origin: 0 0;
+                    transform-origin: 0 0;
+                    background: inherit;
+                }
+
+                .hexTop {
+                    top: -45.2548px;
+                }
+
+                .hexTop:after {
+                    background-position: center top;
+                }
+
+                .hexBottom {
+                    bottom: -45.2548px;
+                }
+
+                .hexBottom:after {
+                    background-position: center bottom;
+                }
+
+                .hexagon:after {
+                    content: "";
+                    position: absolute;
+                    top: 0.0000px;
+                    left: 0;
+                    width: 128.0000px;
+                    height: 73.9008px;
+                    z-index: 2;
+                    background: inherit;
+                }
+            }
+
+            &__tle {
+                margin: 0 0 1rem;
+                line-height: 1;
+                font-size: 1.75rem;
+                font-weight: 500;
+            }
+
+            &__cnt {
+                flex: 1 1 auto;
+                min-width: 0;
+                margin: 0 0 0 1rem;
+            }
+
+            &__lst {
+                ul {
+                    padding: 0 0 0 4px;
+                    font-size: 1.125rem;
+                    list-style: none;
+                    li {
+                        margin: 0 0 .5rem;
+                    }
+                }
+            }
+        }
     }
 }
