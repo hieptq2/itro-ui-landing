@@ -57,7 +57,7 @@
     <!-- END header -->
     <!--=======================================================================-->
     <div class="l-about">
-        <div class="block-about-hero">
+        <div class="block-about-hero d-none">
             <div class="block-about-hero__wrap">
                 <div class="container">
                     <div class="row justify-content-between">
@@ -89,22 +89,24 @@
             </div>
         </div>
         <div class="block-about-quote">
-            <div class="container">
-                <div class="block-about-quote__mda">
+            <div class="block-about-quote__wrap">
+                <div class="container">
+                    <div class="block-about-quote__mda">
 
-                </div>
-                <div class="block-about-quote__wrap">
-                    <h2 class="block-about-quote__tle">
-                        Sale phòng nhanh, <br />
-                        Khách thuê chuẩn, <br />
-                        Cashback tốt.
-                    </h2>
-                    <div class="block-about-quote__cnt">
-                        <b>Đội ngũ chuyên gia và nhân viên giàu kinh nghiệm</b>
-                        của Resident luôn giữ thái độ chuyên nghiệp, trách nhiệm
-                        cùng sự nhiệt huyết trong công việc, đảm bảo phục vụ
-                        khách hàng và đối tác từ  phòng trọ, căn hộ dịch vụ,
-                        CCMN hay mặt bằng kinh doanh, văn phòng làm việc…
+                    </div>
+                    <div class="block-about-quote__wrap">
+                        <h2 class="block-about-quote__tle">
+                            Sale phòng nhanh, <br />
+                            Khách thuê chuẩn, <br />
+                            Cashback tốt.
+                        </h2>
+                        <div class="block-about-quote__cnt">
+                            <b>Đội ngũ chuyên gia và nhân viên giàu kinh nghiệm</b>
+                            của Resident luôn giữ thái độ chuyên nghiệp, trách nhiệm
+                            cùng sự nhiệt huyết trong công việc, đảm bảo phục vụ
+                            khách hàng và đối tác từ  phòng trọ, căn hộ dịch vụ,
+                            CCMN hay mặt bằng kinh doanh, văn phòng làm việc…
+                        </div>
                     </div>
                 </div>
             </div>
@@ -279,6 +281,7 @@
                             <div id="Accordion-Services" class="accordion">
                                 <div class="s-about-service">
                                     <h4 class="s-about-service__tle collapsed" data-toggle="collapse" data-target="#Accordion-Services-01">
+                                        <span class="as-tle-hexagon"></span>
                                         <span class="as-tle-num">01</span>
                                         <span class="as-tle-lbl">Dịch vụ tìm kiếm, môi giới phòng cho khách thuê</span>
                                         <i class="as-tle-icn mdi mdi-chevron-down"></i>
@@ -290,8 +293,7 @@
                                                 sục khắp các ngõ ngách, …. khách thuê chỉ cần liên hệ với Resident để được
                                                 tư vấn và tìm kiếm một căn phòng phù hợp.
                                             </p>
-                                            <hr />
-                                            <p><b><i>Quy trình cung cấp dịch vụ:</i></b></p>
+                                            <p><b><i>>>>> Quy trình cung cấp dịch vụ:</i></b></p>
                                             <ul>
                                                 <li>Bước 1: Tiếp nhận yêu cầu của khách thuê.</li>
                                                 <li>Bước 2: Tư vấn, xác định nhu cầu (về khoảng giá, vị trí, các yêu cầu khác,…)</li>
@@ -299,30 +301,29 @@
                                                 <li>Bước 4: Gửi thông tin nhà cho khách đến xem hoặc trực tiếp dẫn khách đến xem nhà.</li>
                                                 <li>Bước 5: Sau khi ký hợp đồng thành công, xác nhận thông tin và thanh toán cashback cho khách hàng.</li>
                                             </ul>
-                                            <hr />
-                                            <p><b><i>Bảng giá dịch vụ:</i></b></p>
+                                            <p><b><i>>>>> Bảng giá dịch vụ:</i></b></p>
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     <thead>
                                                         <tr>
-                                                            <th>STT</th>
+                                                            <th class="table-data-stt">STT</th>
                                                             <th>Giá phòng</th>
                                                             <th>Cashback</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td class="table-data-stt">1</td>
                                                             <td>< 4tr</td>
                                                             <td>>= 200k</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2</td>
+                                                            <td class="table-data-stt">2</td>
                                                             <td>4tr1 - 10tr</td>
                                                             <td>>= 500k</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>3</td>
+                                                            <td class="table-data-stt">3</td>
                                                             <td>> 10tr</td>
                                                             <td>>= 2tr</td>
                                                         </tr>
@@ -335,6 +336,7 @@
                                 </div>
                                 <div class="s-about-service">
                                     <h4 class="s-about-service__tle collapsed" data-toggle="collapse" data-target="#Accordion-Services-02">
+                                        <span class="as-tle-hexagon"></span>
                                         <span class="as-tle-num">02</span>
                                         <span class="as-tle-lbl">Dịch vụ sale, đẩy phòng cho chủ kinh doanh</span>
                                         <i class="as-tle-icn mdi mdi-chevron-down"></i>
@@ -346,16 +348,14 @@
                                                 nghiệp bài bản, Resident cam kết sẽ khiến khách hàng hài lòng với dịch vụ,
                                                 giảm thiểu tối đa chi phí, thời gian và nhân sự cho chủ kinh doanh.
                                             </p>
-                                            <hr />
-                                            <p><b><i>Quy trình cung cấp dịch vụ:</i></b></p>
+                                            <p><b><i>>>>> Quy trình cung cấp dịch vụ:</i></b></p>
                                             <ul>
                                                 <li>Bước 1: Liên hệ chủ kinh doanh, nhận thông tin và hình ảnh nhà hoặc trực tiếp quay video, hình ảnh phòng cần sale.</li>
                                                 <li>Bước 2: Đẩy thông tin phòng lên các hội nhóm, website về bất động sản sale phòng.</li>
                                                 <li>Bước 3: Sau khi tìm đươc khách thuê, đưa thông tin cho chủ nhà hoặc trực tiếp dẫn khách xem nhà.</li>
                                                 <li>Bước 4: Khách chốt phòng thành công, xác nhận lại nhu cầu, bàn giao cho chủ nhà và nhận hoa hồng.</li>
                                             </ul>
-                                            <hr />
-                                            <p><b><i>Bảng giá dịch vụ:</i></b></p>
+                                            <p><b><i>>>>> Bảng giá dịch vụ:</i></b></p>
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     <thead>
@@ -402,12 +402,13 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <p><b><i>Lưu ý: Mức giá có thể thay đổi tùy vào từng thời điểm khác nhau.</i></b></p>
+                                            <p><b><i>>>>> Lưu ý: Mức giá có thể thay đổi tùy vào từng thời điểm khác nhau.</i></b></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="s-about-service">
                                     <h4 class="s-about-service__tle collapsed" data-toggle="collapse" data-target="#Accordion-Services-03">
+                                        <span class="as-tle-hexagon"></span>
                                         <span class="as-tle-num">03</span>
                                         <span class="as-tle-lbl">Dịch vụ quản lý nhà cho thuê</span>
                                         <i class="as-tle-icn mdi mdi-chevron-down"></i>
@@ -422,8 +423,8 @@
                                                 <li>Quản lý thông tin khách thuê phòng. Gửi thông báo nhanh nhất tới khách thuê về tin tức chung của nhà (như lịch cắt điện, nước đột xuất, thông báo phí điện nước, thời gian thu phí dịch vụ,…) </li>
                                                 <li>Thu các loại phí dịch vụ từ khách thuê nhà. Đồng thời gửi thông báo tới chủ nhà báo cáo thu chi hàng tháng. </li>
                                             </ul>
-                                            <p><b><i>Phí dịch vụ: 10%/phòng/tháng</i></b></p>
-                                            <p><b><i>Lưu ý: Mức giá có thể thay đổi tùy vào từng thời điểm khác nhau</i></b></p>
+                                            <p><b><i>>>>> Phí dịch vụ: 10% /phòng /tháng</i></b></p>
+                                            <p><b><i>>>>> Lưu ý: Mức giá có thể thay đổi tùy vào từng thời điểm khác nhau</i></b></p>
                                         </div>
                                     </div>
                                 </div>
@@ -437,7 +438,7 @@
             <div class="block-about__wrap">
                 <div class="container">
                     <div class="block-about__hdr">
-                        <h3 class="block-about__hdr-tle">Đối tác <br /> & Khách hàng tiêu biểu</h3>
+                        <h3 class="block-about__hdr-tle">Đối tác & Khách hàng tiêu biểu</h3>
                         <div class="block-about__hdr-stl">
                             Hiện tại, Resident đã hợp tác và hỗ trợ thành công nhiều
                             chủ kinh doanh trên toàn địa bàn thành phố hà nội, từ nhà trọ,
@@ -451,24 +452,25 @@
                                 <div class="about-customer">
                                     <div class="about-customer__wrap">
                                         <div class="about-customer__avt">
-                                            <div class="about-customer__avt-wrap">
-                                                <img src="https://via.placeholder.com/256" alt="Alternate Text" />
+                                            <div class="hexagon" style="background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/woman-skin_B1PESLU0KP.jpg') ">
+                                                <div class="hexTop"></div>
+                                                <div class="hexBottom"></div>
                                             </div>
-                                            <div class="about-customer__inf">
-                                                <div class="about-customer__inf-top">
-                                                    <div class="about-customer__inf-shp"></div>
-                                                    <h5 class="about-customer__inf-name">Cô Loan</h5>
-                                                    <div class="about-customer__inf-role">Chủ nhà trọ</div>
-                                                </div>
-                                                <div class="about-customer__inf-quo">
-                                                    <p>
-                                                        Tôi năm nay 64 tuổi và có 1  nhà trọ 47 phòng ở Thanh Xuân. Trước đây,
-                                                        2 vợ chồng già chỉ biết treo biển tìm khách ở đầu ngõ rồi đợi khách tìm đến.
-                                                        Rất may tôi có cơ hội kết nối với Resident, các cháu rất nhiệt tính giúp tôi tìm,
-                                                        dẫn khách, còn đến tận nhà chụp ảnh phòng.
-                                                    </p>
-                                                    <p>Tôi rất cảm ơn và hài lòng với Resident!</p>
-                                                </div>
+                                        </div>
+                                        <div class="about-customer__inf">
+                                            <div class="about-customer__inf-top">
+                                                <div class="about-customer__inf-shp"><div class="hexagon"></div></div>
+                                                <h5 class="about-customer__inf-name">Cô Loan</h5>
+                                                <div class="about-customer__inf-role">Chủ nhà trọ</div>
+                                            </div>
+                                            <div class="about-customer__inf-quo">
+                                                <p>
+                                                    Tôi năm nay 64 tuổi và có 1  nhà trọ 47 phòng ở Thanh Xuân. Trước đây,
+                                                    2 vợ chồng già chỉ biết treo biển tìm khách ở đầu ngõ rồi đợi khách tìm đến.
+                                                    Rất may tôi có cơ hội kết nối với Resident, các cháu rất nhiệt tính giúp tôi tìm,
+                                                    dẫn khách, còn đến tận nhà chụp ảnh phòng.
+                                                </p>
+                                                <p>Tôi rất cảm ơn và hài lòng với Resident!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -554,12 +556,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="block-about__ctm-note">
-                            <div class="about-ctm-note">
-                                <div class="about-ctm-note__txt">100% Đối tác & Khách hàng rất hài lòng với dịch vụ của Resident</div>
-                            </div>
-                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="block-about__ctm-note">
+                <div class="about-ctm-note">
+                    <div class="about-ctm-note__txt">100% Đối tác & Khách hàng rất hài lòng với dịch vụ của Resident</div>
                 </div>
             </div>
         </div>
