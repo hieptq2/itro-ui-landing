@@ -1107,6 +1107,9 @@ align-items: center;*/ }
 .l-page:before, .l-page:after { content: " "; display: table; clear: both; }
 @media (min-width: 992px) { .l-page { margin: 0; min-height: calc(100vh - 129px - 271px); } }
 
+.l-homepage { margin-top: 56px; padding-bottom: 2rem; background-color: #f8f9fa; min-height: calc(100vh - 56px - 500px); }
+.l-homepage:before, .l-homepage:after { content: " "; display: table; clear: both; }
+@media (min-width: 992px) { .l-homepage { margin: 0; min-height: calc(100vh - 129px - 271px); } }
 .l-homepage .block-cards { margin: 1rem 0; }
 
 .block-cashback { background-color: #495057; background-size: cover; background-repeat: no-repeat; background-position: center; }
