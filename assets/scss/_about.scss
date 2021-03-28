@@ -1,11 +1,17 @@
 .l-about{
     overflow: hidden;
+    @media (max-width: $lg - 1){
+        padding: 0 .25rem;
+    }
 }
 //=========================================================
 .block-about-hero {
-    padding: 4rem 0 0;
-    margin: 0rem 0 4rem;
-
+    padding: 3rem 0 0;
+    margin: 0rem 0 3rem;
+    @media (min-width: $lg){
+        padding: 4rem 0 0;
+        margin: 0rem 0 4rem;
+    }
     &__wrap {
         //
     }
@@ -20,59 +26,81 @@
             height: 0;
         }
         img{
-            max-width: 480px;
+            max-width: 80%;
+            @media (min-width: $lg){
+                max-width: 480px;
+            }
         }
     }
 
     &__intro{
         margin: 1rem 0 0;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
+        @media (min-width: $lg){
+            font-size: 1.25rem;
+        }
         p{
             margin: 0 0 .5rem;
         }
     }
 }
 .block-about-quote {
+    margin: 2rem 0 0;
+    @media (min-width: $lg) {
+        margin: 0;
+    }
     &__wrap {
         position: relative;
-        padding: 20rem 2rem 4rem;
+        padding: 2rem;
         color: #fff;
         background-color: $primary;
-        border-radius: 2rem;
+        border-radius: 1.5rem;
 
         @media (min-width: $lg) {
+            padding: 20rem 2rem 4rem;
             margin: 0 -2rem 0 -1rem;
+            border-radius: 2rem;
         }
     }
+    @media (max-width: $lg - 1){
+        &__mda {
+            display: none;
+        }
 
-    &__mda {
-        position: absolute;
-        z-index: 100;
-        top: -170px;
-        left: -80px;
-        width: 400px;
-        height: 400px;
-        background-color: #888;
-        border-radius: 2rem;
-        transform: rotate(45deg);
-        overflow: hidden;
-
-        img {
-            width: 140%;
-            height: 140%;
-            transform: rotate(-45deg);
+        &__mda-helper {
+            display: none;
         }
     }
+    @media (min-width: $lg){
+        &__mda {
+            position: absolute;
+            z-index: 100;
+            top: -170px;
+            left: -80px;
+            width: 400px;
+            height: 400px;
+            background-color: #888;
+            border-radius: 2rem;
+            transform: rotate(45deg);
+            overflow: hidden;
 
-    &__mda-helper {
-        z-index: 90;
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        top: -190px;
-        left: 200px;
-        background-color: #fff;
-        transform: rotate(45deg);
+            img {
+                width: 140%;
+                height: 140%;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &__mda-helper {
+            z-index: 90;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: -190px;
+            left: 200px;
+            background-color: #fff;
+            transform: rotate(45deg);
+        }
     }
 
     &__tle {
@@ -117,10 +145,14 @@
     }
 }
 .block-about-intro {
-    margin: 4rem 0;
-
+    margin: 3rem 0;
+    @media (min-width: $lg){
+        margin: 4rem 0;
+    }
     &.intro-first {
-        margin-top: -24rem;
+        @media (min-width: $lg){
+            margin-top: -24rem;
+        }
     }
 
     &__wrap {
@@ -132,10 +164,12 @@
         padding: 0 0 1.5rem;
         margin: 0 0 1.5rem;
         line-height: 1.125;
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: 700;
         text-transform: uppercase;
-
+        @media (min-width: $lg){
+            font-size: 2rem;
+        }
         &:after {
             content: "";
             display: block;
@@ -170,8 +204,10 @@
 }
 //=========================================================
 .block-about {
-    margin: 4rem 0;
-
+    margin: 3rem 0;
+    @media (min-width: $lg){
+        margin: 4rem 0;
+    }
     &__wrap {
         //
     }
@@ -183,9 +219,12 @@
         &-tle {
             margin: 0;
             line-height: 1.125;
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 700;
             text-transform: uppercase;
+            @media (min-width: $lg){
+                font-size: 2rem;
+            }
         }
 
         &-stl {
@@ -338,9 +377,12 @@
             .about-customer {
 
                 &__wrap {
-                    display: flex;
-                    align-items: center;
-                    padding: 1rem 0 1rem 0;
+                    padding: 1rem .25rem;
+                    @media (min-width: $lg){
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem .25rem;
+                    }
                 }
 
                 &__avt {
@@ -412,10 +454,12 @@
                 }
 
                 &__inf {
-                    flex: 1 1 auto;
-                    min-width: 0;
-                    margin: 0 0 0 2rem;
-
+                    margin: 5rem .25rem 0;
+                    @media (min-width: $lg){
+                        flex: 1 1 auto;
+                        min-width: 0;
+                        margin: 0 0 0 2rem;
+                    }
                     &-top {
                         position: relative;
                         padding: 0 0 1rem 1.5rem;
@@ -508,7 +552,7 @@
             }
 
             .slick-arrow {
-                top: 24px;
+                top: 112px;
                 left: auto;
                 margin-top: 0;
                 border-radius: 0;
@@ -518,7 +562,9 @@
                 line-height: 30px;
                 background-color: $gray-200;
                 border: 1px solid #fff;
-
+                @media (min-width: $lg){
+                    top: 24px;
+                }
                 &:active {
                     background-color: $gray-300;
                 }
@@ -540,11 +586,41 @@
     }
 
     &__ctm-note {
-        margin: 2rem 0 0;
-        padding: 3rem 0;
-        background-color: $primary;
-        text-align: center;
-        color: #fff;
+        .about-ctm-note{
+            position: relative;
+            margin: 0 2rem 0 0;
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+            @media (min-width: $lg){
+                font-size: 2.25rem;
+                margin: 2rem 0 0 2rem;
+            }
+            &__mda{
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-color: $primary;
+                border-radius: 2rem;
+            }
+            &__txt{
+                position: relative;
+                padding: 4rem 2rem;
+                z-index: 20;
+                background-color: rgba($primary,.7);
+                border-radius: 2rem;
+                @media (min-width: $lg){
+                    padding: 6rem 3rem;
+                }
+            }
+        }
+
     }
 
     &__differ {
@@ -560,7 +636,7 @@
 
                 .hexagon {
                     position: absolute;
-                    top: .6125rem;
+                    top: .75rem;
                     left: -1.75rem;
                     width: 12px;
                     height: 6.93px;
@@ -591,78 +667,196 @@
         }
     }
 
+    .about-differ-mda{
+        position: relative;
+        margin: 0 4rem 4rem 0;
+        @media (min-width: $lg){
+            margin: 0 ;
+        }
+        &__img{
+            position: relative;
+            z-index: 5;
+            height: 280px;
+            margin: 0 0 0 0;
+            border-radius: 2rem;
+            background-color: $gray-300;
+            background-size: cover;
+            @media (min-width: $lg){
+                left: -1rem;
+            }
+        }
+        &__hex{
+            position: absolute;
+            z-index: 3;
+            top: 2rem;
+            left: 2rem;
+            height: 280px;
+            width: 100%;
+            background-color: $secondary;
+            border-radius: 2rem;
+            @media (min-width: $lg){
+                left: -3rem;
+            }
+        }
+    }
     &__vision {
         .about-vision {
             padding: 1rem 0 0;
-            display: flex;
-
+            @media (min-width: $lg){
+                display: flex;
+            }
             &__mda {
                 flex: 0 0 auto;
-                padding: 0 1rem;
-                .hexagon {
-                    position: relative;
-                    width: 128px;
-                    height: 73.90px;
-                    margin: 36.95px 0;
-                    background-image: url(http://csshexagon.com/img/meow.jpg);
-                    background-size: auto 147.8017px;
-                    background-position: center;
+                padding: 0;
+                @media (min-width: $lg){
+                    padding: 0 1rem;
                 }
+                &-wrap{
+                    @media (max-width: $lg - 1){
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .hexagonTitle{
+                    margin: 0 0 0 1rem;
+                    line-height: 1;
+                    font-size: 1.75rem;
+                    font-weight: 700;
+                }
+                @media (max-width: $lg - 1){
+                    .hexagon {
+                      position: relative;
+                      width: 96px; 
+                      height: 55.43px;
+                      margin: 27.71px 0;
+                      background-image: url(http://csshexagon.com/img/meow.jpg);
+                      background-size: auto 110.8513px;
+                      background-position: center;
+                    }
 
-                .hexTop,
-                .hexBottom {
-                    position: absolute;
-                    z-index: 1;
-                    width: 90.51px;
-                    height: 90.51px;
-                    overflow: hidden;
-                    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-                    -ms-transform: scaleY(0.5774) rotate(-45deg);
-                    transform: scaleY(0.5774) rotate(-45deg);
-                    background: inherit;
-                    left: 18.75px;
-                }
-                /*counter transform the bg image on the caps*/
-                .hexTop:after,
-                .hexBottom:after {
-                    content: "";
-                    position: absolute;
-                    width: 128.0000px;
-                    height: 73.90083445627211px;
-                    -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
-                    -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
-                    transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
-                    -webkit-transform-origin: 0 0;
-                    -ms-transform-origin: 0 0;
-                    transform-origin: 0 0;
-                    background: inherit;
-                }
+                    .hexTop,
+                    .hexBottom {
+                      position: absolute;
+                      z-index: 1;
+                      width: 67.88px;
+                      height: 67.88px;
+                      overflow: hidden;
+                      -webkit-transform: scaleY(0.5774) rotate(-45deg);
+                      -ms-transform: scaleY(0.5774) rotate(-45deg);
+                      transform: scaleY(0.5774) rotate(-45deg);
+                      background: inherit;
+                      left: 14.06px;
+                    }
 
-                .hexTop {
-                    top: -45.2548px;
-                }
+                    /*counter transform the bg image on the caps*/
+                    .hexTop:after,
+                    .hexBottom:after {
+                      content: "";
+                      position: absolute;
+                      width: 96.0000px;
+                      height: 55.42562584220408px;
+                      -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-27.7128px);
+                      -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-27.7128px);
+                      transform:          rotate(45deg) scaleY(1.7321) translateY(-27.7128px);
+                      -webkit-transform-origin: 0 0;
+                      -ms-transform-origin: 0 0;
+                      transform-origin: 0 0;
+                      background: inherit;
+                    }
 
-                .hexTop:after {
-                    background-position: center top;
-                }
+                    .hexTop {
+                      top: -33.9411px;
+                    }
 
-                .hexBottom {
-                    bottom: -45.2548px;
-                }
+                    .hexTop:after {
+                      background-position: center top;
+                    }
 
-                .hexBottom:after {
-                    background-position: center bottom;
-                }
+                    .hexBottom {
+                      bottom: -33.9411px;
+                    }
 
-                .hexagon:after {
-                    content: "";
-                    position: absolute;
-                    top: 0.0000px;
-                    left: 0;
-                    width: 128.0000px;
-                    height: 73.9008px;
-                    z-index: 2;
-                    background: inherit;
+                    .hexBottom:after {
+                      background-position: center bottom;
+                    }
+
+                    .hexagon:after {
+                      content: "";
+                      position: absolute;
+                      top: 0.0000px;
+                      left: 0;
+                      width: 96.0000px;
+                      height: 55.4256px;
+                      z-index: 2;
+                      background: inherit;
+                    }
+                }
+                @media (min-width: $lg){
+                    .hexagon {
+                        position: relative;
+                        width: 128px;
+                        height: 73.90px;
+                        margin: 36.95px 0;
+                        background-image: url(http://csshexagon.com/img/meow.jpg);
+                        background-size: auto 147.8017px;
+                        background-position: center;
+                    }
+
+                    .hexTop,
+                    .hexBottom {
+                        position: absolute;
+                        z-index: 1;
+                        width: 90.51px;
+                        height: 90.51px;
+                        overflow: hidden;
+                        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+                        -ms-transform: scaleY(0.5774) rotate(-45deg);
+                        transform: scaleY(0.5774) rotate(-45deg);
+                        background: inherit;
+                        left: 18.75px;
+                    }
+                    /*counter transform the bg image on the caps*/
+                    .hexTop:after,
+                    .hexBottom:after {
+                        content: "";
+                        position: absolute;
+                        width: 128.0000px;
+                        height: 73.90083445627211px;
+                        -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
+                        -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
+                        transform: rotate(45deg) scaleY(1.7321) translateY(-36.9504px);
+                        -webkit-transform-origin: 0 0;
+                        -ms-transform-origin: 0 0;
+                        transform-origin: 0 0;
+                        background: inherit;
+                    }
+
+                    .hexTop {
+                        top: -45.2548px;
+                    }
+
+                    .hexTop:after {
+                        background-position: center top;
+                    }
+
+                    .hexBottom {
+                        bottom: -45.2548px;
+                    }
+
+                    .hexBottom:after {
+                        background-position: center bottom;
+                    }
+
+                    .hexagon:after {
+                        content: "";
+                        position: absolute;
+                        top: 0.0000px;
+                        left: 0;
+                        width: 128.0000px;
+                        height: 73.9008px;
+                        z-index: 2;
+                        background: inherit;
+                    }
                 }
             }
 
@@ -670,13 +864,16 @@
                 margin: 0 0 1rem;
                 line-height: 1;
                 font-size: 1.75rem;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             &__cnt {
                 flex: 1 1 auto;
                 min-width: 0;
-                margin: 0 0 0 1rem;
+                margin: 1rem 0 0 0;
+                @media (min-width: $lg){
+                    margin: 0 0 0 1rem;
+                }
             }
 
             &__lst {

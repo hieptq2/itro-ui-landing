@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="230px" viewBox="0 0 208 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Resident" transform="translate(-1547.000000, -2422.000000)" fill="#239055" fill-rule="nonzero">
+            <g id="Layer_7" transform="translate(1547.000000, 936.000000)">
+                <path d="M207.48,1640.95185 L207.48,1560.14185 C207.48,1548.08815 201.047777,1536.95048 190.61,1530.92185 L120.61,1490.52185 C110.171361,1484.49272 97.3086393,1484.49272 86.87,1490.52185 L16.87,1530.92185 C6.43222347,1536.95048 0,1548.08815 0,1560.14185 L0,1640.95185 C0,1653.00363 6.43078752,1664.13953 16.87,1670.16185 L86.87,1710.57185 C97.3086393,1716.60098 110.171361,1716.60098 120.61,1710.57185 L190.61,1670.16185 C201.049212,1664.13953 207.48,1653.00363 207.48,1640.95185 Z" id="Path" style="mix-blend-mode: multiply;"></path>
+            </g>
+        </g>
+    </g>
+</svg>
