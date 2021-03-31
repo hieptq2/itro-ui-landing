@@ -394,7 +394,7 @@
                                                             <div class="row justify-content-between">
                                                                 <div class="col text-left">Nội thất</div>
                                                                 <div class="col text-right">
-                                                                    <a href="#" class="fz-12">Xem phòng</a>
+                                                                    <a id="FancyToggle-table-room-gallery-02" href="#" class="fz-12">Xem phòng</a>
                                                                 </div>
                                                             </div>
                                                         </th>
@@ -956,9 +956,6 @@
             });
 
             // Fancy
-            $('[table-room-gallery-01]').fancybox({
-                
-            });
             $('#FancyToggle-table-room-gallery-01').click(function (e) {
                 e.preventDefault();
                 $.fancybox.open([
@@ -992,7 +989,7 @@
                             thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/home-office_YODJNTOBN9.jpg'
                         }
                     }
-                ], {
+                ],{
                     loop: false,
                     thumbs: {
                         autoStart: true
@@ -1005,8 +1002,45 @@
                         "close"
                     ],
                 });
-
             });
+
+            // Fancy2
+            $('#FancyToggle-table-room-gallery-02').click(function (e) {
+                e.preventDefault();
+                $.fancybox.open([
+                    {
+                        src: 'https://www.youtube.com/embed/mN1Y0fchw9I',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/people-man_1DCPIY9VEV.jpg'
+                        }
+                    },
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/family-bathroom_PFS1ZB5UJR.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/family-bathroom_PFS1ZB5UJR.jpg'
+                        }
+                    },
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/music-sheet_P92M9EDWIA.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/music-sheet_P92M9EDWIA.jpg'
+                        }
+                    }
+                ], {
+                        loop: false,
+                        thumbs: {
+                            autoStart: true
+                        },
+                        buttons: [
+                            "zoom",
+                            "fullScreen",
+                            "download",
+                            "thumbs",
+                            "close"
+                        ],
+                    });
+            });
+            
         
         });
     </script>
