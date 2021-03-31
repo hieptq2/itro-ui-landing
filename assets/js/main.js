@@ -113,6 +113,17 @@
             }
         ],
     });
+
+    //[fancy]
+    $('[data-fancybox]').fancybox({
+        buttons: [
+            "zoom",
+            "fullScreen",
+            "download",
+            "thumbs",
+            "close"
+        ],
+    });
 })
 
 function scrollNavbarBackground(){

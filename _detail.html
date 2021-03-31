@@ -204,13 +204,6 @@
                             <div class="detail-property__header__infos has-4-items clearfix">
                                 <div class="single-info clearfix">
                                     <div class="single-info__label">
-                                        <span class="label-icon"><i class="ion-calendar"></i></span>
-                                        <span class="label-text">Ngày chuyển</span>
-                                    </div>
-                                    <div class="single-info__data">15/04/2017</div>
-                                </div>
-                                <div class="single-info clearfix">
-                                    <div class="single-info__label">
                                         <span class="label-icon"><i class="ion-social-usd"></i></span>
                                         <span class="label-text">Tiền phòng</span>
                                     </div>
@@ -219,24 +212,24 @@
                                 <div class="single-info clearfix">
                                     <div class="single-info__label">
                                         <span class="label-icon"><i class="ion-pricetags"></i></span>
-                                        <span class="label-text">Đặt cọc</span>
+                                        <span class="label-text">Cashback</span>
                                     </div>
                                     <div class="single-info__data">2.000.000đ</div>
                                 </div>
                                 <div class="single-info clearfix">
                                     <div class="single-info__label">
                                         <span class="label-icon"><i class="ion-ios-people"></i></span>
-                                        <span class="label-text">Số người</span>
+                                        <span class="label-text">Số người quan tâm</span>
                                     </div>
-                                    <div class="single-info__data">03 nam</div>
+                                    <div class="single-info__data">6532</div>
                                 </div>
                                 <div class="menu-divider"></div>
                                 <div class="single-info clearfix">
                                     <div class="single-info__label">
                                         <span class="label-icon"><i class="ion-arrow-expand"></i></span>
-                                        <span class="label-text">Diện tích</span>
+                                        <span class="label-text">Đặt cọc</span>
                                     </div>
-                                    <div class="single-info__data">123.456 ha</div>
+                                    <div class="single-info__data">1.000.000đ</div>
                                 </div>
                             </div>
                         </div>
@@ -354,7 +347,7 @@
                                                                     Nội thất
                                                                 </div>
                                                                 <div class="col text-right">
-                                                                    <a href="#" class="fz-12">Xem phòng</a>
+                                                                    <a id="FancyToggle-table-room-gallery-01" href="#" class="fz-12">Xem phòng</a>
                                                                 </div>
                                                             </div>
                                                         </th>
@@ -961,6 +954,60 @@
                 offset: "4",
                 format: 'dd-mm-yyyy'
             });
+
+            // Fancy
+            $('[table-room-gallery-01]').fancybox({
+                
+            });
+            $('#FancyToggle-table-room-gallery-01').click(function (e) {
+                e.preventDefault();
+                $.fancybox.open([
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/apartment-bed_EGXWIV409M.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/apartment-bed_EGXWIV409M.jpg'
+                        }
+                    },
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/house-home_59STCX8DC4.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/house-home_59STCX8DC4.jpg'
+                        }
+                    },
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/kitchen-interior_3ZX53UFU8B.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/kitchen-interior_3ZX53UFU8B.jpg'
+                        }
+                    },
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/laptop-work_D8MPRQM38G.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/laptop-work_D8MPRQM38G.jpg'
+                        }
+                    },
+                    {
+                        src: 'https://cdn.stocksnap.io/img-thumbs/960w/home-office_YODJNTOBN9.jpg',
+                        opts: {
+                            thumb: 'https://cdn.stocksnap.io/img-thumbs/960w/home-office_YODJNTOBN9.jpg'
+                        }
+                    }
+                ], {
+                    loop: false,
+                    thumbs: {
+                        autoStart: true
+                    },
+                    buttons: [
+                        "zoom",
+                        "fullScreen",
+                        "download",
+                        "thumbs",
+                        "close"
+                    ],
+                });
+
+            });
+        
         });
     </script>
 </body>

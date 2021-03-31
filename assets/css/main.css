@@ -1275,7 +1275,7 @@ align-items: center;*/ }
 .detail-property__header .detail-property__header__subtitle i { display: block; position: absolute; top: -1px; left: 0; font-size: 22px; line-height: 28px; color: #fd7e14; }
 .detail-property__header .detail-property__header__infos { padding: 8px 0; margin: 16px 0 0; border-top: 1px solid #dee2e6; }
 @media (min-width: 576px) { .detail-property__header .detail-property__header__infos { padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; } }
-@media (min-width: 992px) { .detail-property__header .detail-property__header__infos { padding: 0 8px 0 0; } }
+@media (min-width: 992px) { .detail-property__header .detail-property__header__infos { margin-right: 8px; } }
 @media (min-width: 576px) and (max-width: 1199px) { .detail-property__header .detail-property__header__infos .menu-divider { flex: 0 0 100%; border-top: 1px solid #dee2e6; }
   .detail-property__header .detail-property__header__infos .menu-divider + .single-info { border-left: 1px solid #dee2e6; } }
 .detail-property__header .detail-property__header__infos .single-info { flex: 1 0 auto; padding: 6px 0px; }
@@ -1286,7 +1286,7 @@ align-items: center;*/ }
 .detail-property__header .detail-property__header__infos .single-info .single-info__label span { display: inline-block; vertical-align: top; line-height: 22px; }
 .detail-property__header .detail-property__header__infos .single-info .single-info__label .label-icon { font-size: 14px; margin: 0 4px 0 0; }
 .detail-property__header .detail-property__header__infos .single-info .single-info__label .label-text { font-size: 14px; }
-.detail-property__header .detail-property__header__infos .single-info .single-info__data { margin: 7px 0 0; line-height: 20px; font-size: 16px; font-weight: 600; color: #333; }
+.detail-property__header .detail-property__header__infos .single-info .single-info__data { margin: 7px 0 0; line-height: 20px; font-size: 18px; font-weight: 600; color: #333; }
 @media (max-width: 575px) { .detail-property__header .detail-property__header__infos .single-info .single-info__data { margin: 0; float: right; } }
 .detail-property__menubar { /*z-index: 1000;*/ }
 .detail-property__menubar ul { text-align: center; font-size: 0; padding: 0; margin: 0; }
@@ -1310,6 +1310,8 @@ align-items: center;*/ }
 .detail-property .single-room__data-tables { margin: 0 0 16px; }
 .detail-property .single-room__data-tables table { margin: 0; }
 .detail-property .single-room__data-tables table + table { margin-top: -1px; }
+.detail-property .table-responsive { margin: 16px 0 0; }
+.detail-property .table-responsive:first-child { margin: 8px 0 0; }
 .detail-property .descr__table-list { position: relative; margin: 0; }
 .detail-property .descr__table-list thead tr th { background-color: #f8f9fa; text-align: center; }
 @media (max-width: 575px) { .detail-property .descr__table-list thead tr th { font-size: 13px; line-height: 18px; } }

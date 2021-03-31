@@ -15760,7 +15760,7 @@ li.fancybox-thumbs-loading { background: rgba(0, 0, 0, 0.1); }
 
 .fancybox-thumbs > ul > li > img { position: absolute; top: 0; left: 0; max-width: none; max-height: none; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.fancybox-thumbs > ul > li:before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 4px solid #4ea7f9; z-index: 99991; opacity: 0; transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.fancybox-thumbs > ul > li:before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 4px solid #248f55; z-index: 99991; opacity: 0; transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 .fancybox-thumbs > ul > li.fancybox-thumbs-active:before { opacity: 1; }
 
