@@ -505,8 +505,8 @@
 
                 &-close {
                     position: absolute;
-                    top: -.25rem;
-                    right: -.5rem;
+                    top: -.5rem;
+                    right: -.75rem;
                     background: transparent;
                     padding: 0;
                     width: 3rem;
@@ -525,7 +525,7 @@
             &__search {
                 flex: 0 0 auto;
                 width: 100%;
-                padding: 0;
+                padding: 0 0 1rem;
 
                 .form-group {
                     position: relative;
@@ -737,13 +737,10 @@
             }
 
             &__search {
-                flex: 0 0 300px;
+                flex: 0 0 220px;
                 display: flex;
-                padding: .5rem .5rem .5rem 0;
-
-                @media (min-width: $xl) {
-                    flex: 0 0 360px;
-                }
+                padding: .5rem 1rem .5rem 0;
+                border-right: 1px solid $gray-300;
 
                 .form-group {
                     position: relative;
@@ -777,7 +774,7 @@
                 .form-control {
                     padding-left: 34px;
                     width: 100%;
-                    font-size: .875rem;
+                    font-size: 1rem;
 
                     &::placeholder {
                         color: $gray-500;
@@ -788,7 +785,7 @@
             &__options {
                 flex: 1 1 auto;
                 min-width: 0;
-                padding: 0 1rem 0 0;
+                padding: 0 .5rem 0 0;
 
                 .row {
                     margin: 0;
