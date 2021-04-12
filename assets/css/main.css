@@ -1178,7 +1178,7 @@ align-items: center;*/ }
 .c-card-ppt__media-img:after { content: ""; display: block; padding-bottom: 56.25%; }
 .c-card-ppt__media-img-wrap { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 10; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; }
 .c-card-ppt__media-img:hover { opacity: .9; }
-.c-card-ppt__media-vid-icon { display: block; position: absolute; top: 0; right: 0; z-index: 20; line-height: 1; font-size: 2rem; padding: .5rem; color: #fff; }
+.c-card-ppt__media-vid-icon { display: block; position: absolute; top: 4px; right: 4px; z-index: 20; line-height: 36px; width: 36px; height: 36px; font-size: 1.75rem; text-align: center; padding: 0; color: #fff; background-color: rgba(0, 0, 0, 0.4); border-radius: 9999px; }
 .c-card-ppt__tag { position: absolute; top: 8px; left: -8px; z-index: 10; }
 .c-card-ppt__tag .ppt-tag-sgl { position: relative; display: inline-block; line-height: 20px; font-size: .875rem; font-weight: 500; padding: 4px 12px; color: #fff; background-color: #6c757d; border-radius: 8px 14px 14px 0; }
 .c-card-ppt__tag .ppt-tag-sgl:after { display: block; position: absolute; top: 100%; left: 0; content: ""; width: 8px; height: 6px; border-radius: 0 0 0 6px; background-color: #ced4da; }

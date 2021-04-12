@@ -384,13 +384,19 @@
         &-vid-icon {
             display: block;
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 4px;
+            right: 4px;
             z-index: 20;
-            line-height: 1;
-            font-size: 2rem;
-            padding: .5rem;
+            line-height: 36px;
+            width: 36px;
+            height: 36px;
+            font-size: 1.75rem;
+            text-align: center;
+            padding: 0;
             color: #fff;
+            background-color: rgba(#000,.4);
+            border-radius: 9999px;
+
         }
     }
 
