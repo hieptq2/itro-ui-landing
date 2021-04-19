@@ -42,11 +42,18 @@ $grid-breakpoints: (
     xl: 1200px 
 );
 
+$container-xs: 0;
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+
 $xs: 0;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
 
 
 $bdrd: .25rem;

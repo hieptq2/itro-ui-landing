@@ -117,12 +117,16 @@
     //[fancy]
     $('[data-fancybox]').fancybox({
         buttons: [
-            "zoom",
             "fullScreen",
             "download",
             "thumbs",
+            'downloadOrg',
             "close"
         ],
+        idleTime: false,
+        beforeShow: function (instance, current) {
+            $('.fancybox-button--download').attr('download', current.src);
+        }
     });
 })
 

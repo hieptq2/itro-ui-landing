@@ -396,7 +396,6 @@
             color: #fff;
             background-color: rgba(#000,.4);
             border-radius: 9999px;
-
         }
     }
 
@@ -524,10 +523,10 @@
 
         .ppt-cback-num {
             margin: 0;
-            line-height: 1;
+            line-height: 1.25;
             font-size: 1rem;
             font-weight: 700;
-            color: darken($secondary,12%);
+            color: darken($secondary,16%);
         }
 
         .ppt-cback-unit {
@@ -536,11 +535,36 @@
             font-weight: 500;
             color: darken($secondary,12);
         }
+
+        .ppt-cback-gift {
+            margin: 0;
+            padding: 0 0 0 1.25rem;
+            line-height: 1.25rem;
+            font-size: .875rem;
+            font-weight: 500;
+            color: darken($secondary,16%);
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                position: absolute;
+                top: 1px;
+                left: 0;
+                background-image: url(./../img/giftbox.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(8deg);
+            }
+        }
     }
 
     &__locat {
         margin: .5rem 0 0;
-        padding: .25rem 0;
+        padding: .125rem 0;
+        line-height: 1.5;
         font-size: 1rem;
         font-weight: 700;
 
@@ -693,5 +717,155 @@
         margin: 0;
         line-height: 1.5;
         font-size: 1.25rem;
+    }
+}
+
+.block-showcase-n{
+    margin: 1rem 0;
+}
+
+.c-showcase-card {
+    &__wrap {
+        background-color: #fff;
+        box-shadow: 0 1px 5px 0 rgba(#000,.12);
+        border-radius: .25rem;
+    }
+
+    &__bg {
+        display: block;
+        position: relative;
+        height: 400px;
+        background-color: $gray-500;
+        border-radius: .25rem 0 0 .25rem;
+    }
+
+    &__cnt {
+        position: absolute;
+        bottom: 32px;
+        left: 0;
+        width: 50%;
+        padding: 2rem;
+        color: #fff;
+        background-color: rgba(#000,.5);
+        border-radius: 0 .25rem .25rem 0;
+
+        &-tle {
+            margin: 0 0 .5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            a {
+                display: block;
+                color: #fff;
+
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-dsr {
+            margin: 0 0;
+            font-size: 1rem;
+            color: $gray-200;
+            @include multi-line-ellipsis(1.5rem, 4);
+        }
+
+        &-atn {
+            margin: 1.5rem 0 0;
+        }
+    }
+}
+
+
+.xrx-tm-slide-slogans {
+    .tm-slide-slogans {
+        display: flex;
+        align-items: stretch;
+
+        @media (max-width: $lg - 1) {
+            flex-direction: column;
+        }
+
+        &__content {
+            flex: 1 1 auto;
+            min-width: 0;
+            background-color: #f5f5f5;
+            order: 2;
+            order: unset;
+
+            @media (min-width: $lg) {
+                order: unset;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .content-slider-wrap {
+                padding: 30px;
+
+                @media (min-width: $sm) {
+                    width: $container-sm / 2;
+                    padding: 0 30px;
+                }
+
+                @media (min-width: $md) {
+                    width: $container-md / 2;
+                }
+
+                @media (min-width: $lg) {
+                    width: $container-lg / 2;
+                }
+
+                @media (min-width: $xl) {
+                    width: $container-xl / 2;
+                }
+            }
+
+            .content {
+                &-wrap {
+                    //
+                }
+
+                &-title {
+                    margin: 0 0 20px;
+                }
+
+                &-descr {
+                    line-height: 28px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $gray-900;
+                }
+            }
+        }
+
+        &__image {
+            flex: 0 0 50%;
+            min-width: 0;
+            background-color: $gray-100;
+            order: 1;
+
+            @media (min-width: $md) {
+                order: unset;
+            }
+
+            .image-wrap {
+                height: 240px;
+
+                @media (min-width: $md) {
+                    height: 380px;
+                }
+            }
+        }
+    }
+
+    .c-slick {
+        &--tm-slogan-content {
+            .slick-dots {
+                margin-top: 32px;
+            }
+        }
     }
 }
