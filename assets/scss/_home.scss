@@ -778,93 +778,405 @@
     }
 }
 
+.block-ctm-rv {
+    padding: 2rem 0;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: $lg) {
+        padding: 4rem 0;
+    }
 
-.xrx-tm-slide-slogans {
-    .tm-slide-slogans {
-        display: flex;
-        align-items: stretch;
+    &__wrap {
+        //
+    }
 
-        @media (max-width: $lg - 1) {
-            flex-direction: column;
+    &__hdr {
+        padding: 0 1rem;
+
+        @media (min-width: $lg) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
         }
 
-        &__content {
-            flex: 1 1 auto;
-            min-width: 0;
-            background-color: #f5f5f5;
-            order: 2;
-            order: unset;
+        &-logo {
+            margin: 0 0 1rem;
 
             @media (min-width: $lg) {
-                order: unset;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                margin: 0;
             }
 
-            .content-slider-wrap {
-                padding: 30px;
-
-                @media (min-width: $sm) {
-                    width: $container-sm / 2;
-                    padding: 0 30px;
-                }
-
-                @media (min-width: $md) {
-                    width: $container-md / 2;
-                }
+            img {
+                display: block;
+                width: 256px;
 
                 @media (min-width: $lg) {
-                    width: $container-lg / 2;
-                }
-
-                @media (min-width: $xl) {
-                    width: $container-xl / 2;
+                    width: 320px;
                 }
             }
+        }
 
-            .content {
-                &-wrap {
+        &-count {
+            @media (min-width: $lg) {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .ctm-rv-count {
+            display: flex;
+            text-align: center;
+            margin: .5rem 0 0;
+
+            @media (min-width: $lg) {
+                display: block;
+                margin: 0 0 0 5rem;
+            }
+
+            &__num {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 1;
+                font-size: 1.75rem;
+                font-weight: 300;
+
+                @media (min-width: $lg) {
+                    font-size: 2.25rem;
+                    font-weight: 300;
+                }
+
+                .rv-num-main {
                     //
                 }
 
-                &-title {
-                    margin: 0 0 20px;
-                }
+                .rv-num-crc {
+                    margin: 0 0 0 .25rem;
+                    font-size: 1.125rem;
+                    font-weight: 400;
 
-                &-descr {
-                    line-height: 28px;
-                    font-size: 16px;
-                    font-weight: 300;
-                    color: $gray-900;
+                    @media (min-width: $lg) {
+                        margin: 0 0 0 .5rem;
+                        font-size: 1.25rem;
+                    }
                 }
             }
-        }
 
-        &__image {
-            flex: 0 0 50%;
-            min-width: 0;
-            background-color: $gray-100;
-            order: 1;
+            &__lbl {
+                margin: 0 0 0 1rem;
+                padding: 5px 0 0;
+                line-height: 1;
+                font-size: 1.125rem;
 
-            @media (min-width: $md) {
-                order: unset;
-            }
-
-            .image-wrap {
-                height: 240px;
-
-                @media (min-width: $md) {
-                    height: 380px;
+                @media (min-width: $lg) {
+                    margin: .5rem 0 0;
+                    padding: 0;
+                    font-size: 1.25rem;
                 }
             }
         }
     }
 
-    .c-slick {
-        &--tm-slogan-content {
+    &__slide {
+        margin: 2rem 0 0;
+
+        @media (min-width: $lg) {
+            margin: 4rem 0 0;
+        }
+
+        .ctm-rv-slide {
+            display: flex;
+
+            &__item {
+                flex: 0 0 50%;
+            }
+
             .slick-dots {
-                margin-top: 32px;
+                position: absolute;
+                /*left: 1.5rem;
+                bottom: .75rem;*/
+                bottom: -1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+
+                @media (min-width: $lg) {
+                    bottom: -2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                li {
+                    display: block;
+                    margin: 0 4px 0 0;
+
+                    button {
+                        display: block;
+                        font-size: 0;
+                        width: 12px;
+                        height: 12px;
+                        padding: 0;
+                        background-color: transparent;
+                        border: 2px solid $secondary;
+                        border-radius: 50%;
+                        outline: none;
+                    }
+
+                    &.slick-active {
+                        button {
+                            background-color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .c-ctm-rv {
+            padding: 0 1rem;
+
+            &__wrap {
+                position: relative;
+                padding: 0 0 2.5rem;
+            }
+
+            &__card {
+                width: 90%;
+                background-color: #fff;
+                box-shadow: 0 1px 5px 0 rgba(#000,.12);
+                border-radius: .5rem;
+
+                @media (min-width: $lg) {
+                    width: 80%;
+                }
+            }
+
+            &__mda {
+                position: relative;
+                display: block;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 56.25%;
+                }
+
+                &-wrap {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $gray-400;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: .5rem .5rem 0 0;
+                }
+            }
+
+            &__cnt {
+                padding: 1rem;
+            }
+
+            &__prc {
+                display: flex;
+                align-items: center;
+                line-height: 1;
+
+                &-num {
+                    display: block;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    color: $secondary;
+                }
+
+                &-crc {
+                    margin: 0 0 0 .25rem;
+                    padding: 0 0 2px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $secondary;
+                }
+
+                &-per {
+                    margin: 0 0 0 .5rem;
+                    padding: 0 0 2px;
+                    font-size: .875rem;
+                    color: $gray-500;
+                }
+            }
+
+            &__addr {
+                margin: .5rem 0 0;
+                display: flex;
+                align-items: center;
+
+                i, span {
+                    display: block;
+                }
+
+                i.mdi {
+                    flex: 0 0 auto;
+                    margin: 0 .25rem 0 0;
+                    line-height: 1;
+                    font-size: 1.25rem;
+                }
+
+                span {
+                    min-width: 0;
+                    flex: 1 1 auto;
+                    @include one-line-ellipsis();
+                }
+            }
+
+            &__dvd {
+                height: 1px;
+                margin: .5rem 0;
+                background-color: $gray-300;
+            }
+
+            &__cback {
+                &-lbl {
+                    margin: 0 0 3px;
+                    line-height: 1.5;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: $gray-600;
+                }
+
+                &-cnt {
+                    height: 28px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &-prc {
+                    display: flex;
+                    align-items: center;
+                    line-height: 28px;
+                    font-weight: 700;
+
+                    &-num {
+                        font-size: 1.375rem;
+                        color: $primary;
+                    }
+
+                    &-crc {
+                        display: block;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        margin: 0 0 0 .25rem;
+                        color: $primary;
+                    }
+                }
+
+                &-plus {
+                    padding: 0 .75rem 2px;
+                    line-height: 1;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $primary;
+                }
+
+                &-gift {
+                    margin: 0;
+                    padding: 0 0 0 1.25rem;
+                    line-height: 1.25rem;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    color: $primary;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 1rem;
+                        height: 1rem;
+                        position: absolute;
+                        top: 1px;
+                        left: 0;
+                        background-image: url(./../img/giftbox.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        transform: rotate( 8deg );
+                    }
+                }
+            }
+            //xx
+            &__cmt {
+                padding: 1rem;
+                background-color: #fff;
+                box-shadow: 0 1px 8px 0 rgba(#000,.16);
+                border-radius: .5rem;
+                z-index: 50;
+                width: 70%;
+                position: absolute;
+                bottom: .5rem;
+                right: 0;
+
+                @media (min-width: $sm) {
+                    width: 60%;
+                    background-color: #fff;
+                }
+
+                @media (min-width: $lg) {
+                    background-color: #fff;
+                    width: 50%;
+                    min-height: 244px;
+                }
+
+                &-cnt {
+                    display: block;
+                    position: relative;
+
+                    svg {
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                        position: absolute;
+                        top: -.25rem;
+                        left: -.125rem;
+                        opacity: .2;
+                        transform: rotate(5deg);
+                    }
+
+                    span {
+                        display: block;
+                        text-indent: 2rem;
+                        font-size: 1rem;
+                        font-style: italic;
+
+                        @media (min-width: $lg) {
+                            font-size: 1.125rem;
+                            @include multi-line-ellipsis(1.6125rem, 10);
+                        }
+                    }
+                }
+
+                &-user {
+                    margin: .5rem 0 0;
+                    padding: 0 0 0 2rem;
+                    position: relative;
+                    line-height: 1.25;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: .25rem;
+                        top: 10px;
+                        display: block;
+                        width: 1.25rem;
+                        height: 1px;
+                        background-color: $gray-900;
+                    }
+                }
             }
         }
     }

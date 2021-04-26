@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\js"
+    "\\assets\\js",
+    "\\assets\\scss"
   ],
-  "SelectedNode": "\\assets\\js\\main.js",
+  "SelectedNode": "\\assets\\scss\\__mixins.scss",
   "PreviewInSolutionExplorer": false
 }
