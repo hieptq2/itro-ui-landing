@@ -779,12 +779,13 @@
 }
 
 .block-ctm-rv {
-    padding: 2rem 0;
-    background-color: #eee;
+    padding: 2rem 0 2rrm;
+    background-color: $gray-200;
     background-size: cover;
     background-position: center;
+
     @media (min-width: $lg) {
-        padding: 4rem 0;
+        padding: 3rem 0 3rem;
     }
 
     &__wrap {
@@ -795,17 +796,21 @@
         padding: 0 1rem;
 
         @media (min-width: $lg) {
-            display: flex;
+            /*display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;*/
             padding: 0;
         }
 
         &-logo {
             margin: 0 0 1rem;
+            font-size: 2rem;
 
             @media (min-width: $lg) {
-                margin: 0;
+                margin: 0 0 1rem;
+                font-size: 2rem;
+                font-weight: 300;
+                text-align: center;
             }
 
             img {
@@ -822,6 +827,7 @@
             @media (min-width: $lg) {
                 display: flex;
                 align-items: center;
+                justify-content: center;
             }
         }
 
@@ -831,8 +837,8 @@
             margin: .5rem 0 0;
 
             @media (min-width: $lg) {
-                display: block;
-                margin: 0 0 0 5rem;
+                display: flex;
+                padding: 0 2rem;
             }
 
             &__num {
@@ -844,8 +850,8 @@
                 font-weight: 300;
 
                 @media (min-width: $lg) {
-                    font-size: 2.25rem;
-                    font-weight: 300;
+                    font-size: 1.75rem;
+                    font-weight: 700;
                 }
 
                 .rv-num-main {
@@ -854,12 +860,12 @@
 
                 .rv-num-crc {
                     margin: 0 0 0 .25rem;
-                    font-size: 1.125rem;
-                    font-weight: 400;
+                    font-size: 1.25rem;
+                    font-weight: 500;
 
                     @media (min-width: $lg) {
-                        margin: 0 0 0 .5rem;
-                        font-size: 1.25rem;
+                        margin: 0 0 0 .25rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -871,7 +877,7 @@
                 font-size: 1.125rem;
 
                 @media (min-width: $lg) {
-                    margin: .5rem 0 0;
+                    margin: .25rem 0 0 1rem;
                     padding: 0;
                     font-size: 1.25rem;
                 }
@@ -883,7 +889,7 @@
         margin: 2rem 0 0;
 
         @media (min-width: $lg) {
-            margin: 4rem 0 0;
+            margin: 3rem -1rem 0;
         }
 
         .ctm-rv-slide {
@@ -907,7 +913,7 @@
                 margin: 0;
 
                 @media (min-width: $lg) {
-                    bottom: -2rem;
+                    bottom: -1.75rem;
                     left: 50%;
                     transform: translateX(-50%);
                 }
@@ -942,7 +948,7 @@
 
             &__wrap {
                 position: relative;
-                padding: 0 0 2.5rem;
+                padding: 0 0 1.5rem;
             }
 
             &__card {
@@ -1013,7 +1019,7 @@
             }
 
             &__addr {
-                margin: .5rem 0 0;
+                margin: .25rem 0 0;
                 display: flex;
                 align-items: center;
 
@@ -1043,18 +1049,16 @@
 
             &__cback {
                 &-lbl {
-                    margin: 0 0 3px;
+                    margin: 0 0 2px;
                     line-height: 1.5;
                     font-size: 12px;
                     font-weight: 500;
                     text-transform: uppercase;
-                    color: $gray-600;
+                    color: $gray-500;
                 }
 
                 &-cnt {
-                    height: 28px;
-                    display: flex;
-                    align-items: center;
+                    height: 40px;
                 }
 
                 &-prc {
@@ -1064,7 +1068,7 @@
                     font-weight: 700;
 
                     &-num {
-                        font-size: 1.375rem;
+                        font-size: 1.25rem;
                         color: $primary;
                     }
 
@@ -1078,11 +1082,16 @@
                 }
 
                 &-plus {
-                    padding: 0 .75rem 2px;
+                    padding: 0 .5rem 2px;
                     line-height: 1;
                     font-size: 1rem;
                     font-weight: 400;
                     color: $primary;
+                }
+
+                &-gift-wrap {
+                    display: flex;
+                    align-items: center;
                 }
 
                 &-gift {
@@ -1129,8 +1138,8 @@
 
                 @media (min-width: $lg) {
                     background-color: #fff;
-                    width: 50%;
-                    min-height: 244px;
+                    width: 60%;
+                    /*min-height: 228px;*/
                 }
 
                 &-cnt {
@@ -1155,8 +1164,8 @@
                         font-style: italic;
 
                         @media (min-width: $lg) {
-                            font-size: 1.125rem;
-                            @include multi-line-ellipsis(1.6125rem, 10);
+                            font-size: 1rem;
+                            @include multi-line-ellipsis(1.5rem, 10);
                         }
                     }
                 }
@@ -1166,6 +1175,7 @@
                     padding: 0 0 0 2rem;
                     position: relative;
                     line-height: 1.25;
+
                     &:before {
                         content: "";
                         position: absolute;
