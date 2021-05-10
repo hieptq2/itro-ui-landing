@@ -1242,8 +1242,8 @@ align-items: center;*/ }
 .c-showcase-card__cnt-dsr { margin: 0 0; font-size: 1rem; color: #e9ecef; display: block; overflow: hidden; line-height: 1.5rem; max-height: 6rem; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; text-overflow: ellipsis; }
 .c-showcase-card__cnt-atn { margin: 1.5rem 0 0; }
 
-.block-ctm-rv { padding: 2rem 0 2rrm; background-color: #e9ecef; background-size: cover; background-position: center; }
-@media (min-width: 992px) { .block-ctm-rv { padding: 3rem 0 3rem; } }
+.block-ctm-rv { padding: 2rem 0 3rem; background-color: #e9ecef; background-size: cover; background-position: center bottom; background-repeat: no-repeat; }
+@media (min-width: 992px) { .block-ctm-rv { padding: 3rem 0 5rem; } }
 .block-ctm-rv__hdr { padding: 0 1rem; }
 @media (min-width: 992px) { .block-ctm-rv__hdr { /*display: flex;
 align-items: center;
@@ -1252,15 +1252,17 @@ justify-content: center;*/ padding: 0; } }
 @media (min-width: 992px) { .block-ctm-rv__hdr-logo { margin: 0 0 1rem; font-size: 2rem; font-weight: 300; text-align: center; } }
 .block-ctm-rv__hdr-logo img { display: block; width: 256px; }
 @media (min-width: 992px) { .block-ctm-rv__hdr-logo img { width: 320px; } }
+.block-ctm-rv__hdr-tle { margin: 0 0 1rem; font-size: 2rem; font-weight: 300; }
+@media (min-width: 992px) { .block-ctm-rv__hdr-tle { text-align: center; font-size: 2.5rem; } }
 @media (min-width: 992px) { .block-ctm-rv__hdr-count { display: flex; align-items: center; justify-content: center; } }
 .block-ctm-rv__hdr .ctm-rv-count { display: flex; text-align: center; margin: .5rem 0 0; }
-@media (min-width: 992px) { .block-ctm-rv__hdr .ctm-rv-count { display: flex; padding: 0 2rem; } }
+@media (min-width: 992px) { .block-ctm-rv__hdr .ctm-rv-count { display: flex; padding: 0 1.5rem; } }
 .block-ctm-rv__hdr .ctm-rv-count__num { display: flex; align-items: center; justify-content: center; line-height: 1; font-size: 1.75rem; font-weight: 300; }
 @media (min-width: 992px) { .block-ctm-rv__hdr .ctm-rv-count__num { font-size: 1.75rem; font-weight: 700; } }
 .block-ctm-rv__hdr .ctm-rv-count__num .rv-num-crc { margin: 0 0 0 .25rem; font-size: 1.25rem; font-weight: 500; }
 @media (min-width: 992px) { .block-ctm-rv__hdr .ctm-rv-count__num .rv-num-crc { margin: 0 0 0 .25rem; font-size: 1.5rem; } }
-.block-ctm-rv__hdr .ctm-rv-count__lbl { margin: 0 0 0 1rem; padding: 5px 0 0; line-height: 1; font-size: 1.125rem; }
-@media (min-width: 992px) { .block-ctm-rv__hdr .ctm-rv-count__lbl { margin: .25rem 0 0 1rem; padding: 0; font-size: 1.25rem; } }
+.block-ctm-rv__hdr .ctm-rv-count__lbl { margin: 0 0 0 .75rem; padding: 5px 0 0; line-height: 1; font-size: 1.125rem; }
+@media (min-width: 992px) { .block-ctm-rv__hdr .ctm-rv-count__lbl { margin: .25rem 0 0 .75rem; padding: 0; font-size: 1.25rem; } }
 .block-ctm-rv__slide { margin: 2rem 0 0; }
 @media (min-width: 992px) { .block-ctm-rv__slide { margin: 3rem -1rem 0; } }
 .block-ctm-rv__slide .ctm-rv-slide { display: flex; }
@@ -1268,9 +1270,9 @@ justify-content: center;*/ padding: 0; } }
 .block-ctm-rv__slide .ctm-rv-slide .slick-dots { position: absolute; /*left: 1.5rem;
 bottom: .75rem;*/ bottom: -1.25rem; left: 50%; transform: translateX(-50%); list-style: none; display: flex; align-items: center; padding: 0; margin: 0; }
 @media (min-width: 992px) { .block-ctm-rv__slide .ctm-rv-slide .slick-dots { bottom: -1.75rem; left: 50%; transform: translateX(-50%); } }
-.block-ctm-rv__slide .ctm-rv-slide .slick-dots li { display: block; margin: 0 4px 0 0; }
-.block-ctm-rv__slide .ctm-rv-slide .slick-dots li button { display: block; font-size: 0; width: 12px; height: 12px; padding: 0; background-color: transparent; border: 2px solid #73d99f; border-radius: 50%; outline: none; }
-.block-ctm-rv__slide .ctm-rv-slide .slick-dots li.slick-active button { background-color: #73d99f; }
+.block-ctm-rv__slide .ctm-rv-slide .slick-dots li { display: block; margin: 0 4px 0 0; opacity: 1; }
+.block-ctm-rv__slide .ctm-rv-slide .slick-dots li button { display: block; font-size: 0; width: 12px; height: 12px; padding: 0; background-color: transparent; border: 2px solid #248f55; border-radius: 50%; outline: none; box-shadow: 0 0 2px 2px #fff; opacity: 1; }
+.block-ctm-rv__slide .ctm-rv-slide .slick-dots li.slick-active button { background-color: #248f55; }
 .block-ctm-rv__slide .c-ctm-rv { padding: 0 1rem; }
 .block-ctm-rv__slide .c-ctm-rv__wrap { position: relative; padding: 0 0 1.5rem; }
 .block-ctm-rv__slide .c-ctm-rv__card { width: 90%; background-color: #fff; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12); border-radius: .5rem; }

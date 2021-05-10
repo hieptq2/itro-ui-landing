@@ -779,13 +779,14 @@
 }
 
 .block-ctm-rv {
-    padding: 2rem 0 2rrm;
+    padding: 2rem 0 3rem;
     background-color: $gray-200;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 
     @media (min-width: $lg) {
-        padding: 3rem 0 3rem;
+        padding: 3rem 0 5rem;
     }
 
     &__wrap {
@@ -823,6 +824,17 @@
             }
         }
 
+        &-tle {
+            margin: 0 0 1rem;
+            font-size: 2rem;
+            font-weight: 300;
+
+            @media (min-width: $lg) {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+        }
+
         &-count {
             @media (min-width: $lg) {
                 display: flex;
@@ -838,7 +850,7 @@
 
             @media (min-width: $lg) {
                 display: flex;
-                padding: 0 2rem;
+                padding: 0 1.5rem;
             }
 
             &__num {
@@ -871,13 +883,13 @@
             }
 
             &__lbl {
-                margin: 0 0 0 1rem;
+                margin: 0 0 0 .75rem;
                 padding: 5px 0 0;
                 line-height: 1;
                 font-size: 1.125rem;
 
                 @media (min-width: $lg) {
-                    margin: .25rem 0 0 1rem;
+                    margin: .25rem 0 0 .75rem;
                     padding: 0;
                     font-size: 1.25rem;
                 }
@@ -921,6 +933,7 @@
                 li {
                     display: block;
                     margin: 0 4px 0 0;
+                    opacity: 1;
 
                     button {
                         display: block;
@@ -929,14 +942,16 @@
                         height: 12px;
                         padding: 0;
                         background-color: transparent;
-                        border: 2px solid $secondary;
+                        border: 2px solid $primary;
                         border-radius: 50%;
                         outline: none;
+                        box-shadow: 0 0 2px 2px #fff;
+                        opacity: 1;
                     }
 
                     &.slick-active {
                         button {
-                            background-color: $secondary;
+                            background-color: $primary;
                         }
                     }
                 }
